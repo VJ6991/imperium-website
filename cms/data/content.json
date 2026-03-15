@@ -1,0 +1,77 @@
+{
+    "home": {
+        "title": "Home",
+        "fields": {
+            "slide1_heading_line1": {
+                "type": "text",
+                "label": "Slide 1 - Heading (Line 1)",
+                "value": "Enhance CX with"
+            },
+            "slide1_heading_line2": {
+                "type": "text",
+                "label": "Slide 1 - Heading (Line 2)",
+                "value": "AI Powered Solutions"
+            },
+            "slide2_heading_line1": {
+                "type": "text",
+                "label": "Slide 2 - Heading (Line 1)",
+                "value": "Streamline Business"
+            },
+            "slide2_heading_line2": {
+                "type": "text",
+                "label": "Slide 2 - Heading (Line 2)",
+                "value": "with Smart Solutions"
+            }
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "fields": {
+            "main_heading": {
+                "type": "text",
+                "label": "Main Heading",
+                "value": "We Help You Connect Your Business with ease"
+            },
+            "content_paragraph_1": {
+                "type": "textarea",
+                "label": "Content Paragraph 1",
+                "value": "Founded in the year 2005, Imperium Software Technologies FZCO is a subsidiary of a parent organization Protocol Systems and is dedicated to enabling better functionality of telephony.\r\n\r\nWe are an industry leader in CTI solutions and the only industry expert in the region to hold almost a decade of association with Avaya as a certified Avaya DevConnect Technology partner. Our expertise in complete ICT solutions endows us the status of a fully-charged software production house that develops value added products. We seamlessly integrate of varied business applications with a telephony system for smart workflow.\r\n\r\nWe enable complete business automation by providing advice, solution, implementation and applications all in one place. We are one-stop solution partner for all your ICT needs.\r\n\r\nThe Company moved from just implementing telephony systems to developing a brand of its own with applications built on top of a VoIP system to support additional features that allow better grip over business communication."
+            },
+            "customer_service_image": {
+                "type": "image",
+                "label": "Customer Service Image",
+                "value": "assets\/image\/cms\/1773381706_call.jpg"
+            },
+            "vision_heading": {
+                "type": "text",
+                "label": "Vision Heading",
+                "value": "Our Vision"
+            },
+            "vision_paragraph": {
+                "type": "textarea",
+                "label": "Vision Paragraph",
+                "value": "Imperium's vision is to expand its reach as a prime strategic partner creating telecommunication solutions and offering sustainable growth to businesses worldwide. We wish to present our simplified yet effective solutions and products to companies of every size and industry.\r\n\r\nWe envision a world that is technologically empowered and better connected where businesses and individuals are linked through premium communication systems and functionalities. This through a reliable and efficient marketing partner like us.\r\nImperium has been a dedicated Avaya partner for almost a decade. We have recently upgraded ourselves to be on-boarded as Avaya Powered By Cloud partner.\r\n\r\nCloud is the future. Alongside providing exceptional service to every client, Imperium shall focus on becoming an agile Cloud Provider in the region with high touch engagement process from end to end for a smooth the transition."
+            },
+            "vision_image": {
+                "type": "image",
+                "label": "Vision Image",
+                "value": "assets\/image\/mission.jpg"
+            }
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "fields": {
+            "banner_heading": {
+                "type": "text",
+                "label": "Banner Heading",
+                "value": "Blog and News "
+            },
+            "breadcrumb_text": {
+                "type": "text",
+                "label": "Breadcrumb Text",
+                "value": "BLOGS"
+            }
+        }
+    }
+}

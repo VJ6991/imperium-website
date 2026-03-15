@@ -1,0 +1,84 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule Find https://%{HTTP_HOST}/properties?location=&mlsStatus=Active [L,R=301,NC]
+
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule Help.aspx https://%{HTTP_HOST}/contact [L,R=301,NC]
+
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule 35320-Marsha-Wehrenberg https://%{HTTP_HOST}/team/detail/Marsha%20-Wehrenberg-Sk5Kg6fJZM2kG9gxE [L,R=301,NC]
+
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule 27173-Matt-Hagar https://%{HTTP_HOST}/team/detail/Matt-Hagar,%20CCIM-KxpScFt37rWLmvPc8 [L,R=301,NC]
+
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule megan_sandoval/?search=true https://%{HTTP_HOST}/team/detail/Megan%20-Hagar-7gG8rkam4iQZgzDK9 [L,R=301,NC]
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule 27211-Sandy-Foreman https://%{HTTP_HOST}/team/detail/Sandy%20-Foreman-ZDN6zdff8bhFSKSop [L,R=301,NC]
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule 27167-Mary-Beall https://%{HTTP_HOST}/team/detail/Mary%20Beall-Neighbor-wWtihH8PgjFE5ruZu [L,R=301,NC]
+
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule 1290-Walnut-Creek https://%{HTTP_HOST}/office [L,R=301,NC]
+
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule About_Us https://%{HTTP_HOST}/about [L,R=301,NC]
+    
+     RewriteCond %{SERVER_PORT} 80
+    RewriteCond %{HTTP_HOST} ^(www\.)?imperiumapp\.com
+    RewriteRule ^(.*)$ https://imperiumapp.com/$1 [R,L]
+  
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule offices https://%{HTTP_HOST}/office [L,R=301,NC]
+
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !=localhost:8080
+    RewriteCond %{HTTP_HOST} !=104.197.167.156
+    RewriteRule 27174-Christine-Jeffers https://%{HTTP_HOST}/team/detail/Christine%20-Jeffers-mJr7ZRaMswicmnntY [L,R=301,NC]
+    RewriteEngine On
+  
+#
+#    RewriteCond %{HTTP_HOST} !=localhost
+     RewriteCond %{HTTP_HOST} !=localhost:8080
+#    RewriteCond %{HTTP_HOST} !^www\.
+#    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+    #Ignore asset folder (separate folders by |)
+    RewriteRule ^(assets)($|/) - [L]
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*) index.php?uri=$1 [L,QSA]
+</IfModule>

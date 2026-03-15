@@ -1,0 +1,15 @@
+export const aiDocLink                      = "";
+export const callAnalyticsDocLink           = "";
+export const callBackDocLink                = "";
+export const coBrowserDocLink               = "";
+export const crmDocLink                     = "";
+export const dccDocLink                     = "";
+export const qmsDocLink                     = "";
+export const outBoundDocLink                = "";
+export const smartRuleEngineDocLink         = "";
+export const smartSurveyDocLink             = "";
+export const smsDocLink                     = "";
+export const socialEngagementDocLink        = "";
+export const ticketingDocLink               = "";
+export const videoKycDocLink                = "";
+export const socialMediaConnectorDocLink    = "";

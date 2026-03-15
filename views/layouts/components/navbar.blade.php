@@ -1,0 +1,320 @@
+<style>
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(245, 244, 244);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+    }
+    @font-face {
+      font-family: 'Satoshi';
+      src: url('assets/fonts/Satoshi-Variable.woff2') format('woff2'); 
+      font-style: normal;
+    }
+
+  .sub-drop{
+    position: relative; 
+  }
+
+  .sub-drop-content {
+    display: none;
+    position: absolute;
+    right: -160px;
+    top: 0;
+    background-color: rgb(245, 244, 244);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+   }
+
+   .drop-content-responsive{
+    display: none;
+    width: 100%;
+    }
+
+    .submenu-responsive li{
+      width: 100%;
+    }
+
+    
+   .drop-content-responsive a{
+    color: #fff !important;
+    background-color: #000;
+    padding: 8px;
+    width: 100%;
+
+   }
+
+
+  .sub-drop:hover .sub-drop-content{
+     display: block;
+  }
+
+  .navbar-responsive,
+  .menu {
+    display: none;
+  }
+
+  .dropdown-content a ,.sub-drop{
+    float: none;
+    color: rgb(59, 58, 58);
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .submenu-responsive, .sub-drop-responsive {
+    background-color: rgb(245, 244, 244);
+    color: #000;
+    margin-top: 4px;
+    width: 100%;
+  }
+
+  .submenu-responsive a {
+    color: #000;
+    width: 100%;
+
+  }
+
+
+
+
+  .drop:hover .dropdown-content {
+    display: block;
+  }
+
+  .hamburger-responsive {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-responsive {
+    display: flex;
+    list-style: none;
+  }
+
+
+  .menu-responsive li {
+    min-height: 40px;
+    border-bottom: 0.2px solid gray;
+    margin-top: 6px;
+    color: #bab6b6;
+  }
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 1100px) {
+    .menu-responsive {
+      display: none;
+      /* Initially hide the menu */
+      flex-direction: column;
+      background-color: black;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      z-index: 10;
+      padding: 0 10px;
+    }
+
+    .menu-responsive.show-responsive,
+    .navbar-responsive {
+      display: flex;
+      /* Show the menu when toggled */
+    }
+
+    .hamburger-responsive {
+      display: block;
+    }
+
+    .submenu-responsive {
+      display: none;
+      width: 100%;
+      padding-right: 10px;
+      /* Hide submenus by default */
+    }
+
+    .submenu-responsive li {
+      align-items: center;
+      min-height: 38px;
+      display: flex;
+      /* Hide submenus by default */
+    }
+    .submenu-responsive li{
+      font-size: 14px;
+      border-bottom: none;
+    }
+
+    .submenu-responsive.show-responsive {
+      display: block;
+      /* Show submenu when toggled */
+    }
+
+    .navbar-main {
+      display: none;
+    }
+  }
+  .navbar-section-1  li a:hover{
+    color: #E9753B;
+  }
+  .sub-drop-content  a {
+    background: rgb(233, 230, 230) !important;
+    color: rgb(76, 75, 75) !important;
+  }
+  .dropdown-content > a:hover ,.sub-drop:hover{
+    background: rgb(76, 75, 75) !important;
+    color: rgb(233, 230, 230) !important;
+   
+  }
+  
+  .menu-responsive a , .sub-drop-responsive{
+    color: #bab6b6;
+  }
+
+  .submenu-responsive ,.sub-drop-responsive {
+    background-color:rgb(98, 97, 97);
+  }
+
+</style>
+
+<header class="navbar-position">
+  <div class="navbar-main">
+    <div class="navbar-container">
+      <div class="navbar-container-div-1">
+       <a  href="{{ url('') }}"> <img src="{{asset('image/imperium-logo-orange-new.png')}}" alt="logo"  style="cursor: pointer;"/></a>
+        <ul class="navbar-section-1">
+
+          <li id="aboutli"><a href="{{ url('about') }}">About Us</a></li>
+          <li id="productsli"><a href="{{ url('products') }}">Products</a></li>
+
+          
+          <li id="solutionsli"><a href="{{url('industry-influence')}}">Verticals</a></li>
+          <li id="solutionsli1"><a href="http://localhost:3000/cx/#/solutions">Solutions</a></li>
+          <li><a href="{{url('casestudy')}}">Case Studies</a></li>
+          <li id="partnersli" class="drop"><a href="javascript:;">Partners <span style="margin-left: 5px;" class="arrow-responsive"> <img class="arrow-for-nav" src="assets/image/redesign-img/scroll/down-arrow.png"  alt=""></span></a>
+            <div class="dropdown-content">
+              <a href="{{ url('strategic-partnerships') }}">Strategic Partnership</a>
+              <div class="sub-drop">Technology Partner
+                <div class="sub-drop-content">
+                  <a href="http://localhost:3000/cx/#/Avaya_CX">Avaya</a>
+                  <a href="{{ url('partners-cisco') }}">Cisco</a>
+                  <a href="{{ url('partners-microsoft-lync') }}">Microsoft Lync</a>
+                </div>
+              </div>
+              <a href="{{ url('partners-microsoft-lync') }}">Channel Partner</a>
+            </div>
+
+            
+
+            <!-- <ul>
+                                        <li><a href="https://imperiumapp.com/cx/#/strategic-partnerships">Strategic Partnership</a></li>
+                                        <li><a href="javascript:void(0)">Technology Partner</a>
+                                            <ul>
+                                                 <li><a href="{{ url('cx') }}">Avaya</a></li>
+                                                <li><a href="{{ url('partners-cisco') }}">Cisco</a></li>
+                                                <li><a href="{{ url('partners-microsoft-lync') }}">Microsoft Lync</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="{{ url('registration') }}">Channel Partner</a></li>
+                                    </ul> -->
+          </li>
+          <li id="inaipili" class="drop"><a href="javascript:;">Cloud<span style="margin-left: 5px;" class="arrow-responsive"><img class="arrow-for-nav" src="assets/image/redesign-img/scroll/down-arrow.png"  alt=""></span></a>
+            <div class="dropdown-content">
+              <a href="{{ url('inaipi') }}"> INAIPI Cloud</a>
+              <a href="{{ url('avaya') }}">Avaya Cloud</a>
+            </div>
+         
+          </li>
+          <li id="contactli"><a href="{{ url('blog-news') }}">Blog</a></li>
+         </ul>
+      </div>
+      <div class="navbar-container-div-2">
+         <a class="butn butn__new" href="{{ url('contact') }}"><span>Contact Sales</span> </a> 
+      </div>
+    </div>
+
+  </div>
+
+  <nav class="navbar-responsive">
+    <img class="logo-responsive" src="{{asset('image/imperium-logo-orange-new.png')}}" alt="logo" />
+    <div style="display: flex; align-items:center; gap:16px">
+    <div class="navbar-container-div-2">
+        <button><a href="{{ url('contact') }}">Contact Sales</a></button>
+      </div>
+    <button class="hamburger-responsive" aria-label="Toggle menu">
+    <img src="{{asset('image/icon/ham.svg')}}" alt="logo" />
+    </button>
+    </div>
+    <ul class="nav_res"> 
+      <li><a href="{{ url('about') }}">About Us</a></li>
+      <li><a href="{{ url('products') }}">Products</a></li>
+      
+      <li><a href="{{url('industry-influence')}}">Verticals</a></li>
+      <li><a href="http://localhost:3000/cx/#/solutions">Solutions</a></li>
+      <li><a href="{{url('casestudy')}}">Case Studies</a></li>
+      <li class="has-submenu-responsive">
+        <div style="display: flex; justify-content:space-between; padding-right:20px"> <span><a href="javascript:;">Partners</span> <span class="arrow-responsive"><img class="arrow-for-nav" src="assets/image/redesign-img/scroll/down-arrow.png"  alt=""></a></span></div>
+        <ul class="submenu-responsive">
+          <li>  <a href="{{ url('strategic-partnerships') }}">Strategic-Partnerships</a> 
+        </li>
+          <li >
+             <div class="sub-drop-responsive"  href="#"> 
+              <div style="display: flex; justify-content:space-between; padding-right:20px">
+              <span>Technology Partner</span> <span style="margin-left: 5px;" class="arrow-responsive"><img class="arrow-for-nav" src="assets/image/redesign-img/scroll/down-arrow.png"  alt=""></span>
+            </div>
+            <!-- jdrhgiuderguideriguheriuygh -->
+                <ul class="drop-content-responsive">
+                      <li><a href="{{ url('cx') }}">Avaya</a></li>
+                      <li> <a href="{{ url('partners-cisco') }}">Cisco</a></li>
+                      <li><a href="{{ url('partners-microsoft-lync') }}">Microsoft Lync</a></li>
+                  </ul>
+              </div>
+             
+        </li>
+          <li> <a href="{{ url('partners-microsoft-lync') }}">Channel Partner</a></li>
+        </ul>
+       
+      </li>
+      <li class="has-submenu-responsive">
+        <div style="display: flex; justify-content:space-between; padding-right:20px"> <span>Cloud</span> <span class="arrow-responsive"><img class="arrow-for-nav" src="assets/image/redesign-img/scroll/down-arrow.png"  alt=""></span></div>
+        <ul class="submenu-responsive">
+          <li><a href="{{ url('inaipi') }}"> INAIPI Cloud</a></li>
+          <li><a href="{{ url('avaya') }}">Avaya Cloud</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ url('blog-news') }}">Blog</a></li>
+       
+    </ul>
+  </nav>
+
+</header>
+<script>
+  $(document).ready(function() {
+    // Toggle menu visibility
+    $(".hamburger-responsive").click(function() {
+      $(".menu-responsive").toggleClass("show-responsive");
+    });
+
+    // Toggle submenu visibility
+    $(".has-submenu-responsive").click(function(e) {
+      e.stopPropagation(); // Prevent menu toggle when submenu is clicked
+      const submenu = $(this).find(".submenu-responsive");
+      submenu.stop(true, true).slideToggle(300); // Animate submenu with 300ms duration
+    });
+
+    $(".sub-drop-responsive").click(function(e) {
+      e.stopPropagation(); // Prevent menu toggle when submenu is clicked
+      const submenu = $(this).find(".drop-content-responsive");
+      submenu.stop(true, true).slideToggle(300); // Animate submenu with 300ms duration
+    });
+  });
+</script>

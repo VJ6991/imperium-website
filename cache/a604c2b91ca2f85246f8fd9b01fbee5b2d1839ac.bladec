@@ -1,0 +1,76 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('meta'); ?>
+<?php echo Helper::setMetaTags($meta); ?>
+
+<?php $this->stopSection(); ?>
+<?php $this->startSection('content'); ?>
+
+<div class="lite-breadcroumb-area innerbanner" id="solution">
+ <div class="container">
+ <div class="row">
+ <div class="col-md-12">
+ <h1>Industries We Serve</h1>
+ <div class="breadcroumb">
+ <a href="<?php echo static::e(url('./')); ?>">Home</a> &gt;
+ <span class="current">Industries We Serve</span>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<section id="about" class="service-area section-big section-padding service">
+ <div class="container">
+ <div class="topcontent">
+ <div class="row">
+ <div class="col-md-12 text-center">
+ <div class="section-title">
+ <h2>Vertical based customized ICT solutions for a winning edge </h2>
+ </div>
+ </div>
+ </div>
+ <div class="solutionsec detailspage">
+ <div class="row">
+ <?php
+ $verticals_file = __DIR__ . '/../cms/data/verticals.json';
+ $verticals_data = [];
+ if (file_exists($verticals_file)) {
+ $verticals_data = json_decode(file_get_contents($verticals_file), true);
+ }
+ ?>
+
+ <?php if (empty($verticals_data)): ?>
+ <div class="col-md-12 text-center">
+ <p class="text-muted">No verticals found.</p>
+ </div>
+ <?php else: ?>
+ <?php foreach ($verticals_data as $vertical): ?>
+ <div class="col-md-4 col-sm-6 col-xs-12">
+ <div class="service-box">
+ <a href="<?php echo static::e(url($vertical['link'])); ?>" class="learn-more-link">
+ <div class="thumb">
+ <div class="serviceimg">
+ <div class="image">
+ <img src="<?php echo static::e(url($vertical['image'])); ?>" alt="<?php echo static::e($vertical['title']); ?>">
+ </div>
+ </div>
+ </div>
+ <div class="servicecont">
+ <h3><?php echo static::e($vertical['title']); ?></h3>
+ <p class="match-height"><?php echo static::e($vertical['description']); ?></p>
+ More 
+ <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+ </div>
+ </a>
+ </div>
+ </div>
+ <?php endforeach; ?>
+ <?php endif; ?>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+<?php $this->stopSection(); ?>
+
+
+<?php if (@$_shouldextend[1]) { echo $this->runChild('layouts.app'); } ?>

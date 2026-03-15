@@ -1,0 +1,615 @@
+@media (max-width: 600px) {
+    .product-header .head {
+      font-size: 36px;
+      font-weight: 600;
+      width: fit-content;
+      color: #fff;
+      text-align: center;
+      line-height: 44px;
+    }
+    .product-header .sub-head {
+      font-size: 18px;
+    }
+    .products-inner-page .lists {
+      color: #7a7a7a;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 30px; /* 200% */
+    }
+  
+    .products-inner-page .starting-para,
+    .starting-para > p {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+    }
+  }
+  @media (max-width: 600px) {
+    .top_section {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .arrow-btn {
+      left: 20px;
+    }
+    .products-inner-page .feature-container,
+    .products-inner-page .journey-container,
+    .products-inner-page .blue-cards {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 28px;
+    }
+    .products-inner-page .feature-container .card .head {
+      font-size: 24px;
+    }
+  
+    .products-inner-page .feature-container .card .para {
+      font-size: 13px;
+    }
+  
+    .products-inner-page .journey-container .head {
+      text-align: center;
+    }
+    .products-inner-page .blue-head {
+      font-size: 24px;
+    }
+    .products-inner-page .sub-para {
+      font-size: 16px;
+    }
+    .products-inner-page .sub-para-ai {
+      font-size: 16px;
+    }
+    .products-inner-page .button-group {
+      font-size: 13px;
+    }
+  
+    .products-inner-page .para-small {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .faq {
+      color: var(--black, #000);
+      font-size: 12px !important;
+      font-style: normal !important;
+      font-weight: 600 !important;
+      line-height: normal !important;
+      letter-spacing: -0.24px !important;
+      text-transform: capitalize;
+    }
+  
+    .plus {
+      width: 16px !important;
+      height: 16px !important;
+    }
+  
+    .aboutImg {
+      width: 300px;
+      height: 204.07px;
+    }
+  }
+  
+  @media (min-width: 1444px) {
+    .aboutFlex {
+      display: block !important;
+      position: absolute !important;
+    }
+  
+    .flexAbout {
+      display: none !important;
+    }
+  
+    .about1 {
+      display: block !important;
+    }
+  
+    .about11 {
+      display: none !important;
+    }
+  }
+  
+  @media (max-width: 1444px) {
+    .aboutFlex {
+      display: none !important;
+    }
+  
+    .flexAbout {
+      display: block !important;
+      position: absolute !important;
+    }
+  
+    .about1 {
+      display: none !important;
+    }
+  
+    .about11 {
+      display: block !important;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .dropdownButton {
+      padding: 14px 20px;
+      border-radius: 22.18px;
+      border: 0.443px solid #c1c1c1;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  
+  @media (max-width: 1150px) {
+    .careerImg {
+      width: 480px;
+      height: 349.68px;
+      border-radius: 8px;
+    }
+  }
+  @media (min-width: 600px) and (max-width: 1300px) {
+    .land {
+      width: 500px;
+      height: 440.36px;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1070px) {
+    .land {
+      width: 480px;
+      height: 397.36px;
+    }
+  }
+  @media (min-width: 400px) {
+    .top_section {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .arrow-btn {
+      left: 40px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    h1 {
+      color: var(--black, #000);
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -0.64px;
+    }
+  
+    h2 {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 42px;
+      letter-spacing: -0.64px;
+    }
+  
+    h3 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.32px;
+    }
+  
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: -0.05px;
+    }
+  
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .head1 {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .careerImg {
+      width: 343px !important;
+      height: 249.88px !important;
+      border-radius: 8px !important;
+    }
+  
+    .careerC {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+    }
+  
+    .demo {
+      background: #006fff;
+      color: white !important;
+      font-size: 10px !important;
+      padding: 14px 20px !important;
+    }
+  
+    .ucxH {
+      color: #000;
+      font-size: 10px !important;
+      font-weight: 500 !important;
+    }
+  
+    .careerD {
+      padding: 40px 0px 40px !important;
+    }
+  
+    .productH {
+      font-size: 16px !important;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.32px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .searchButton {
+      display: flex;
+      padding: 14px 24px;
+      align-items: center;
+      gap: 3.546px;
+      border-radius: 32px;
+      background: #006fff;
+    }
+  
+    .aboutImg {
+      width: 344px;
+      height: 234.649px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .search {
+      padding: 3px 3px 3px 14px;
+    }
+  
+    .searchButton {
+      display: flex !important;
+      padding: 12px 20px !important;
+      align-items: center !important;
+      border-radius: 32px !important;
+      background: #006fff;
+      font-size: 10px !important;
+      font-weight: 600 !important;
+    }
+  
+    .jobs {
+      width: 100% !important;
+      justify-content: space-between !important;
+      gap: 18px;
+      align-self: stretch;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .jobs {
+      display: flex;
+      padding: 16px 24px;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 26.62px;
+      border: 0.443px solid #2f2f2f;
+      background: #fff;
+      width: 400px;
+    }
+  
+    .location,
+    .jobTitle {
+      color: #000000 !important;
+      text-align: left !important;
+      font: 400 14px "Manrope", sans-serif !important;
+      position: relative !important;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .header-nav {
+      display: none !important;
+    }
+  
+    .responsive-btn {
+      display: flex !important;
+    }
+  
+    .cardCus {
+      display: flex;
+      flex-direction: column;
+      justify-content: start !important;
+      align-items: center;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .responsive-btn {
+      display: none !important;
+    }
+  
+    .resp-nav {
+      display: none !important;
+    }
+  
+    .header-nav {
+      display: flex !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    @keyframes sliderscroll {
+      0% {
+        transform: translateY(0);
+      }
+  
+      100% {
+        transform: translateX(calc(-2000px * 1));
+      }
+    }
+  
+    .careerB {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .careerBfull {
+      margin-top: 30px;
+      overflow-x: auto;
+    }
+  
+    .careerBfull::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .careerBflow2 {
+      min-width: 100vw;
+    }
+  
+    .careerBflow1 {
+      flex: 1 0 100vw;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .aboutCard {
+      padding: 20px;
+      gap: 26.667px;
+      border-radius: 26.667px;
+      border: 0.833px solid #fff;
+    }
+  
+    .cardH {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 200%;
+      letter-spacing: -0.08px;
+      text-align: left;
+    }
+  
+    .cardP {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21.667px;
+      letter-spacing: 0.06px;
+    }
+  
+    .aboutCount {
+      padding: 64px 24px;
+    }
+  }
+  @media (max-width: 1190px) {
+    .contactImg {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1170px) {
+    .meet {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 500px) {
+    .carousel .slider.animated {
+      position: relative !important;
+      left: -203px !important;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .boxH {
+      color: #000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: -0.2px;
+      text-transform: capitalize;
+    }
+  
+    .boxP {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.14px;
+      text-transform: capitalize;
+    }
+  
+    .boxList {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: -0.14px;
+      text-transform: capitalize;
+    }
+  
+    .enhance {
+      color: #000;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+    }
+  
+    .enhanceP {
+      color: #434343;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: -0.14px;
+    }
+  
+    .smartcardH {
+      color: #000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: -0.2px;
+    }
+  
+    .smartcardP {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.16px;
+    }
+  
+    .conclude {
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.14px;
+    }
+  
+    .boxList1 {
+      color: #252525;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: -0.14px;
+      text-transform: capitalize;
+    }
+  
+    .avaya {
+      padding: 12px 24px;
+      border-radius: 43.08px;
+      border: 0.438px solid #e4e4e4;
+    }
+  
+    .offerCards {
+      padding: 24px !important;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 24px !important;
+    }
+  
+    .offerH {
+      color: #242424;
+      font-size: 20px !important;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: -0.4px;
+      text-transform: capitalize;
+    }
+  
+    .offerP {
+      color: var(--sub, #5a5a5a);
+      font-size: 16px !important;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px !important;
+      letter-spacing: -0.07px;
+    }
+  
+    .CxLine {
+      width: 3px;
+      height: 180px !important;
+    }
+  
+    .cxCard {
+      padding: 24px 20px !important;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 18px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 1236px) and (min-width: 1024px) {
+    .avayImg {
+      width: 400px !important;
+      height: 395.76px !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .contactImg {
+      width: 200px;
+      height: 200px;
+    }
+    .products-grid .cards {
+      min-height: 300px;
+    }
+    .products-grid .cards .head {
+      font-size: 18px;
+    }
+  
+    .products-grid .para {
+      font-size: 14px;
+    }
+  
+    .products-inner-page .cards-body {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  
+    .products-inner-page .cards-head {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .press-release-container a{
+      font-size: 14px !important; 
+  }
+  }
+  
+  @media (min-width: 1310px) {
+    .custom-margin{
+      transform: scale(0.90) !important;
+      top: -32px;
+      margin-top: 0px;
+    }
+  }

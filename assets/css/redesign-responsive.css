@@ -1,0 +1,719 @@
+/* ---------------------------------  1160 ------------------------------------ */
+/* ---------------------------------  1160 ------------------------------------ */
+/* ---------------------------------  1160 ------------------------------------ */
+@media only screen and (max-width: 1160px) {
+  .main-container-index{
+    grid-template-columns: 1fr 537px;
+  }
+  .main-container-div-1 div h1 {
+    font-size: 50px;
+    line-height: 63.68px;
+}
+.main-container-div-1 div h5 {
+  font-size: 16px;
+  line-height: 28.46px;
+  top: 54px;
+}
+.main-container-div-1-div-button {
+  top:128px;
+}
+.navigation-button-div {
+  top: 366px;
+}
+.box-content-text h3 {
+  line-height: 59.44px;
+}
+.main-css-div {
+  gap: 0px !important;
+}
+.tab {
+  padding: 18px 20px !important;
+  font-size: 12px !important;
+}
+.tab-screen {
+grid-template-columns: 404px 1fr !important;
+gap: 10px !important;
+}
+.tab-screen-text {
+  margin-top: 0px !important;
+}
+.tab-text-h3 {
+  font-size: 26px;
+  line-height: 36.48px;
+}
+.tab-text-p {
+  font-size: 16px;
+  line-height: 26.5px;
+}
+.section-3 {
+  margin-top: 25px;
+}
+.industry-influence-scroll-card {
+  height: 355px;
+}
+.industry-influence-scroll-card-heading {
+  width: 86%;
+  left: 16px;
+}
+.industry-influence-scroll-card-heading h4 {
+  font-size: 20px;
+  line-height: 25.12px;
+}
+.industry-influence-scroll-card-heading button {
+  width: 117px;
+  font-size: 14px;
+  padding: 4px 20px;
+}
+.arrow-div-text {
+  font-size: 16px !important;
+}
+.bottom-box-text,.contact_us_button {
+  font-size: 46px;
+  height: 45px;
+}
+.bottom-main {
+  padding-top: 55px !important;
+  padding-bottom: 55px !important;
+  margin: 0px auto 48px auto !important;
+}
+.bottom-menu-container {
+  margin-top: 44px;
+  margin-bottom: 47px;
+}
+.buttons {
+  margin-top: 0px !important;
+}
+.imperium-cards {
+  height: 298px !important;
+}
+.vertical-container {
+
+  margin-top: 25px !important;
+  gap:13px !important
+}
+.imperium-cards-heading h4 {
+  font-size: 14px !important;
+  line-height: 19.12px !important;
+}
+.download-study-text {
+  font-size: 13px !important;
+  line-height: 29.84px !important;
+
+}
+.imperium-cards-heading {
+
+  bottom: 1px !important;
+  left: 10px !important;
+
+}
+.bottom-box {
+  gap: 21px;
+  /* background-color: #007bff; */
+}
+.contact_us_button {
+  width: 165px;
+  height: 42px;
+}
+.bottom-box-text {
+  font-size: 30px !important;
+}
+.bottom-main {
+  padding-top: 42px !important;
+  padding-bottom: 42px !important;
+}
+.industry-influence-scroll-card{
+  width: 280px;
+  height: 313px;
+}
+.industry-influence-scroll-card-heading h4 {
+  font-size: 16px;
+  line-height: 21.12px;
+}
+
+  .tab-text-h3 {
+    font-size: 26px !important;
+    line-height: 35.48px !important;
+}
+.tab-text-p,.tab-text-p2 {
+  font-size: 16px !important;
+  line-height: 27.5px !important;
+}
+.seeAll {
+  font-size: 16px !important;
+  margin-bottom: -14px !important;
+}
+}
+
+
+/* ---------------------------------  860 ------------------------------------ */
+/* ---------------------------------  860 ------------------------------------ */
+/* ---------------------------------  860 ------------------------------------ */
+@media only screen and (max-width: 870px) {
+  .main-container-index{
+    grid-template-columns: 1fr 1fr;
+  }
+  .box-content-text h3 {
+    line-height: 46.44px;
+    width: 70%;
+}
+.tabs {
+  gap: 11px;
+}
+.tab {
+  padding: 23px 13px !important;
+  font-size: 12px !important;
+  text-align: center;
+  line-height: 15px;
+}
+.tab-screen {
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+}.contact_us_button {
+  font-size: 20px;
+}
+.bottom-box {
+  gap: 12px;
+}
+.industry-influence-scroll-main {
+  margin-top: 17px;
+}
+.industry-influence-div-button {
+  margin-bottom: -20px;
+}
+.section-card-main-div {
+  gap: 10px;
+}
+.box-content-div{
+  width: 100%;
+}
+
+.seeAll {
+  font-size: 16px !important;
+  margin-bottom: 7px !important;
+}
+}
+
+/* ---------------------------------  670 ------------------------------------ */
+/* ---------------------------------  670 ------------------------------------ */
+/* ---------------------------------  670 ------------------------------------ */
+@media only screen and (max-width: 670px) {
+  .main-css-div {
+    padding: 0px;
+  }
+  .tab-div-main {
+    padding: 15px 10px;
+  }
+  .tabs{
+    display: none;
+  }
+  .tabs-phone{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab-hidden{
+    display: block;
+  }
+  .tab-dropdown{
+    width: 90%; 
+    padding: 14px 20px; /* Top/bottom and left/right padding */
+    border-radius: 57px; 
+    border-style: solid;
+    text-align: center;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    border: 2px solid #DE7233;
+  }
+  .industry-influence-div {
+    padding: 15px 10px;
+  }
+  .vertical-section {
+    padding: 0px 16px;
+}
+.contents-withArrow {
+  grid-template-columns: 1fr;
+    gap: 15px;
+}
+.vertical-container {
+  margin-top: 0;
+}
+.section-card-main-div {
+  padding: 0px 16px
+}
+.drop-down-scroll {
+  margin: 0px 16px;
+}
+.margin-top-esteem {
+  margin-top: 28px;
+}
+.bottom-container {
+  padding: 0px;
+}
+.bottom-main {
+  border-radius: 0px;
+  padding: 0px;
+}
+.box-content-text h3 {
+  line-height: 25.44px;
+  width: 50%;
+  margin-left: 16px;
+}
+.navbar-responsive {
+  padding: 16px;
+}
+.logo-responsive{
+  width: 100px;
+}
+.navbar-container-div-2 button{
+  margin-left: 32px;
+}
+.main-div{
+  padding: 16px;
+}
+.section-cards-scroll {
+  display: flex; /* Arrange items in a row */
+  gap: 20px; /* Add space between items */
+  padding: 10px; /* Optional padding for better visuals */
+   overflow-x: scroll;
+  scroll-behavior: smooth; 
+
+}
+.main-container-index {
+  grid-template-columns: 1fr;
+}
+.main-container-div-1 div h1{
+  top: 93px;
+}
+.main-container-div-1 div h5{
+  top: 200px;
+}
+.imperium-cards {
+  flex-shrink: 0;
+  width: 80%;
+}
+
+}
+/* ---------------------------------  1160 ------------------------------------ */
+/* ---------------------------------  1160 ------------------------------------ */
+/* ---------------------------------  1160 ------------------------------------ */
+@media only screen and (max-width: 1160px) {
+  .main-container-index{
+    grid-template-columns: 1fr 537px;
+  }
+  .main-container-div-1 div h1 {
+    font-size: 50px;
+    line-height: 63.68px;
+}
+.main-container-div-1 div h5 {
+  font-size: 16px;
+  line-height: 28.46px;
+  top: 54px;
+}
+.main-container-div-1-div-button {
+  top:128px;
+}
+.navigation-button-div {
+  top: 366px;
+}
+.box-content-text h3 {
+  line-height: 59.44px;
+}
+.main-css-div {
+  gap: 0px !important;
+}
+.tab {
+  padding: 18px 20px !important;
+  font-size: 12px !important;
+}
+.tab-screen {
+grid-template-columns: 404px 1fr !important;
+gap: 10px !important;
+}
+.tab-screen-text {
+  margin-top: 0px !important;
+}
+.tab-text-h3 {
+  font-size: 26px;
+  line-height: 36.48px;
+}
+.tab-text-p {
+  font-size: 16px;
+  line-height: 26.5px;
+}
+.section-3 {
+  margin-top: 25px;
+}
+.industry-influence-scroll-card {
+  height: 355px;
+}
+.industry-influence-scroll-card-heading {
+  width: 86%;
+  left: 16px;
+}
+.industry-influence-scroll-card-heading h4 {
+  font-size: 20px;
+  line-height: 25.12px;
+}
+.industry-influence-scroll-card-heading button {
+  width: 117px;
+  font-size: 14px;
+  padding: 4px 20px;
+}
+.arrow-div-text {
+  font-size: 16px !important;
+}
+.bottom-box-text{
+  font-size: 46px;
+  height: 45px;
+}
+.contact_us_button {
+  font-size: 18px;
+}
+.bottom-main {
+  padding-top: 55px !important;
+  padding-bottom: 55px !important;
+  margin: 0px auto 48px auto !important;
+}
+.bottom-menu-container {
+  margin-top: 44px;
+  margin-bottom: 47px;
+}
+.buttons {
+  margin-top: 0px !important;
+}
+.imperium-cards {
+  height: 298px !important;
+}
+.vertical-container {
+
+  margin-top: 25px !important;
+  gap:13px !important
+}
+.imperium-cards-heading h4 {
+  font-size: 14px !important;
+  line-height: 19.12px !important;
+}
+.download-study-text {
+  font-size: 13px !important;
+  line-height: 29.84px !important;
+
+}
+.imperium-cards-heading {
+
+  bottom: 1px !important;
+  left: 10px !important;
+
+}
+.bottom-box {
+  gap: 21px;
+  /* background-color: #007bff; */
+}
+.contact_us_button {
+  width: 165px;
+  height: 42px;
+}
+.bottom-box-text {
+  font-size: 30px !important;
+}
+.bottom-main {
+  padding-top: 42px !important;
+  padding-bottom: 42px !important;
+}
+.industry-influence-scroll-card{
+  width: 280px;
+  height: 313px;
+}
+.industry-influence-scroll-card-heading h4 {
+  font-size: 16px;
+  line-height: 21.12px;
+}
+
+  .tab-text-h3 {
+    font-size: 26px !important;
+    line-height: 35.48px !important;
+}
+.tab-text-p,.tab-text-p2 {
+  font-size: 16px !important;
+  line-height: 27.5px !important;
+}
+.seeAll {
+  font-size: 16px !important;
+  margin-bottom: -14px !important;
+}
+}
+
+
+/* ---------------------------------  860 ------------------------------------ */
+/* ---------------------------------  860 ------------------------------------ */
+/* ---------------------------------  860 ------------------------------------ */
+@media only screen and (max-width: 870px) {
+  .main-container-index{
+    grid-template-columns: 1fr 1fr;
+  }
+  .box-content-text h3 {
+    line-height: 46.44px;
+    width: 70%;
+}
+.tabs {
+  gap: 11px;
+}
+.tab {
+  padding: 23px 13px !important;
+  font-size: 12px !important;
+  text-align: center;
+  line-height: 15px;
+}
+.tab-screen {
+  grid-template-columns: 1fr  !important;
+  gap: 10px !important;
+}.contact_us_button {
+  font-size: 20px;
+}
+.bottom-box {
+  gap: 12px;
+}
+.industry-influence-scroll-main {
+  margin-top: 17px;
+}
+.industry-influence-div-button {
+  margin-bottom: -20px;
+}
+.section-card-main-div {
+  gap: 10px;
+}
+.box-content-div{
+  width: 100%;
+}
+
+.seeAll {
+  font-size: 16px !important;
+  margin-bottom: 7px !important;
+}
+}
+
+/* ---------------------------------  765 ------------------------------------ */
+/* ---------------------------------  765 ------------------------------------ */
+/* ---------------------------------  765 ------------------------------------ */
+@media only screen and (max-width: 765px) {
+  .main-container-index{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+
+/* ---------------------------------  670 ------------------------------------ */
+/* ---------------------------------  670 ------------------------------------ */
+/* ---------------------------------  670 ------------------------------------ */
+@media only screen and (max-width: 670px) {
+  .main-container-div-1 div h5 {
+    white-space: normal;
+ }
+  .main-css-div {
+    padding: 0px;
+  }
+  .tab-div-main {
+    padding: 15px 10px;
+  }
+  .tabs{
+    display: none;
+  }
+  .tabs-phone{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab-hidden{
+    display: block;
+  }
+  .tab-dropdown{
+    width: 90%; 
+    padding: 14px 20px; /* Top/bottom and left/right padding */
+    border-radius: 57px; 
+    border-style: solid;
+    text-align: center;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    border: 2px solid #DE7233;
+  }
+  .drop-phone{
+    width: 85%; 
+    text-align: center;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    /* border: 2px solid #DE7233; */
+    border: none;
+  }
+  .industry-influence-div {
+    padding: 15px 10px;
+  }
+  .vertical-section {
+    padding: 0px 16px;
+}
+.contents-withArrow {
+  grid-template-columns: 1fr;
+    gap: 15px;
+}
+.vertical-container {
+  margin-top: 0;
+}
+.section-card-main-div {
+  padding: 0px 16px
+}
+.drop-down-scroll {
+  margin: 0px 16px;
+}
+.margin-top-esteem {
+  margin-top: 28px;
+}
+.bottom-container {
+  padding: 0px;
+}
+.bottom-main {
+  border-radius: 0px;
+  padding: 0px;
+}
+.box-content-text h3 {
+  line-height: 35.44px;
+  width: 80%;
+  margin-left: 16px;
+}
+.bottom-box-text {
+  font-size: 23px !important;
+}
+.contact_us_button {
+  font-size: 17px;
+}
+.navbar-responsive {
+  padding: 16px;
+}
+.logo-responsive{
+  width: 100px;
+}
+.navbar-container-div-2 button{
+  margin-left: 32px;
+}
+.main-div{
+  padding: 16px;
+}
+.section-cards-scroll {
+  display: flex; /* Arrange items in a row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  gap: 20px; /* Add space between items */
+  padding: 10px; /* Optional padding for better visuals */
+}
+.main-container-index-div{
+  width: 100%;
+}
+/* .main-container-div-1{
+  margin: 3px;
+} */
+.main-container-index {
+  grid-template-columns: 1fr !important;
+}
+.main-container-div-1 div h1{
+  top: 93px;
+}
+.main-container-div-1 div h5{
+  top: 200px;
+}
+
+.main-container-div-1 div {
+  margin-top: -85px;
+  font-size: 10px;
+}
+.main-container-div-1 div h1 {
+  font-size: 28px;
+  line-height: 34.68px;
+  top: -37px;
+}
+.main-container-div-1 div h5 {
+  top: 40px;
+  font-size: 13px;
+  line-height:  21.46px;
+  width:  250px;
+  text-wrap: wrap;
+  /* width: 100%; */
+  /* background-color: yellow; */
+  
+}
+.responsive-br{
+  display: none;
+}
+.main-container-div-1-div-button {
+  top: 139px;
+}
+.main-container-div-2, .main-container-div-2-image-2 {
+height:200px ;
+width: 100%;
+/* background-color: red; */
+object-fit: cover;
+}
+.main-container-div-1 {
+  /* background-color: blue; */
+  height: 264px;
+  width: 100%;
+}
+.navigation-button-div {
+  top: 401px;
+  left: 14px;
+}
+.main-container-div-1-div-button{
+  width: 100px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  top: 134px;
+  text-align: left;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.button-know-more.button-know-more:hover { 
+  color: #f96d25;
+  border: none;
+  transform: scale(1.02);
+}
+.bottom-container{
+  margin: -2px;
+}
+.bottom-main {
+  padding-top: 0px !important;
+  padding-bottom: 55px !important;
+  margin: 0px auto -5px auto !important;
+}
+.margin-top-esteem {
+  margin-top: 2px;
+}
+.tab-div-main {
+  border-radius: 10px;
+
+}
+.margin-top-esteem {
+  margin-top: 2px;
+}
+.industry-influence-scroll-main{
+  overflow-x: auto; 
+}
+.tab-text-p2{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tab-text-p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tab-text-span{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.arrow-for-nav{
+  height: 9px;
+  width: 14px;
+}
+.navbar-container-div-2 a{
+  font-size: 12px !important;
+}
+.navbar-container-div-2 button {
+  padding: 5px 20px;
+}
+}

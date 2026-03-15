@@ -1,0 +1,139 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('meta'); ?>
+	<?php echo Helper::setMetaTags($meta); ?>
+
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('content'); ?>
+	<!-- Inner Page Header serction start here -->
+ <div class="lite-breadcroumb-area innerbanner" id="aboutbanner">
+ <div class="container">
+ <div class="row">
+ <div class="col-md-12">
+ <h1>About Us</h1>
+ <div class="breadcroumb">
+ <a href="<?php echo static::e(url('')); ?>">Home</a> &gt;
+ <span class="current">About Us</span>
+ </div>
+ <a href="javascript:;" data-toggle="modal" data-target="#modal-download-brochure" class="filled-btn">Download Brochure</a>
+ </div>
+ </div>
+ </div>
+ </div>
+
+
+
+ <section id="about" class="service-area section-big section-padding">
+ <div class="container">
+ <div class="topcontent">
+ <div class="row">
+ <div class="col-md-7">
+ <h2> <?php echo Helper::cms('about', 'main_heading', 'We Help You Connect Your Business'); ?> </h2>
+ <p>
+ <?php echo nl2br(htmlspecialchars(Helper::cms('about', 'content_paragraph_1', 'Founded in the year 2005...'))); ?>
+
+ </p>
+ </div>
+ <div class="col-md-5 text-right">
+ <div class="showvideo">
+ <a data-toggle="modal" data-target="#myModal" href="javascript:;" class="playbtn">
+ <i class="fa fa-play" aria-hidden="true"></i>
+ </a>
+ <img src="<?php echo static::e(url(Helper::cms('about', 'customer_service_image', 'assets/image/customer-service.jpg'))); ?>" alt="Imperium">
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+ <div class="modal-content">
+ <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+ <div class="modal-body">
+ <div class="videoWrapper">
+ <iframe id="videoIframe" src="https://www.youtube.com/embed/5qg1LVivohU?rel=0" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <!-- Modal -->
+ </div>
+ </section>
+
+
+ <section id="service" class="service-area section-big section-padding">
+ <div class="container">
+ <div class="row">
+ <div class="col-md-12 text-center">
+ <div class="section-title">
+ </div>
+ </div>
+ </div>
+ <div class="topcontent mission">
+ <h2><?php echo Helper::cms('about', 'vision_heading', 'Our Vision'); ?></h2>
+ 
+ <div class="contsec">
+ 
+ <p>
+ <?php echo nl2br(htmlspecialchars(Helper::cms('about', 'vision_paragraph', 'Imperium\'s vision is...'))); ?>
+
+ </p>
+ </div>
+
+ <div class="imgsec">
+ 
+ <img src="<?php echo static::e(url(Helper::cms('about', 'vision_image', 'assets/image/mission.jpg'))); ?>" alt="Imperium">
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="service-area section-big section-padding subsect">
+ <div class="container">
+ <p>
+ Convergent Networks supporting voice, video and data are a standard in today’s competitive busi-ness world and customers are looking for smarter systems to manage multi-layered networks.
+ </p>
+ </div>
+ </section>
+ 
+ <div class="modal fade " id="modal-download-brochure" tabindex="-1" role="dialog">
+ <div class="modal-dialog sm" role="document">
+ <div class="modal-content">
+ <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+ <div class="modal-body">
+ <!--contact form-->
+ <div class="contact-form text-center">
+ <header class="section-header">
+ <img src="<?php echo static::e(asset('image/support-icon.svg')); ?>"  alt="support icon" style="width: 100px;">
+ <h2>Download Flyer</h2>
+ </header>
+ <form name="downlaodBrochurecrm" id="downlaodBrochurecrmAbout" class="cta-form cta-light">
+ <div class="alert hidden" id="brochure-message"></div>
+ <div class="form-group">
+ <input type="text" placeholder="Name *" class="form-control" name="firstName" data-validation="required" required/>
+ </div>
+ <div class="form-group">
+ <input type="email" name="emailId" class="form-control" placeholder="Email *" data-validation="email" required />
+ </div>
+ <div class="form-group text-center">
+ <button type="submit" class="btn theme-btn read-more-btn">SUBMIT</button>
+ </div>
+ </form>
+ </div>
+ <!--contact form end-->
+ </div>
+ </div>
+ </div>
+ </div>
+
+
+<?php $this->stopSection(); ?>
+
+
+
+
+
+
+
+<?php if (@$_shouldextend[1]) { echo $this->runChild('layouts.app'); } ?>

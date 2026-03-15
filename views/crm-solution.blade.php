@@ -1,0 +1,164 @@
+@extends('layouts.app')
+
+@section('meta')
+    {!!Helper::setMetaTags($meta)!!}
+@stop
+
+@section('content')
+
+    <!-- Inner Page Header serction start here -->
+    <div class="lite-breadcroumb-area cti-banner crm-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Imperium CRM Solutions Dubai - IMCC</h1>
+                    <!-- <div class="breadcroumb">
+                        <a href="index.html">Home</a> &gt;
+                        <a href="javascript:;">Products</a> &gt;
+                        <span class="current">Cti-Solutions</span>
+                    </div> -->
+                    <p>
+                       Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task.  
+                    </p>
+                    <br>
+                    <a href="javascript:;" data-toggle="modal" data-target="#modal-download-brochure" class="filled-btn">Download Brochure</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="service-area section-big section-padding">
+        <div class="container">
+            <div class="topcontent">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2> Imperium-Customer Relationship Management System </h2>
+                        <img class="right-img" src="{{asset('image/avaya-big.jpg')}}"  alt="Imperium">
+                        <p>
+                            Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task. 
+                        </p>
+                        
+                        <p>
+                            The IMCC is a powerful desktop application integrates Avaya's real-time communications capabilities with leading Business Applications like Microsoft CRM/Dynamics, JD-Edwards, and Salesforce to improve productivity & enhance customer services
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="service-area section-big section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2> OUR CRM Products Overview </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="topcontent">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="overview padright">
+                            <h3> Product Highlights </h3>
+                            <ul>
+                                <li>
+                                    Improves productivity through time saved not having to search for customer contact details, create customer activity records, or manually dial numbers. 
+                                </li>
+                                <li> 
+                                    Users click to dial customers, colleagues and partners directly from customer records (including client case and customer opportunity records), and sales leads.
+                                </li>
+                                <li>
+                                    A log of inbound and outbound calls can be generated automatically. 
+                                </li>
+                                <li>
+                                    Missed calls, call duration, and annotated notes are also included within the client record for easy retrieval at any time
+                                </li>
+                                <li>
+                                    Users can click to call from the contact list and CRM customer records, for incoming & outgoing calls a desktop toast pop-up notification contextual information about the customer and gives the user the option to Hold or Release the call / Transfer the call / Enter notes during the call / Generate an activity record in the CRM database that includes automatically populated call details / View call history & missed calls.
+                                </li>
+                                <li>
+                                    Enhances customer service by presenting the customer number or name and company within the toast pop-up. Users can greet the customer by name, click to open the customer record, and access relevant customer information, facilitating more personalized, well-informed conversations.
+                                </li>
+                            </ul>
+
+                            <!-- <div class="know-more kright">
+                                <a href="products-cti-crm-connecter">  know more <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                            </div> -->
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="overview padlet">
+                            <h3>Key Features & Benefits </h3>
+                            <ul>
+                                <li>
+
+                                    Click to Dial from contact lists and customer records that contain phone numbers
+                                </li>
+
+
+                                <li> 
+                                    Automatic Call Logging of inbound and outbound calls stores call history within the client record, including call duration and missed calls.
+                                </li>
+
+                                <li> 
+                                    Call Annotation allows a user to enter personal notes during a call and stores the notes in the record along with call detail such as time and date. 
+                                </li>
+
+                                <li>
+                                    Call Duration automatically captures conversation time for inbound and outbound calls, rounds it to the nearest minute, and stores it in the customer record.
+                                </li>
+
+                            </ul>
+
+                            <!-- <div class="know-more kright">
+                                <a href="products-cti-outlook-connecter">  know more <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+ <div class="modal fade " id="modal-download-brochure" tabindex="-1" role="dialog">
+        <div class="modal-dialog sm" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-body">
+                    <!--contact form-->
+                    <div class="contact-form text-center">
+                        <header class="section-header">
+                            <img src="{{asset('image/support-icon.svg')}}"  alt="support icon" style="width: 100px;">
+                            <h2>Download Flyer</h2>
+                        </header>
+                        <form name="downlaodBrochurecrm" id="downlaodBrochurecrm" class="cta-form cta-light">
+                            <div class="alert hidden" id="brochure-message"></div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Name *" class="form-control" name="firstName" data-validation="required" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="emailId" class="form-control" placeholder="Email *" data-validation="email" required />
+                            </div>
+                            <div class="form-group text-center">
+                            <button type="submit" class="btn theme-btn read-more-btn">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--contact form end-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+@endsection

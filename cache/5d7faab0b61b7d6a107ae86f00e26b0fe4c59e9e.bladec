@@ -1,0 +1,104 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('meta'); ?>
+ <?php echo Helper::setMetaTags($meta); ?>
+
+<?php $this->stopSection(); ?>
+<?php $this->startSection('content'); ?>
+
+ 
+<!-- Inner Page Header serction start here -->
+<div class="lite-breadcroumb-area innerbanner" id="blogbanner">
+ <div class="container">
+ <div class="row">
+ <div class="col-md-12">
+ <h1><?php echo static::e(Helper::cms('blog', 'banner_heading', 'Blog and News')); ?></h1>
+ <div class="breadcroumb">
+ <a href="<?php echo static::e(url('')); ?>">Home</a> &gt;
+ <span class="current"><?php echo static::e(Helper::cms('blog', 'breadcrumb_text', 'BLOGS')); ?></span>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+
+
+ <!-- MAIN CONTENT START HERE -->
+ <section class="service-area section-big section-padding">
+ <!-- BLOG START -->
+ <div id="blog" class="lite-blog-content-area">
+ <div class="container">
+
+ <div class="row">
+ <!-- SINGLE POST START -->
+ <?php if(count($blogs)==0): ?>
+ <div class="col-md-8"> 
+ 
+ <div class="heading">
+ <h1>No posts found!</h1>
+ </div>
+ </div>
+ <?php endif; ?>
+
+ <div class="col-md-8"> 
+ <?php if(!empty(Input::get('q'))): ?>
+ <p class=" section-supporting-text font-primary "> Search posts for  <b> &#8220;<?php echo static::e(Input::get('q')); ?>&#8221;</b></p> 
+
+ <?php endif; ?>
+ 
+ <?php $__currentLoopData = $blogs; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <div class="singlepost">
+ <?php if($post->featuredImage != '/img/imageph.png' && $post->featuredImage != ''): ?>
+ <div class="blog-img">
+ <a href="#">
+ <img src="<?php echo static::e($post->featuredImage); ?>" class="img-responsive" alt="blog" />
+ </a>
+ </div>
+ <?php endif; ?>
+
+<div class="blog-content">
+ <h3><a href="<?php echo static::e(url('blog-news/post/'. Helper::slugify($post->title) .'-'. $post->_id )); ?>"><?php echo static::e($post->title); ?></a></h3>
+
+
+
+ <div class="blogmeta"> <span><?php echo static::e(Helper::dateFormat($post->createdAt)); ?> by  <?php echo static::e($post->user->profile->firstName); ?></span>
+
+</div>
+
+
+
+ <div class="entry-content">
+ <p>
+ <?php echo static::e(Helper::limit_words(strip_tags($post->body) , 40)); ?>
+
+ </p>
+ <a href="<?php echo static::e(url('blog-news/post/'. Helper::slugify($post->title) .'-'. $post->_id )); ?>" class="read-more-btn">Read More</a>
+ </div>
+ </div>
+
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+
+
+
+
+
+
+ <div class="col-md-4"> 
+ <?php echo $this->runChild('blog.sidebar'); ?>
+ </div>
+ 
+ <!-- /.END SINGLE POST -->
+ <!-- PAGINATION -->
+ 
+ <!-- /.END PAGINATION -->
+ </div>
+ </div>
+ </div>
+
+ </section>
+
+ 
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend[1]) { echo $this->runChild('layouts.app'); } ?>

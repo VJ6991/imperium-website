@@ -1,0 +1,40 @@
+<div class="sidebar">
+ <!-- CATAGORIES -->
+ <section class="widget widget_categories">
+ <h2 class="widget-title">categories</h2>
+ <ul>
+ <?php $__currentLoopData = $categories; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <li class="cat-item cat-item-4">
+ <a href="<?php echo static::e(url('blog-news/category/'.$category->title)); ?>" class="text-capitalize ng-binding"> <?php echo static::e($category->title); ?></a>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?> 
+ </section>
+ <!-- RECENT POST -->
+ <section class="widget widget-recent-post">
+ <h2 class="widget-title color-black">Recent Posts</h2>
+ <!-- RECENT POST START HERE -->
+ <?php $__currentLoopData = $recentPosts; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $rPost): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <div class="media">
+ <?php if($rPost->featuredImage != '/img/imageph.png' && $rPost->featuredImage != ''): ?>
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="medialeft">
+ <a href="#">
+ <img class="media-object" src="<?php echo static::e($rPost->featuredImage); ?>" alt="blog">
+ </a>
+ </div>
+ </div>
+ <?php endif; ?>
+ <div class="col-sm-8">
+ <div class="mediabody recent">
+ <h2><a href="<?php echo static::e(url('blog-news/post/'. Helper::slugify($rPost->title) .'-'. $rPost->_id )); ?>"><?php echo static::e($rPost->title); ?></a></h2>
+ <span><?php echo static::e(Helper::dateFormat($rPost->createdAt)); ?></span>
+ </div>
+ </div>
+ </div>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ 
+ </section>
+
+</div>

@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "title": "Imperium CRM Connect Pro",
+        "description": "Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request\/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task. The IMCC is a powerful desktop application integrates...",
+        "image": "assets\/image\/products\/cti-new.jpg",
+        "link": "products\/crmsolution"
+    },
+    {
+        "id": 2,
+        "title": "Call Management System",
+        "description": "The Imperium CMS is a web-based call management solution designed to determine the performance of your telephony system with call reporting capability and intricate analytics on usage and billing within the network. With this innovation, Imperium aims to route your business toward cost-efficiency, profitability and improved....",
+        "image": "assets\/image\/products\/call-management.jpg",
+        "link": "products\/callmanagement"
+    },
+    {
+        "id": 3,
+        "title": "WebRTC",
+        "description": "A technology that is the backbone of many stunning web-based real time communication applications. WebRTC blends the VoIP and the web to enable functionalities which are the best of both worlds, over the internet. It forms a crucial piece in the Unified Communication and some of the Imperium products....",
+        "image": "assets\/image\/products\/webrtc.png",
+        "link": "products\/webrtc"
+    },
+    {
+        "id": 4,
+        "title": "Toll Fraud Protection",
+        "description": "The imperium Toll fraud protection system is a unique tool which monitors the usage pattern of your telephony system and detects anomalies in outbound calls if any. It takes inputs from the system and maps the usage trend which can also be pre-defined according to office hours. It then implements artificial intelligence....",
+        "image": "assets\/image\/products\/toll-froud.jpg",
+        "link": "products\/tollfraud"
+    },
+    {
+        "id": 5,
+        "title": "Budget Control System",
+        "description": "Telecommunication is known to incur the highest business expense upsetting the fiscal plan of your enterprise. The Imperium Budget Control module is the ideal solution to this. It impose a definite and well-structure budget mechanism on your Telephone system to strategically enhance budget planning....",
+        "image": "assets\/image\/products\/cm.jpg",
+        "link": "products\/budgetcontrol"
+    },
+    {
+        "id": 6,
+        "title": "Call Back Assist Module",
+        "description": "A brilliant addition to upgrade your contact center and business communication center, Imperium's Call-back Assist is a versatile tool that restores missed opportunities of customer service. A contact center is bound to have abandoned calls but that needn\u2019t limit your capability to assist every.....",
+        "image": "assets\/image\/products\/call-back.jpg",
+        "link": "products\/callassistmodule"
+    },
+    {
+        "id": 7,
+        "title": "Customer Survey Module",
+        "description": "The Imperium Customer Survey Module is a multi-level application designed to conduct automated post-call survey for analyzing customer service quality and customer satisfaction. Once a call is completed by an agent, the Imperium Customer Survey Module kicks in and directs the call to Avaya IPOCC IVR through.....",
+        "image": "assets\/image\/products\/customersurveymodule.jpg",
+        "link": "products\/customersurvey"
+    },
+    {
+        "id": 8,
+        "title": "Push\/Pull Notification",
+        "description": "Imperium\u2019s Push \/ Pull Notification offers individualized and bulk messages which can be pushed to mobile devices. All you need to do is to select the recipient or group, type the message and the message gets sent immediately. This solution is available in different variants such as web based system....",
+        "image": "assets\/image\/products\/push.png",
+        "link": "products\/pushpull"
+    },
+    {
+        "id": 9,
+        "title": "Payroll HRMS",
+        "description": "This system maintains the Employee Attendance and Payroll Details in the custom build application environment to analyze, verify, validate and report for operational and statistical purposes of your business. \r\n The HRMS Payroll application developed by our team is a multi-tier web-based application which can be hosted anywhere for...",
+        "image": "assets\/image\/products\/cm.jpg",
+        "link": "products\/payroll"
+    },
+    {
+        "id": 10,
+        "title": "Islamic Prayer Announcement Module",
+        "description": "Automate Prayer announcement for your colleagues with Imperium. We promote a kind of workplace culture that makes everyone that they belong. What better than spiritual well-being at work. The all new Imperium Islamic Prayer announcement module helps you to record your prayers on your...",
+        "image": "assets\/image\/products\/prayer.jpg",
+        "link": "products\/islamicprayer"
+    },
+    {
+        "id": 11,
+        "title": "Imperium Customer Experience Portal - ICEP",
+        "description": "An all-in-one work space platform to handle every type of business communication for your customer service center. The ICEP lends you the benefit for an Omni-present customer service leading to a full-filling customer experience...",
+        "image": "assets\/image\/products\/icep.png",
+        "link": "products\/icep"
+    },
+    {
+        "id": 12,
+        "title": "Chatbot",
+        "description": "Customer Support of the era is edging towards virtual chats and artificial intelligence to support the customers at fast pace. The Imperium Chatbot is conversational agent designed to serve as a support system for your customer on any digital platform....",
+        "image": "assets\/image\/products\/chatbot.jpg",
+        "link": "products\/chatbot"
+    },
+    {
+        "id": 13,
+        "title": "Social Media Integrator",
+        "description": "Connect with your customer in a single go. The Imperium social media integrator places all your business social media touch points on a single interface that is easy to manage. Customer service agents can respond to customer queries and assist customers from platforms such as Facebook, LinkedIn, Instagram, Twitter while still on call.....",
+        "image": "assets\/image\/products\/social-media.png",
+        "link": "products\/socialmedia"
+    },
+    {
+        "id": 14,
+        "title": "Imperium ZOHO Connector",
+        "description": "Take your business to a whole new level of customer engagement with personalized customer service on the go. Imperium bring you Voice as Service for your ZOHO CRM. Imperium's Zoho CRM Connector is a supreme CTI solution designed specifically for ZOHO CRM to be integrated with Avaya Communication systems......",
+        "image": "assets\/image\/products\/ZOHO.jpg",
+        "link": "products\/zoho"
+    },
+    {
+        "id": 15,
+        "title": "Inaipi Click to Call",
+        "description": "Covert your web traffic into immediate footfall and sales using the robust Inaipi Click-to-Call service on Cloud. It\u2019s a functional tool that opens up multiple channels on your website for customers to connect to your helpdesk on the go, on your website. The Inaipi Click-to-Call service built on Avaya WebRTC links your VoIP to your website and quickly enables browser-based.....",
+        "image": "assets\/image\/products\/INAIPI_Click-to-Call_2.jpg",
+        "link": "products\/clicktocall"
+    },
+    {
+        "id": 16,
+        "title": "Imperium Call Reporter",
+        "description": "$28 Billion is an estimated loss telecom industries faced in 2018 due to Toll Fraud. \r\n An all-powerful web based call reporting system designed to discover toll fraud attackers and provide you an intricate analytical overview of your business telephony systems....",
+        "image": "assets\/image\/Header.jpg",
+        "link": "products\/callreporter"
+    }
+]
