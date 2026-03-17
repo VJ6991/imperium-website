@@ -10,7 +10,7 @@ function Partnership() {
   useEffect(() => {
     const fetchPartners = async () => {
       try {
-        const response = await axios.get("/get_partnerships.php");
+        const response = await axios.get("get_partnerships_live.php");
         // Map CMS data structure to React structure if necessary
         // CMS: id, title, logo, description, link
         // React expected: image, description, link, alt
