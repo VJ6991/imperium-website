@@ -15,7 +15,7 @@ function Partnership() {
         // CMS: id, title, logo, description, link
         // React expected: image, description, link, alt
         const mappedData = response.data.map(item => ({
-          image: "/" + item.logo, // Ensure absolute path for CMS assets
+          image: "/assets/" + item.logo, // Ensure absolute path for CMS assets
           description: item.description,
           link: (item.link.startsWith('http')) ? item.link : ("/cx/#/" + item.link),
           alt: item.title,
