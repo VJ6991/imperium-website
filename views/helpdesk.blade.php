@@ -10,10 +10,10 @@
    <div class="container">
       <div class="row">
          <div class="col-md-12">
-            <h1>Make Help Desk</h1>
+            <h1>{{ Helper::cms('helpdesk', 'banner_title', 'Make Help Desk') }}</h1>
             <div class="breadcroumb">
                <a href="./">Home</a> &gt;
-               <span class="current">Make Help Desk</span>
+               <span class="current">{{ Helper::cms('helpdesk', 'banner_title', 'Make Help Desk') }}</span>
             </div>
          </div>
       </div>
@@ -25,7 +25,7 @@
          <div class="row">
              <div class="col-md-12 text-center">
                 <div class="section-title">
-                   <h2>Imperium Help Desk Module</h2>
+                   <h2>{{ Helper::cms('helpdesk', 'section_title', 'Imperium Help Desk Module') }}</h2>
                 </div>
              </div>
          </div>
@@ -33,12 +33,12 @@
          <div class="row">
             <div class="col-md-6">
                <p>
-                  Avaya IP Office Call center suite with Imperium Service desk module offers the best fit and cost-effective solution for the Customer service industry enabling them to provide effective call resolution for their customers. 
+                  {!! nl2br(Helper::cms('helpdesk', 'description', 'Avaya IP Office Call center suite with Imperium Service desk module offers the best fit and cost-effective solution for the Customer service industry enabling them to provide effective call resolution for their customers.')) !!}
                </p>
             </div>
             <div class="col-md-6">
                <div class="telvideo">
-                  <img src="{{ asset('image/cs1.jpg') }}" alt="Debt Collection">
+                  <img src="{{ asset(Helper::cms('helpdesk', 'image', 'image/cs1.jpg')) }}" alt="Help Desk">
                </div>
             </div>
          </div>

@@ -162,7 +162,7 @@
             As an Avaya DevConnect Technology Partner, Diamond Partner, and APS Delivery Partner, we are at the forefront of delivering innovative communication solutions. Our partnership allows us to sell Avaya solutions- IP Telephony, UC and CC solutions, while Avaya also resells our groundbreaking solutions to their global partner community. Together, we are driving the future of customer engagement.
         </p>
         <div class="sp-action">
-            <a href="javascript:;" class="btn-explore">Explore more</a>
+            <a href="{{ url('partners-avaya') }}" class="btn-explore">Explore more</a>
         </div>
     </div>
 </div>
@@ -177,7 +177,7 @@
             As a Development Partner and System Integrator for Mondee's advanced AI Chatbot solutions, we are pushing the boundaries of AI-driven customer engagement. Our collaboration ensures businesses can leverage cutting-edge chatbot technology to offer personalized, efficient, and seamless customer experiences.
         </p>
         <div class="sp-action">
-            <a href="javascript:;" class="btn-explore">Explore more</a>
+            <a href="{{ url('products/chatbot') }}" class="btn-explore">Explore more</a>
         </div>
     </div>
 </div>
@@ -192,7 +192,7 @@
             Our partnership with Konnect Insights allows us to offer an all-in-one social media engagement platform that unifies customer care and market insights. This powerful platform enables businesses to monitor, manage, and engage with their audience across multiple channels, ensuring a cohesive and responsive customer experience.
         </p>
         <div class="sp-action">
-            <a href="javascript:;" class="btn-explore">Explore more</a>
+            <a href="{{ url('products/socialmedia') }}" class="btn-explore">Explore more</a>
         </div>
     </div>
 </div>
@@ -207,7 +207,7 @@
             We deliver Inaipi's innovative cloud, digital contact center solutions, UCaaS, CCaaS, and SaaS offerings. This partnership enables us to provide our clients with advanced, flexible, and scalable solutions that enhance customer interactions and streamline operations.
         </p>
         <div class="sp-action">
-            <a href="javascript:;" class="btn-explore">Explore more</a>
+            <a href="{{ url('inaipi') }}" class="btn-explore">Explore more</a>
         </div>
     </div>
 </div>

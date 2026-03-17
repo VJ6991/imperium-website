@@ -87,59 +87,69 @@
 
             <!-- Card 1 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <!-- Image placeholder matched via context -->
-                        <img src="{{ asset('image/products/contact-center-new.jpg') }}" onerror="this.src='{{ asset('image/customer-service.jpg') }}'" alt="Digital Contact Center">
+                <a href="{{ url('contact-center') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <!-- Image placeholder matched via context -->
+                            <img src="{{ asset('image/products/contact-center-new.jpg') }}" onerror="this.src='{{ asset('image/customer-service.jpg') }}'" alt="Digital Contact Center">
+                        </div>
+                        <h3>Digital Contact Center</h3>
+                        <p>A revolutionary platform where cutting-edge technology meets seamless communication. Experience the next level of customer support and interaction, ensuring efficiency and satisfaction in the digital era.</p>
                     </div>
-                    <h3>Digital Contact Center</h3>
-                    <p>A revolutionary platform where cutting-edge technology meets seamless communication. Experience the next level of customer support and interaction, ensuring efficiency and satisfaction in the digital era.</p>
-                </div>
+                </a>
             </div>
 
             <!-- Card 2 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/products/chatbot.jpg') }}" alt="AI Chatbot">
+                <a href="{{ url('products/chatbot') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/products/chatbot.jpg') }}" alt="AI Chatbot">
+                        </div>
+                        <h3>AI Chatbot</h3>
+                        <p>Engage your customers across digital platforms such as Website, Facebook Messenger, Twitter, or WhatsApp, with 24*7 automated personalized responses and if required provide chat escalation to agents.</p>
                     </div>
-                    <h3>AI Chatbot</h3>
-                    <p>Engage your customers across digital platforms such as Website, Facebook Messenger, Twitter, or WhatsApp, with 24*7 automated personalized responses and if required provide chat escalation to agents.</p>
-                </div>
+                </a>
             </div>
 
             <!-- Card 3 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/products/ZOHO.jpg') }}" alt="Smart- X">
-                        <!-- ZOHO image acts as placeholder for the smartx tablet image -->
+                <a href="{{ url('products/zoho') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/products/ZOHO.jpg') }}" alt="Smart- X">
+                            <!-- ZOHO image acts as placeholder for the smartx tablet image -->
+                        </div>
+                        <h3>Smart- X</h3>
+                        <p>A No-Code system that helps enterprises to host all the business rule in a centralized place and extend to any of the customer touchpoints seamlessly.</p>
                     </div>
-                    <h3>Smart- X</h3>
-                    <p>A No-Code system that helps enterprises to host all the business rule in a centralized place and extend to any of the customer touchpoints seamlessly.</p>
-                </div>
+                </a>
             </div>
 
             <!-- Card 4 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/calling-phone-2.jpg') }}" onerror="this.src='{{ asset('image/image 24.jpg') }}'" alt="Co Browsing">
+                <a href="{{ url('products/webrtc') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/calling-phone-2.jpg') }}" onerror="this.src='{{ asset('image/image 24.jpg') }}'" alt="Co Browsing">
+                        </div>
+                        <h3>Co Browsing</h3>
+                        <p>A powerful visual engagement tool that seamlessly shares screens during live support sessions, empowering agents to assist customers in real-time, and enhancing communication and problem-solving capabilities.</p>
                     </div>
-                    <h3>Co Browsing</h3>
-                    <p>A powerful visual engagement tool that seamlessly shares screens during live support sessions, empowering agents to assist customers in real-time, and enhancing communication and problem-solving capabilities.</p>
-                </div>
+                </a>
             </div>
             
             <!-- Card 5 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/products/social-media.png') }}" onerror="this.src='{{ asset('image/Whatsapp.png') }}'" alt="Social Media Connector">
+                <a href="{{ url('products/socialmedia') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/products/social-media.png') }}" onerror="this.src='{{ asset('image/Whatsapp.png') }}'" alt="Social Media Connector">
+                        </div>
+                        <h3>Social Media Connector</h3>
+                        <p>Engage in two-way conversations and personalized interactions with customers directly. Chats/comments from WhatsApp and Social Media will be routed to the agent wherein the agent can respond/reply to those.</p>
                     </div>
-                    <h3>Social Media Connector</h3>
-                    <p>Engage in two-way conversations and personalized interactions with customers directly. Chats/comments from WhatsApp and Social Media will be routed to the agent wherein the agent can respond/reply to those.</p>
-                </div>
+                </a>
             </div>
 
             <!-- Card 6 -->
@@ -155,35 +165,41 @@
 
             <!-- Card 7 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/crmpartners.jpg') }}" alt="CRM Connector">
+                <a href="{{ url('products/crmsolution') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/crmpartners.jpg') }}" alt="CRM Connector">
+                        </div>
+                        <h3>CRM Connector</h3>
+                        <p>Business applications like CRM/ERP, ticketing tools, etc. can be seamlessly integrated and boosts their ability with our connector. It activates a screen pop-up that pulls customer data and efficiently presents it to agents for enhanced customer service. Provides additional call control options to non-contact center users.</p>
                     </div>
-                    <h3>CRM Connector</h3>
-                    <p>Business applications like CRM/ERP, ticketing tools, etc. can be seamlessly integrated and boosts their ability with our connector. It activates a screen pop-up that pulls customer data and efficiently presents it to agents for enhanced customer service. Provides additional call control options to non-contact center users.</p>
-                </div>
+                </a>
             </div>
 
             <!-- Card 8 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/products/customersurveymodule.jpg') }}" onerror="this.src='{{ asset('image/products/survey.png') }}'" alt="Smart Survey">
+                <a href="{{ url('products/customersurvey') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/products/customersurveymodule.jpg') }}" onerror="this.src='{{ asset('image/products/survey.png') }}'" alt="Smart Survey">
+                        </div>
+                        <h3>Smart Survey</h3>
+                        <p>Conducts automated post-interaction surveys via IVR, SMS, or email, to gain valuable insights and understand your customers' preferences, needs, and satisfaction levels.</p>
                     </div>
-                    <h3>Smart Survey</h3>
-                    <p>Conducts automated post-interaction surveys via IVR, SMS, or email, to gain valuable insights and understand your customers' preferences, needs, and satisfaction levels.</p>
-                </div>
+                </a>
             </div>
 
             <!-- Card 9 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/products/call-back.jpg') }}" alt="Call Back Manager">
+                <a href="{{ url('products/callmanagement') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/products/call-back.jpg') }}" alt="Call Back Manager">
+                        </div>
+                        <h3>Call Back Manager</h3>
+                        <p>A versatile tool that recovers missed customer service opportunities by monitoring dropped calls, compiling a list, and automatically connecting customers with available agents.</p>
                     </div>
-                    <h3>Call Back Manager</h3>
-                    <p>A versatile tool that recovers missed customer service opportunities by monitoring dropped calls, compiling a list, and automatically connecting customers with available agents.</p>
-                </div>
+                </a>
             </div>
             
             <!-- Card 10 -->
@@ -199,24 +215,28 @@
 
             <!-- Card 11 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/products/call-management.jpg') }}" onerror="this.src='{{ asset('image/Providing-Analysis.png') }}'" alt="Call Analytics">
+                <a href="{{ url('products/callreporter') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/products/call-management.jpg') }}" onerror="this.src='{{ asset('image/Providing-Analysis.png') }}'" alt="Call Analytics">
+                        </div>
+                        <h3>Call Analytics</h3>
+                        <p>Provides an overview of analysis, reporting and optimization capabilities for all your telephony activities with the help of an advanced Call Management System.</p>
                     </div>
-                    <h3>Call Analytics</h3>
-                    <p>Provides an overview of analysis, reporting and optimization capabilities for all your telephony activities with the help of an advanced Call Management System.</p>
-                </div>
+                </a>
             </div>
 
             <!-- Card 12 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="solution-card">
-                    <div class="solution-card-img-wrapper">
-                        <img src="{{ asset('image/iconcaht.png') }}" onerror="this.src='{{ asset('image/iconchat.png') }}'" alt="SMS Solution">
+                <a href="{{ url('products-sms-solutions') }}" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="solution-card">
+                        <div class="solution-card-img-wrapper">
+                            <img src="{{ asset('image/iconcaht.png') }}" onerror="this.src='{{ asset('image/iconchat.png') }}'" alt="SMS Solution">
+                        </div>
+                        <h3>SMS Solution</h3>
+                        <p>Optimize your communication strategies effortlessly with our streamlined messaging solution. Whether it's sending individual messages or bulk notifications, our system seamlessly integrates with your CRM or backend systems.</p>
                     </div>
-                    <h3>SMS Solution</h3>
-                    <p>Optimize your communication strategies effortlessly with our streamlined messaging solution. Whether it's sending individual messages or bulk notifications, our system seamlessly integrates with your CRM or backend systems.</p>
-                </div>
+                </a>
             </div>
             
             <!-- Card 13 -->

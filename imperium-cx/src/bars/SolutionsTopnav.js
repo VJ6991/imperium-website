@@ -9,7 +9,7 @@ import SatoshiFont from "../fonts/Satoshi-Variable.woff2";
 */
 
 function SolutionsTopnav() {
-  const baseUrl = "http://localhost:8000";
+  const baseUrl = window.location.origin;
 
   const navbarHTML = `
 <style>

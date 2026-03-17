@@ -74,7 +74,7 @@ const AvayaHeader = ({ handleMenuClick, activeSection }) => {
             )}
           </button>
           <div className=''>
-            <Link to='/'><img className="lg:w-[132px] w-[74.559px]" src={Logo} alt="logo" /></Link>
+            <a href='/'><img className="lg:w-[132px] w-[74.559px]" src={Logo} alt="logo" /></a>
           </div>
         </div>
         <nav className={navOpen ? "resp-nav flex" : "resp-nav hidden"}>

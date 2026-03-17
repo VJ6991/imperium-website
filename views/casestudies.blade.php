@@ -34,174 +34,35 @@
             </p>
         </div>
         <div class="topcontent" id="pagecontainer">
-            <ul>
-                <li class="col-sm-6 blogcolm">
-                    <article>
+            <ul class="row d-flex flex-wrap" style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                @foreach($casestudies as $cs)
+                <li class="col-sm-6 blogcolm d-flex" style="display: flex; margin-bottom: 30px;">
+                    <article class="w-100" style="display: flex; flex-direction: column; width: 100%; border: 1px solid #eee; padding: 15px; background: #fff;">
                         <div class="post_featured with_thumb hover_dots">
                             <img
-                                src="{{asset('image/Office-960x720.jpg')}}"
-                                alt="ICT Solution to Concordia"
+                                src="{{ url($cs['image']) }}"
+                                alt="{{ $cs['title'] }}"
                                 class="wp-post-image"
-                                width="790"
-                                height="444">
+                                style="width: 100%; height: 200px; object-fit: cover;">
                         </div>
-                        <!-- <div class="post_meta">
-                            <span class="post_meta_item">
-                                Tuesday, 30 October 2018
-                            </span>
-                        </div> -->
                         <div class="post_header entry-header">
-                            <h2 class="post_title entry-title match-height">
-                                Emirates Hospital Vitalized With Avaya Contact Center Set Up By Imperium
+                            <h2 class="post_title entry-title match-height" style="min-height: 60px; margin-top: 15px;">
+                                {{ $cs['title'] }}
                             </h2>
                         </div>
-                        <div class="post_content entry-content">
-                            <div class="post_content_inner">
-                                <p>A prestigious name and a subsidiary of Emirates Healthcare Company, Emirates Hospital has seven branches in UAE and is an internationally recognized beacon of progress in the region’s healthcare ecosystem providing personalized, real-time healthcare solutions....
-                                </p>
+                        <div class="post_content entry-content" style="flex-grow: 1; display: flex; flex-direction: column;">
+                            <div class="post_content_inner" style="flex-grow: 1;">
+                                <p class="match-desc" style="min-height: 80px;">{{ Helper::limit_words($cs['description'], 30) }}</p>
                             </div>
-                            <p>
-                                <a class="more-link sc_button_hover_slide_left" href="{{asset('pdf/Case_Study_Final_Contact_Center_Set_Up_Emirates_Hospital.pdf')}}" download>
+                            <p style="margin-top: auto; padding-top: 15px;">
+                                <a class="more-link sc_button_hover_slide_left" href="{{ url($cs['pdf']) }}" download>
                                 Download Case Study</a>
                             </p>
                         </div>
                     </article>
                 </li>
-
-                <li class="col-sm-6 blogcolm">
-                    <article>
-                        <div class="post_featured with_thumb hover_dots">
-                            <img
-                                src="{{asset('image/1338634_19af.jpg')}}"
-                                alt="ICT Solution to Concordia"
-                                class="wp-post-image"
-                                width="790"
-                                height="444">
-                        </div>
-                        <!-- <div class="post_meta">
-                            <span class="post_meta_item">
-                                Tuesday, 30 October 2018
-                            </span>
-                        </div> -->
-                        <div class="post_header entry-header">
-                            <h2 class="post_title entry-title match-height">
-                               Concordia Dubai Expands On Efficiency With Imperium CMS
-                            </h2>
-                        </div>
-                        <div class="post_content entry-content">
-                            <div class="post_content_inner">
-                                <p>Concordia’s helpdesk team handles a humungous number of query calls round the clock at their in-house Contact Centre powered by Avaya. With a heavy call flow of about 200 calls per hour, call reports are vital in tracking business growth....
-                                </p>
-                            </div>
-                            <p>
-                                <a class="more-link sc_button_hover_slide_left" href="{{asset('pdf/Imperium_Concordia_Case_Study_Final.pdf')}}" download>
-                                Download Case Study</a>
-                            </p>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="col-sm-6 blogcolm">
-                    <article>
-                        <div class="post_featured with_thumb hover_dots">
-                            <img
-                                src="{{asset('image/cs1.jpg')}}"
-                                alt="ICT Solution to Concordia"
-                                class="wp-post-image"
-                                width="790"
-                                height="444">
-                        </div>
-                        <!-- <div class="post_meta">
-                            <span class="post_meta_item">
-                                Tuesday, 30 October 2018
-                            </span>
-                        </div> -->
-                        <div class="post_header entry-header">
-                            <h2 class="post_title entry-title match-height">
-                                Imperium Macemacro Success
-                            </h2>
-                        </div>
-                        <div class="post_content entry-content">
-                            <div class="post_content_inner">
-                                <p>Macemacro is an international consultancy and construction company with projects in Middle East, Europe and Canada and now expanding to Asia. They provide facility management services for highly complex construction, property, from managing costs....
-                                </p>
-                            </div>
-                            <p>
-                                <a class="more-link sc_button_hover_slide_left" href="{{asset('pdf/Imperium_Macemacro_success_story.pdf')}}" download>
-                                Download Case Study</a>
-                            </p>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="col-sm-6 blogcolm">
-                    <article>
-                        <div class="post_featured with_thumb hover_dots">
-                            <img
-                                src="{{asset('image/consider_uribel_drug_for_urinary_problems.jpg')}}"
-                                alt="ICT Solution to Concordia"
-                                class="wp-post-image"
-                                width="790"
-                                height="444">
-                        </div>
-                        <!-- <div class="post_meta">
-                            <span class="post_meta_item">
-                                Tuesday, 30 October 2018
-                            </span>
-                        </div> -->
-                        <div class="post_header entry-header">
-                            <h2 class="post_title entry-title">
-                                Omniyat Real Estate
-                            </h2>
-                        </div>
-                        <div class="post_content entry-content">
-                            <div class="post_content_inner">
-                                <p>A distinguished name in the real estate sector bent on building outstanding landmark on Dubai’s skyline, Omniyat is a property design and development firm that create startling environments in residential, commercial, hospitality....
-                                </p>
-                            </div>
-                            <p>
-                                <a class="more-link sc_button_hover_slide_left" href="{{asset('pdf/Omniyat_Case_Study.pdf')}}" download>
-                                    Download Case Study</a>
-                            </p>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="col-sm-6 blogcolm">
-                    <article>
-                        <div class="post_featured with_thumb hover_dots">
-                            <img
-                                src="{{asset('image/Office-960x720.jpg')}}"
-                                alt="ICT Solution to Concordia"
-                                class="wp-post-image"
-                                width="790"
-                                height="444">
-                        </div>
-                        <!-- <div class="post_meta">
-                            <span class="post_meta_item">
-                                Tuesday, 30 October 2018
-                            </span>
-                        </div> -->
-                        <div class="post_header entry-header">
-                            <h2 class="post_title entry-title">
-                                Growthgate Capital Corporation
-                            </h2>
-                        </div>
-                        <div class="post_content entry-content">
-                            <div class="post_content_inner">
-                                <p>Growthgate Capital Corporation is a private investment firm established in late 2007, as a closed joint stock company in the Kingdom of Bahrain. It is engaged in direct equity investments with a focus on the middle market segment....
-                                </p>
-                            </div>
-                            <p>
-                                <a class="more-link sc_button_hover_slide_left" href="{{asset('pdf/Imperium_GrowthGate_CaseStudy_Final_DEC_2018.pdf')}}" download>
-                                    Download Case Study</a>
-                            </p>
-                        </div>
-                    </article>
-                </li>
-
+                @endforeach
             </ul>
-
         </div>
     </section>
 

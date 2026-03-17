@@ -10,10 +10,10 @@
    <div class="container">
       <div class="row">
          <div class="col-md-12">
-            <h1>Business Center</h1>
+            <h1>{{ Helper::cms('businesscenter', 'banner_title', 'Business Center') }}</h1>
             <div class="breadcroumb">
                <a href="./">Home</a> &gt;
-               <span class="current">Business Center</span>
+               <span class="current">{{ Helper::cms('businesscenter', 'banner_title', 'Business Center') }}</span>
             </div>
          </div>
       </div>
@@ -25,7 +25,7 @@
          <div class="row">
              <div class="col-md-12 text-center">
                 <div class="section-title">
-                   <h2>Imperium: Converged Network Services</h2>
+                   <h2>{{ Helper::cms('businesscenter', 'section_title', 'Imperium: Converged Network Services') }}</h2>
                 </div>
              </div>
          </div>
@@ -33,12 +33,12 @@
          <div class="row">
             <div class="col-md-6">
                <p>
-                  Convergent Networks supporting voice, video and data are a standard in today's competitive busi-ness world and customers are looking for smarter systems to manage multi-layered networks.
+                  {!! nl2br(Helper::cms('businesscenter', 'description', "Convergent Networks supporting voice, video and data are a standard in today's competitive busi-ness world and customers are looking for smarter systems to manage multi-layered networks.")) !!}
                </p>
             </div>
             <div class="col-md-6">
                <div class="telvideo">
-                  <img src="{{ asset('image/Office-960x720.jpg') }}" alt="Debt Collection">
+                  <img src="{{ asset(Helper::cms('businesscenter', 'image', 'image/Office-960x720.jpg')) }}" alt="Business Center">
                </div>
             </div>
          </div>

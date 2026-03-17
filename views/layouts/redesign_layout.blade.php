@@ -207,8 +207,12 @@ gtag('config', 'UA-212453304-1');
 
 
     <footer class="lite-footer-area">
+        <style>
+            .lite-footer-area p { margin: 0 !important; }
+            .lite-footer-area ul { margin: 0 !important; }
+        </style>
         <div class="container">
-            <div class="row">
+            <div class="row" style="display: flex; align-items: center;">
                 <div class="col-md-4 ">
                     <div class="footer-text wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                         <p>&copy; <?php echo date("Y"); ?> Imperium. All rights reserved.</p>
@@ -218,8 +222,7 @@ gtag('config', 'UA-212453304-1');
                     <ul class="sociallinks wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
                     <li><a href="{{ url('about') }}">About</a> |</li>
                         <!-- <li><a href="{{ url('faqs') }}">Faqs</a> |</li> -->
-                        <li><a href="{{ url('blog-news') }}"> Blog</a> |</li>
-                        <li><a href="{{ url('cms') }}"> CMS Admin</a></li>
+                        <li><a href="{{ url('blog-news') }}"> Blog</a></li>
                     </ul>
                 </div>
 

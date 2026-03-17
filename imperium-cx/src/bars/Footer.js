@@ -7,7 +7,7 @@ import React from "react";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
-  const baseUrl = "http://localhost:8000";
+  const baseUrl = "/";
 
   const footerHTML = `
 <style>
@@ -53,7 +53,7 @@ function Footer() {
   #imp-main-footer .section-padding { padding: 60px 0; }
   
   #imp-main-footer #contactt {
-    background: rgba(0, 0, 0, 0) url("https://imperiumapp.com/assets/image/customercare-banner.png") no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0) url("/assets/image/customercare-banner.png") no-repeat center center/cover;
     position: relative;
     z-index: 1;
     color: #fff;

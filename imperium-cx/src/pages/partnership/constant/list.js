@@ -8,7 +8,7 @@ export const partner_list =
     {
         image:AvayaImg,
         description:"As an Avaya DevConnect Technology Partner, Diamond Partner, and APS Delivery Partner, we are at the forefront of delivering innovative communication solutions. Our partnership allows us to sell Avaya solutions- IP Telephony, UC and CC solutions, while Avaya also resells our groundbreaking solutions to their global partner community. Together, we are driving the future of customer engagement.",
-        link:"https://imperiumapp.com/cx",
+        link:"/cx",
         width:"130px",
         alt:"Avaya"
     },

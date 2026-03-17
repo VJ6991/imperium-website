@@ -74,7 +74,7 @@ const ImpHeader = ({ handleMenuClick, activeSection }) => {
             )}
           </button>
           <div className=''>
-            <Link to='https://imperiumapp.com/' target="_blank" ><img className="lg:w-[131.171px] w-[74.559px]" src={ImperiumLogo} alt="ImperiumLogo" /></Link>
+            <a href='/' ><img className="lg:w-[131.171px] w-[74.559px]" src={ImperiumLogo} alt="ImperiumLogo" /></a>
           </div>
         </div>
         <nav className={navOpen ? "resp-nav flex" : "resp-nav hidden"}>

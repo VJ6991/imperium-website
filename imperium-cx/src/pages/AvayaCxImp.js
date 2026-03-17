@@ -181,7 +181,7 @@ function AvayaCxImp() {
                 customers to create their unique journeys.
               </div>
               <div className="text-base lg:text-lg text-[#4D4D4D] leading-[28px] font-normal">
-                As a DevConnect Technology Partner of Avaya, we are recognized
+                As a <a href="/" className="text-[#D52017] font-bold hover:underline">DevConnect Technology Partner of Avaya</a>, we are recognized
                 for our expertise in a broad spectrum of Avaya products,
                 consistently exceeding customer expectations by delivering
                 exceptional experiences. Our comprehensive range of services and
@@ -211,7 +211,7 @@ function AvayaCxImp() {
               customers to create their unique journeys.
             </div>
             <div className="text-base text-[#4D4D4D] leading-[28px] font-normal">
-              As a DevConnect Technology Partner of Avaya, we are recognized for
+              As a <a href="/" className="text-[#D52017] font-bold hover:underline">DevConnect Technology Partner of Avaya</a>, we are recognized for
               our expertise in a broad spectrum of Avaya products, consistently
               exceeding customer expectations by delivering exceptional
               experiences. Our comprehensive range of services and solutions is

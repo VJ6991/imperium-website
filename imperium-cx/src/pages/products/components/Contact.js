@@ -23,7 +23,7 @@ function Contact(props) {
     <div className="button-group">
     <div className="mt-9 flex md:flex-row flex-col items-center justify-center gap-2">
       <a href="https://calendly.com/avayacentrum-demo/avaya-centrum-solutions-demo" target="_blank" className="schedule md:w-auto w-full">Schedule a Demo</a>
-      <a href="https://imperiumapp.com/contact" target="_blank" className="contact md:w-auto w-full">Contact Us</a>
+      <a href="/contact" target="_blank" className="contact md:w-auto w-full">Contact Us</a>
       {doc_link ?
       <button  onClick={()=>handleDoc()} className="schedule md:w-auto w-full flex justify-center" 
       // href={doc_link}  

@@ -10,10 +10,10 @@
    <div class="container">
       <div class="row">
          <div class="col-md-12">
-            <h1>E-Commerce</h1>
+            <h1>{{ Helper::cms('ecommerce', 'banner_title', 'E-Commerce') }}</h1>
             <div class="breadcroumb">
                <a href="{{ url('') }}">Home</a> &gt;
-               <span class="current">E-Commerce</span>
+               <span class="current">{{ Helper::cms('ecommerce', 'banner_title', 'E-Commerce') }}</span>
             </div>
          </div>
       </div>
@@ -25,34 +25,31 @@
          <div class="row">
              <div class="col-md-12 text-center">
                 <div class="section-title">
-                   <h2>E-Commerce</h2>
+                   <h2>{{ Helper::cms('ecommerce', 'section_title', 'E-Commerce') }}</h2>
                 </div>
              </div>
          </div>
          <div class="row">
             <div class="col-md-6">
                <p>
-                  "If your business is not on the internet, then your business will be out of business" - Bill Gates.
-                  <br><br>
-                  The power of E-commerce is amplifying as we move towards a global economy. Today, you can attain a great global presence for your business from a single location and whist your patrons are spread world-wide. The Omni-channel concept booming, brands require great logistics.
-                  <br><br>
-                  As your market broadens, so does the need for creating a fanatic customer interaction online and on telecom, along with being inclusive and super-responsive. 
-                  <br><br>
-                  Imperium grants Ecommerce businesses an impeccable communication system with multichannel capabilities and order details and business sights to help the communication center run smoothly.
+                  {!! nl2br(Helper::cms('ecommerce', 'description', '"If your business is not on the internet, then your business will be out of business" - Bill Gates.')) !!}
                </p>
             </div>
             <div class="col-md-6">
                <div class="telvideo">
-                  <img src="{{ asset('image/ecommerce.jpg') }}" alt="Ecommerce">
+                  <img src="{{ asset(Helper::cms('ecommerce', 'image', 'image/ecommerce.jpg')) }}" alt="Ecommerce">
                </div>
             </div>
          </div>
 
+         @php $extra_img = Helper::cms('ecommerce', 'extra_image'); @endphp
+         @if($extra_img)
          <div class="row">
            <div class="col-md-12">
-             <img src="{{ asset('image/products/core_poducts/E-Commerce_Imperium_Products.png') }}" alt="Ecommerce">
+             <img src="{{ asset($extra_img) }}" alt="Ecommerce Products">
            </div>
          </div>
+         @endif
       </div>
    </div>
 </section>
