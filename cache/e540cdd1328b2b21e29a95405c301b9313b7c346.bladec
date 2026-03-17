@@ -47,7 +47,7 @@
  <h1><?php echo Helper::cms('home', 'slide1_heading_line1', 'Enhance CX with'); ?> <br><span> <?php echo Helper::cms('home', 'slide1_heading_line2', 'AI Powered Solutions'); ?> </span></h1>
  <h5>We provide cutting-edge telephony, omnichannel contact centers, <br class="responsive-br"> intelligent CX tools, and cloud-driven hospitality solutions.</h5>
 
- <a href="http://localhost:3000/cx/#/solutions" class="main-container-div-1-div-button button-know-more">Know more</a>
+ <a href="<?php echo static::e(url('cx/#/solutions')); ?>" class="main-container-div-1-div-button button-know-more">Know more</a>
  </div>
  </div>
  <div class="main-container-div-2"></div>
@@ -64,7 +64,7 @@
  </div>
  <h1 style="text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);"><?php echo Helper::cms('home', 'slide2_heading_line1', 'Streamline Business'); ?> <br><span> <?php echo Helper::cms('home', 'slide2_heading_line2', 'with Smart Solutions'); ?></span></h1>
  <h5>Empower operations with tailored business process automation, <br class="responsive-br">ticketing solutions, and customer engagement portals</h5>
- <a href="http://localhost:3000/cx/#/solutions" class="main-container-div-1-div-button button-know-more">Know more</a>
+ <a href="<?php echo static::e(url('cx/#/solutions')); ?>" class="main-container-div-1-div-button button-know-more">Know more</a>
 
  </div>
  </div>
@@ -184,7 +184,7 @@
  </div>
  <div class="industry-influence-scroll-main">
  <!-- image 1 -->
- <a href="http://localhost:3000/cx/#/crm-connector" class="industry-influence-scroll-card">
+ <a href="<?php echo static::e(url('cx/#/crm-connector')); ?>" class="industry-influence-scroll-card">
  <img src="/assets/image/9dc6972a748ee22d062d771adb3996fc.jpg" alt="" />
  <div class="industry-influence-scroll-card-smokeeffect">
  <div class="industry-influence-scroll-card-heading">
@@ -194,7 +194,7 @@
  </div>
  </a>
  <!-- image 2 -->
- <a href="http://localhost:3000/cx/#/social-media-connector" class="industry-influence-scroll-card">
+ <a href="<?php echo static::e(url('cx/#/social-media-connector')); ?>" class="industry-influence-scroll-card">
  <img src="/assets/image/influ2.jpg" alt="" />
  <div class="industry-influence-scroll-card-smokeeffect">
  <div class="industry-influence-scroll-card-heading">
@@ -205,7 +205,7 @@
  </a>
 
  <!-- image 3 -->
- <a href="http://localhost:3000/cx/#/out-bound-dialer" class="industry-influence-scroll-card">
+ <a href="<?php echo static::e(url('cx/#/out-bound-dialer')); ?>" class="industry-influence-scroll-card">
  <img src="/assets/image/influ3.jpg" alt="" />
  <div class="industry-influence-scroll-card-smokeeffect">
  <div class="industry-influence-scroll-card-heading">
@@ -216,7 +216,7 @@
  </a>
 
  <!-- img -4 -->
- <a href="http://localhost:3000/cx/#/power-bi-reports" class="industry-influence-scroll-card">
+ <a href="<?php echo static::e(url('cx/#/power-bi-reports')); ?>" class="industry-influence-scroll-card">
  <img src="assets/image/redesign-img/industry-13.jpg" alt="" />
  <div class="industry-influence-scroll-card-smokeeffect">
  <div class="industry-influence-scroll-card-heading">
@@ -302,50 +302,20 @@
  <div class="section-card-main-div">
  <div class="section-card-head">
  <h3 class="section-card-head-h3">Imperium Case Studies</h3>
- <a href="https://imperiumapp.com/casestudy" target="_blank" class="seeAll">See All</a>
+ <a href="<?php echo static::e(url('casestudy')); ?>" target="_blank" class="seeAll">See All</a>
  </div>
  <div class="section-cards-scroll">
-
- <a download target="_blank" href="https://imperiumapp.com/assets/pdf/Case_Study_Final_Contact_Center_Set_Up_Emirates_Hospital.pdf" class="imperium-cards">
- <img src="assets/image/redesign-img/scroll-imperium-1.svg" alt="" />
+ <?php $__currentLoopData = array_slice($casestudies, 0, 4); $this->addLoop($__currentLoopData); foreach($__currentLoopData as $cs): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <a download target="_blank" href="<?php echo static::e(url($cs['pdf'])); ?>" class="imperium-cards">
+ <img src="<?php echo static::e(url($cs['home_image'] ?? $cs['image'])); ?>" alt="" />
  <div class="imperium-cards-smokeeffect">
  <div class="imperium-cards-heading">
- <h4>Emirates Hospital vitalized with Avaya Contact Center set up by Imperium</h4>
+ <h4><?php echo static::e($cs['title']); ?></h4>
  <p class="download-study-text">Download Case study</p>
  </div>
  </div>
  </a>
- <!--  -->
- <a href="https://imperiumapp.com/assets/pdf/Imperium_Concordia_Case_Study_Final.pdf" target="_blank" class="imperium-cards">
- <img src="assets/image/redesign-img/scroll-imperium-2.svg" alt="" />
- <div class="imperium-cards-smokeeffect">
- <div class="imperium-cards-heading">
- <h4>Concordia Dubai Expands On Efficiency With Imperium CMS</h4>
- <p class="download-study-text">Download Case study</p>
- </div>
- </div>
- </a>
- <!--  -->
- <a href="https://imperiumapp.com/assets/pdf/Imperium_Macemacro_success_story.pdf" download target="_blank" class="imperium-cards">
- <img src="assets/image/redesign-img/scroll-imperium-3.svg" alt="" />
- <div class="imperium-cards-smokeeffect">
- <div class="imperium-cards-heading">
- <h4>Imperium Macemacro Success</h4>
- <p class="download-study-text">Download Case study</p>
- </div>
- </div>
- </a>
- <!--  -->
- <a class="imperium-cards" href="https://imperiumapp.com/assets/pdf/Omniyat_Case_Study.pdf" target="_blank">
- <img src="assets/image/redesign-img/scroll-imperium-4.svg" alt="" />
- <div class="imperium-cards-smokeeffect">
- <div class="imperium-cards-heading">
- <h4>Omniyat Real Estate</h4>
- <p class="download-study-text">Download Case study</p>
- </div>
- </div>
- </a>
- <!--  -->
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </div>
  </div>
 </section>

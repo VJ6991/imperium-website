@@ -207,28 +207,34 @@ gtag('config', 'UA-212453304-1');
 
 
  <footer class="lite-footer-area">
+ <style>
+ .lite-footer-area p { margin: 0 !important; }
+ .lite-footer-area ul { margin: 0 !important; }
+ </style>
  <div class="container">
- <div class="row" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
- <div class="col-md-3">
+ <div class="row" style="display: flex; align-items: center;">
+ <div class="col-md-4 ">
  <div class="footer-text wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
- <p style="margin: 0;">&copy; <?php echo date("Y"); ?> Imperium. All rights reserved.</p>
+ <p>&copy; <?php echo date("Y"); ?> Imperium. All rights reserved.</p>
  </div>
  </div>
- <div class="col-md-5 text-center">
- <ul class="sociallinks wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight; margin: 0; padding: 0; list-style: none;">
- <li style="display: inline-block;"><a href="<?php echo static::e(url('about')); ?>">About</a> |</li>
- <li style="display: inline-block;"><a href="<?php echo static::e(url('blog-news')); ?>"> Blog</a></li>
+ <div class="col-md-4 ">
+ <ul class="sociallinks wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+ <li><a href="<?php echo static::e(url('about')); ?>">About</a> |</li>
+ <!-- <li><a href="<?php echo static::e(url('faqs')); ?>">Faqs</a> |</li> -->
+ <li><a href="<?php echo static::e(url('blog-news')); ?>"> Blog</a></li>
  </ul>
  </div>
- <div class="col-md-4 text-right">
- <ul class="social-links wow fadeInTop animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; margin: 0; padding: 0; list-style: none;">
- <li style="display: inline-block;"><a href="https://www.facebook.com/imperiumapp" target="blank" style="margin-right: 15px;"><i class="fa fa-facebook"></i></a></li>
- <li style="display: inline-block;"><a href="https://twitter.com/imperiumapp" target="blank" style="margin-right: 15px;"><i class="fa fa-twitter"></i></a></li>
- <li style="display: inline-block;"><a href="https://www.youtube.com/@imperiumsoftwaretechnologi9361" target="blank" style="margin-right: 15px;"><i class="fa fa-youtube"></i></a></li>
- <li style="display: inline-block;"><a href="https://plus.google.com/u/0/108354065877917080537" target="blank" style="margin-right: 15px;"><i class="fa fa-google-plus"></i></a></li>
- <li style="display: inline-block;"><a href="https://www.linkedin.com/company/imperium-software-technologies/" target="blank"><i class="fa fa-linkedin"></i></a></li>
+
+ <div class="col-md-4 ">
+ <ul class="social-links wow fadeInTop animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+ <li><a href="https://www.facebook.com/imperiumapp" target="blank"><i class="fa fa-facebook"></i></a></li>
+ <li><a href="https://twitter.com/imperiumapp" target="blank"><i class="fa fa-twitter"></i></a></li>
+ <li><a href="https://www.youtube.com/@imperiumsoftwaretechnologi9361" target="blank"><i class="fa fa-youtube"></i></a></li>
+ <li><a href="https://plus.google.com/u/0/108354065877917080537" target="blank"><i class="fa fa-google-plus"></i></a></li>
+ <li><a href="https://www.linkedin.com/company/imperium-software-technologies/" target="blank"><i class="fa fa-linkedin"></i></a></li>
+
  </ul>
- </div>
  </div>
 
 

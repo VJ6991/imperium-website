@@ -198,14 +198,14 @@
 
  
  <li id="solutionsli"><a href="<?php echo static::e(url('industry-influence')); ?>">Verticals</a></li>
- <li id="solutionsli1"><a href="http://localhost:3000/cx/#/solutions">Solutions</a></li>
+ <li id="solutionsli1"><a href="<?php echo static::e(url('cx/#/solutions')); ?>">Solutions</a></li>
  <li><a href="<?php echo static::e(url('casestudy')); ?>">Case Studies</a></li>
  <li id="partnersli" class="drop"><a href="javascript:;">Partners <span style="margin-left: 5px;" class="arrow-responsive"> <img class="arrow-for-nav" src="assets/image/redesign-img/scroll/down-arrow.png"  alt=""></span></a>
  <div class="dropdown-content">
- <a href="<?php echo static::e(url('strategic-partnerships')); ?>">Strategic Partnership</a>
+ <a href="<?php echo static::e(url('cx/#/strategic-partnerships')); ?>">Strategic Partnership</a>
  <div class="sub-drop">Technology Partner
  <div class="sub-drop-content">
- <a href="http://localhost:3000/cx/#/Avaya_CX">Avaya</a>
+ <a href="<?php echo static::e(url('cx/#/Avaya_CX')); ?>">Avaya</a>
  <a href="<?php echo static::e(url('partners-cisco')); ?>">Cisco</a>
  <a href="<?php echo static::e(url('partners-microsoft-lync')); ?>">Microsoft Lync</a>
  </div>
@@ -259,12 +259,12 @@
  <li><a href="<?php echo static::e(url('products')); ?>">Products</a></li>
  
  <li><a href="<?php echo static::e(url('industry-influence')); ?>">Verticals</a></li>
- <li><a href="http://localhost:3000/cx/#/solutions">Solutions</a></li>
+ <li><a href="<?php echo static::e(url('cx/#/solutions')); ?>">Solutions</a></li>
  <li><a href="<?php echo static::e(url('casestudy')); ?>">Case Studies</a></li>
  <li class="has-submenu-responsive">
  <div style="display: flex; justify-content:space-between; padding-right:20px"> <span><a href="javascript:;">Partners</span> <span class="arrow-responsive"><img class="arrow-for-nav" src="assets/image/redesign-img/scroll/down-arrow.png"  alt=""></a></span></div>
  <ul class="submenu-responsive">
- <li>  <a href="<?php echo static::e(url('strategic-partnerships')); ?>">Strategic-Partnerships</a> 
+ <li>  <a href="<?php echo static::e(url('cx/#/strategic-partnerships')); ?>">Strategic-Partnerships</a> 
  </li>
  <li >
  <div class="sub-drop-responsive"  href="#"> 

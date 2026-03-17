@@ -11,10 +11,10 @@
  <div class="container">
  <div class="row">
  <div class="col-md-12">
- <h1><?php echo static::e(Helper::cms('blog', 'banner_heading', 'Blog and News')); ?></h1>
+ <h1>Blog and News</h1>
  <div class="breadcroumb">
  <a href="<?php echo static::e(url('')); ?>">Home</a> &gt;
- <span class="current"><?php echo static::e(Helper::cms('blog', 'breadcrumb_text', 'BLOGS')); ?></span>
+ <span class="current">BLOGS</span>
  </div>
  </div>
  </div>

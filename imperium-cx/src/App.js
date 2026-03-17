@@ -34,8 +34,10 @@ function App() {
   
   return (
     <HashRouter>
-      <Routes basename="/cx/">       
+      <Routes>       
         <Route path="/" element={<AvayaCxImp />}></Route>
+        <Route path="/Avaya_CX" element={<AvayaCxImp />}></Route>
+        <Route path="/ImperiumAvaya_CX" element={<AvayaCxImp />}></Route>
 
         {/* solutions */}
         <Route path="/solutions" element={<Solutionslayout><ProductNew /></Solutionslayout>}></Route>
