@@ -146,4 +146,22 @@ class Helper
         return $default;
     }
 
+    public static function get_casestudies()
+    {
+        $data_file = __DIR__ . '/../cms/data/casestudies.json';
+        if (file_exists($data_file)) {
+            return json_decode(file_get_contents($data_file), true);
+        }
+        return [];
+    }
+
+    public static function get_verticals()
+    {
+        $data_file = __DIR__ . '/../cms/data/verticals.json';
+        if (file_exists($data_file)) {
+            return json_decode(file_get_contents($data_file), true);
+        }
+        return [];
+    }
+
 }

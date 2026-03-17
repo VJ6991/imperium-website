@@ -86,6 +86,18 @@ if (file_exists($data_file)) {
                     </div>
                 </a>
             </div>
+            <div class="col-md-4">
+                <a href="casestudies.php" class="page-item-link">
+                    <div class="card shadow-sm h-100 border-warning">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center py-5">
+                            <h4 class="card-title text-center mb-0 text-warning">
+                                📄 Manage Case Studies
+                            </h4>
+                            <p class="text-muted small mt-2">Add, Edit or Delete case studies</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <hr class="my-5">
@@ -93,6 +105,15 @@ if (file_exists($data_file)) {
 
         <div class="row g-4">
             <?php foreach ($data as $page_id => $page_data): ?>
+                <?php 
+                    // Hide individual vertical pages as they are now managed inside Manage Verticals
+                    $vertical_slugs = [
+                        'banking', 'businesscenter', 'debtcollection', 'ecommerce', 
+                        'educationsector', 'finance', 'healthcare', 'helpdesk', 
+                        'insurance', 'logistics', 'realestate', 'retail'
+                    ];
+                    if (in_array($page_id, $vertical_slugs)) continue;
+                ?>
                 <div class="col-md-4">
                     <a href="edit.php?page=<?php echo urlencode($page_id); ?>" class="page-item-link">
                         <div class="card shadow-sm h-100">

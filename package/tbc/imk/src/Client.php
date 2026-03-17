@@ -7,7 +7,7 @@ use Exception;
 class Client {
 
     private $base_uri = "";
-    private $timeout = 30;
+    private $timeout = 5;
 
     function __construct($options) {
         if (isset($options['base_uri']) && is_string($options['base_uri']) && !empty($options['base_uri'])) {
@@ -15,7 +15,7 @@ class Client {
         } else {
             throw new Exception("Base URI is required");
         }
-        if (isset($options['timeout']) && is_string($options['timeout']) && !empty($options['timeout'])) {
+        if (isset($options['timeout']) && (is_string($options['timeout']) || is_int($options['timeout'])) && !empty($options['timeout'])) {
             $this->timeout = $options['timeout'];
         }
     }

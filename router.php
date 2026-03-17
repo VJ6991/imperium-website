@@ -3,8 +3,8 @@
 
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// If the requested file is a static asset (CSS/JS/images)
-if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js|ico|woff|woff2|ttf|svg|mp4)$/i', $path)) {
+// If the requested file is a static asset (HTML/CSS/JS/images) or the cx/ directory
+if (preg_match('/\.(?:html|htm|png|jpg|jpeg|gif|css|js|ico|woff|woff2|ttf|svg|mp4|pdf)$/i', $path) || strpos($path, '/cx') === 0) {
     // Return false to let the built-in server handle the static file natively
     return false;
 }

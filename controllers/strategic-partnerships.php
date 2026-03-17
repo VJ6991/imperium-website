@@ -2,7 +2,7 @@
 /**
 * strategicpartnerships Controller
 */
-class strategicpartnerships extends Controller
+class strategicPartnerships extends Controller
 {
 	
 	function __construct(){

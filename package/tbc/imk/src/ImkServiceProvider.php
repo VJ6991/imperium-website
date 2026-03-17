@@ -84,7 +84,8 @@ class ImkServiceProvider {
         }
 
         $this->client = new Client([
-            "base_uri" => $this->api_url
+            "base_uri" => $this->api_url,
+            "timeout" => 5
         ]);
 
         return $this;

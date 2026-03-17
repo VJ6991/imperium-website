@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Emirates Hospital Vitalized With Avaya Contact Center Set Up By Imperium",
+        "description": "A prestigious name and a subsidiary of Emirates Healthcare Company, Emirates Hospital has seven branches in UAE and is an internationally recognized beacon of progress in the region\u2019s healthcare ecosystem providing personalized, real-time healthcare solutions....",
+        "image": "assets\/image\/Office-960x720.jpg",
+        "pdf": "assets\/pdf\/Case_Study_Final_Contact_Center_Set_Up_Emirates_Hospital.pdf",
+        "home_image": "assets\/image\/redesign-img\/scroll-imperium-1.svg"
+    },
+    {
+        "id": 2,
+        "title": "Concordia Dubai Expands On Efficiency With Imperium CMS",
+        "description": "Concordia\u2019s helpdesk team handles a humungous number of query calls round the clock at their in-house Contact Centre powered by Avaya. With a heavy call flow of about 200 calls per hour, call reports are vital in tracking business growth....",
+        "image": "assets\/image\/1338634_19af.jpg",
+        "pdf": "assets\/pdf\/Imperium_Concordia_Case_Study_Final.pdf",
+        "home_image": "assets\/image\/redesign-img\/scroll-imperium-2.svg"
+    },
+    {
+        "id": 3,
+        "title": "Imperium Macemacro Success",
+        "description": "Macemacro is an international consultancy and construction company with projects in Middle East, Europe and Canada and now expanding to Asia. They provide facility management services for highly complex construction, property, from managing costs....",
+        "image": "assets\/image\/cs1.jpg",
+        "pdf": "assets\/pdf\/Imperium_Macemacro_success_story.pdf",
+        "home_image": "assets\/image\/redesign-img\/scroll-imperium-3.svg"
+    },
+    {
+        "id": 4,
+        "title": "Omniyat Real Estate",
+        "description": "A distinguished name in the real estate sector bent on building outstanding landmark on Dubai\u2019s skyline, Omniyat is a property design and development firm that create startling environments in residential, commercial, hospitality....",
+        "image": "assets\/image\/consider_uribel_drug_for_urinary_problems.jpg",
+        "pdf": "assets\/pdf\/Omniyat_Case_Study.pdf",
+        "home_image": "assets\/image\/redesign-img\/scroll-imperium-4.svg"
+    },
+    {
+        "id": 5,
+        "title": "Growthgate Capital Corporation",
+        "description": "Growthgate Capital Corporation is a private investment firm established in late 2007, as a closed joint stock company in the Kingdom of Bahrain. It is engaged in direct equity investments with a focus on the middle market segment....",
+        "image": "assets\/image\/Office-960x720.jpg",
+        "pdf": "assets\/pdf\/Imperium_GrowthGate_CaseStudy_Final_DEC_2018.pdf",
+        "home_image": "assets\/image\/Office-960x720.jpg"
+    }
+]

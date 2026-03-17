@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 define('VERSION', '1.5.9');
 
-if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'localhost:8000' || $_SERVER['HTTP_HOST'] == '192.168.1.19:8080' || $_SERVER['HTTP_HOST'] == '104.197.167.156') {
+if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'localhost:8000' || $_SERVER['HTTP_HOST'] == 'localhost:8001' || $_SERVER['HTTP_HOST'] == 'localhost:8002' || $_SERVER['HTTP_HOST'] == '192.168.1.19:8080' || $_SERVER['HTTP_HOST'] == '104.197.167.156') {
     if (php_sapi_name() === 'cli-server') {
         define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST']);
     } else {
