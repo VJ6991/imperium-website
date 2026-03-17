@@ -152,94 +152,31 @@
     </div>
 </div>
 
-<!-- Avaya -->
-<div class="sp-partner-row">
-    <div class="sp-partner-content">
-        <div class="sp-logo-wrapper">
-            <img src="{{ asset('image/partner_new_avaya.png') }}" alt="Avaya" class="sp-logo" style="max-height: 40px;">
-        </div>
-        <p class="sp-text">
-            As an Avaya DevConnect Technology Partner, Diamond Partner, and APS Delivery Partner, we are at the forefront of delivering innovative communication solutions. Our partnership allows us to sell Avaya solutions- IP Telephony, UC and CC solutions, while Avaya also resells our groundbreaking solutions to their global partner community. Together, we are driving the future of customer engagement.
-        </p>
-        <div class="sp-action">
-            <a href="{{ url('partners-avaya') }}" class="btn-explore">Explore more</a>
-        </div>
-    </div>
-</div>
-
-<!-- Mondee -->
-<div class="sp-partner-row">
-    <div class="sp-partner-content">
-        <div class="sp-logo-wrapper">
-            <img src="{{ asset('image/partner_new_mondee.png') }}" alt="Mondee" class="sp-logo" style="max-height: 35px;">
-        </div>
-        <p class="sp-text">
-            As a Development Partner and System Integrator for Mondee's advanced AI Chatbot solutions, we are pushing the boundaries of AI-driven customer engagement. Our collaboration ensures businesses can leverage cutting-edge chatbot technology to offer personalized, efficient, and seamless customer experiences.
-        </p>
-        <div class="sp-action">
-            <a href="{{ url('products/chatbot') }}" class="btn-explore">Explore more</a>
+@if(isset($partnerships) && !empty($partnerships))
+    @foreach($partnerships as $partner)
+    <!-- {{ $partner['title'] }} -->
+    <div class="sp-partner-row">
+        <div class="sp-partner-content">
+            <div class="sp-logo-wrapper">
+                <img src="{{ asset($partner['logo']) }}" alt="{{ $partner['title'] }}" class="sp-logo" style="max-height: 40px;">
+            </div>
+            <p class="sp-text">
+                {{ $partner['description'] }}
+            </p>
+            <div class="sp-action">
+                <a href="{{ (strpos($partner['link'], 'http') === 0) ? $partner['link'] : url($partner['link']) }}" 
+                   class="btn-explore" 
+                   @if(strpos($partner['link'], 'http') === 0) target="_blank" @endif>
+                   Explore more
+                </a>
+            </div>
         </div>
     </div>
-</div>
-
-<!-- Konnect Insights -->
-<div class="sp-partner-row">
-    <div class="sp-partner-content">
-        <div class="sp-logo-wrapper">
-            <img src="{{ asset('image/partner_new_konnect.png') }}" alt="KONNECT INSIGHTS" class="sp-logo" style="max-height: 30px;">
-        </div>
-        <p class="sp-text">
-            Our partnership with Konnect Insights allows us to offer an all-in-one social media engagement platform that unifies customer care and market insights. This powerful platform enables businesses to monitor, manage, and engage with their audience across multiple channels, ensuring a cohesive and responsive customer experience.
-        </p>
-        <div class="sp-action">
-            <a href="{{ url('products/socialmedia') }}" class="btn-explore">Explore more</a>
-        </div>
+    @endforeach
+@else
+    <div class="container text-center py-5">
+        <p class="text-muted">No partners found. Manage them in the CMS.</p>
     </div>
-</div>
-
-<!-- inaipi -->
-<div class="sp-partner-row">
-    <div class="sp-partner-content">
-        <div class="sp-logo-wrapper">
-            <img src="{{ asset('image/partner_new_inaipi.png') }}" alt="inaipi" class="sp-logo" style="max-height: 40px;">
-        </div>
-        <p class="sp-text">
-            We deliver Inaipi's innovative cloud, digital contact center solutions, UCaaS, CCaaS, and SaaS offerings. This partnership enables us to provide our clients with advanced, flexible, and scalable solutions that enhance customer interactions and streamline operations.
-        </p>
-        <div class="sp-action">
-            <a href="{{ url('inaipi') }}" class="btn-explore">Explore more</a>
-        </div>
-    </div>
-</div>
-
-<!-- Edaya -->
-<div class="sp-partner-row">
-    <div class="sp-partner-content">
-        <div class="sp-logo-wrapper">
-            <img src="{{ asset('image/partner_new_edaya.png') }}" alt="edaya" class="sp-logo" style="max-height: 40px;">
-        </div>
-        <p class="sp-text">
-            We have partnered with Edaya to bring exceptional hospitality solutions that elevate guest experiences. Through this collaboration, we offer state-of-the-art technology that enhances every touchpoint of the guest journey, ensuring satisfaction and loyalty in the hospitality industry.
-        </p>
-        <div class="sp-action">
-            <a href="https://edaya.com" target="_blank" class="btn-explore">Explore more</a>
-        </div>
-    </div>
-</div>
-
-<!-- ListenIQ -->
-<div class="sp-partner-row">
-    <div class="sp-partner-content">
-        <div class="sp-logo-wrapper">
-            <img src="{{ asset('image/listeniq.png') }}" alt="ListenIQ" class="sp-logo" style="max-height: 20px;">
-        </div>
-        <p class="sp-text">
-            We have partnered with ListenIQ to deliver advanced social listening, reputation intelligence, and analytics capabilities. Through this collaboration, organizations can monitor digital conversations, analyze customer sentiment, and uncover actionable insights from real-time data. This enables businesses to make informed decisions, strengthen brand reputation, and enhance customer engagement across the digital ecosystem.
-        </p>
-        <div class="sp-action">
-            <a href="https://listeniq.edayaapp.com/" target="_blank" class="btn-explore">Explore more</a>
-        </div>
-    </div>
-</div>
+@endif
 
 @endsection

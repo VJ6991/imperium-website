@@ -6,6 +6,7 @@ define('BLOGS_FILE', WEBSITE_ROOT . '/cms/data/blogs.json');
 define('VERTICALS_FILE', WEBSITE_ROOT . '/cms/data/verticals.json'); 
 define('PRODUCTS_FILE', WEBSITE_ROOT . '/cms/data/products.json'); 
 define('CASESTUDIES_FILE', WEBSITE_ROOT . '/cms/data/casestudies.json'); 
+define('PARTNERSHIPS_FILE', WEBSITE_ROOT . '/cms/data/partnerships.json'); 
 define('IMAGE_UPLOAD_DIR', WEBSITE_ROOT . '/assets/image/cms/');
 define('PDF_UPLOAD_DIR', WEBSITE_ROOT . '/assets/pdf/cms/');
 define('WEBSITE_URL', 'http://localhost:8000');

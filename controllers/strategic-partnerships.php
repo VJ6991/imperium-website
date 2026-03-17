@@ -9,7 +9,14 @@ class strategicPartnerships extends Controller
 		parent::__construct();
 	}
 	function index(){
-		header("Location: " . url('cx/#/strategic-partnerships'));
-		exit;
+		$partnerships_file = WEBSITE_ROOT . '/cms/data/partnerships.json';
+		$partnerships = [];
+		if (file_exists($partnerships_file)) {
+			$partnerships = json_decode(file_get_contents($partnerships_file), true);
+		}
+		
+		return view('strategic-partnerships', [
+			'partnerships' => $partnerships
+		]);
 	}
 }

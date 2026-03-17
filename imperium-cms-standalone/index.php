@@ -98,6 +98,18 @@ if (file_exists($data_file)) {
                     </div>
                 </a>
             </div>
+            <div class="col-md-4">
+                <a href="partnerships.php" class="page-item-link">
+                    <div class="card shadow-sm h-100 border-secondary">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center py-5">
+                            <h4 class="card-title text-center mb-0 text-secondary">
+                                🤝 Strategic Partnerships
+                            </h4>
+                            <p class="text-muted small mt-2">Add, Edit or Delete partners</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <hr class="my-5">
