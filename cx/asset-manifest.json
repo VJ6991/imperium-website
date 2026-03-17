@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cx/static/css/main.989a46d8.css",
-    "main.js": "/cx/static/js/main.452fd64f.js",
+    "main.css": "/cx/static/css/main.1ce92153.css",
+    "main.js": "/cx/static/js/main.f72177d1.js",
     "static/js/787.633816a4.chunk.js": "/cx/static/js/787.633816a4.chunk.js",
     "static/media/DevconnectBg.png": "/cx/static/media/DevconnectBg.d51e60346ddf57e71144.png",
     "static/media/smc.jpg": "/cx/static/media/smc.215ecb02c54d254456e1.jpg",
@@ -103,7 +103,6 @@
     "static/media/AvayaExp.png": "/cx/static/media/AvayaExp.bf90d38a65c3fda02180.png",
     "static/media/contact.png": "/cx/static/media/contact.cd4ea43d2b4eb98460e4.png",
     "static/media/coBrowseDb3.png": "/cx/static/media/coBrowseDb3.b53ae92e335b08056dd2.png",
-    "static/media/inaipi.png": "/cx/static/media/inaipi.1e00091e4a6453292378.png",
     "static/media/devConnectTest.png": "/cx/static/media/devConnectTest.567bfc8659565a1593b9.png",
     "static/media/logo.png": "/cx/static/media/logo.d18fb802b94f06a202c4.png",
     "static/media/sugarcrm.png": "/cx/static/media/sugarcrm.1a7d14d00e42e545fac7.png",
@@ -118,12 +117,12 @@
     "static/media/Prev.svg": "/cx/static/media/Prev.43b7fde2df71b9c9ed4a.svg",
     "static/media/arrow.svg": "/cx/static/media/arrow.e44d5963957217418ad53281bf268f8d.svg",
     "static/media/qoutes.svg": "/cx/static/media/qoutes.b07e1c2af0a9351692e6de64d30cee08.svg",
-    "main.989a46d8.css.map": "/cx/static/css/main.989a46d8.css.map",
-    "main.452fd64f.js.map": "/cx/static/js/main.452fd64f.js.map",
+    "main.1ce92153.css.map": "/cx/static/css/main.1ce92153.css.map",
+    "main.f72177d1.js.map": "/cx/static/js/main.f72177d1.js.map",
     "787.633816a4.chunk.js.map": "/cx/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.989a46d8.css",
-    "static/js/main.452fd64f.js"
+    "static/css/main.1ce92153.css",
+    "static/js/main.f72177d1.js"
   ]
 }

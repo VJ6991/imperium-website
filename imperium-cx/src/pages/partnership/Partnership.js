@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./partner.css";
 import BackgroundPic from "./image/partnerBg.png";
-import { partner_list } from "./constant/list";
+import axios from "axios";
 
 function Partnership() {
+  const [partnerList, setPartnerList] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPartners = async () => {
+      try {
+        const response = await axios.get("/get_partnerships.php");
+        // Map CMS data structure to React structure if necessary
+        // CMS: id, title, logo, description, link
+        // React expected: image, description, link, alt
+        const mappedData = response.data.map(item => ({
+          image: "/" + item.logo, // Ensure absolute path for CMS assets
+          description: item.description,
+          link: (item.link.startsWith('http')) ? item.link : ("/cx/#/" + item.link),
+          alt: item.title,
+          width: item.width || "140px" // Default width
+        }));
+        setPartnerList(mappedData);
+      } catch (error) {
+        console.error("Error fetching partners:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPartners();
+  }, []);
+
   return (
     <div className="partner-section">
       <div
@@ -27,14 +55,16 @@ function Partnership() {
             partnerships:
           </div>
       <div className="parter-list flex flex-col  mb-16">
-        {partner_list.map((item, i) => {
+        {loading ? (
+          <div className="text-center py-10 text-orange-500">Loading partnerships...</div>
+        ) : partnerList.map((item, i) => {
           return (
             <div key={i} className="hover:bg-gradient-to-t from-orange-100 md:pt-14 pt-10">
                 <div className="top_section">
                     <img src={item?.image} className="w-[140px] mb-2" style={{ width: item?.width }} alt={item?.alt}/>
                     <div className="para">{item?.description}</div>
                     <div className="flex items-center justify-center mb-6">
-                        <a target="_blank" href={item?.link} className="explore-more-btn mt-5 flex justify-end">Explore more</a>
+                        <a target={(item?.link.startsWith('http')) ? "_blank" : "_self"} href={item?.link} className="explore-more-btn mt-5 flex justify-end">Explore more</a>
                     </div>
                     <hr />
               </div>
