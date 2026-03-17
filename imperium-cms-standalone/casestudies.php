@@ -3,20 +3,20 @@ require_once 'auth.php';
 require_once 'config.php';
 check_auth();
 
-$products_file = PRODUCTS_FILE;
-$products = [];
-if (file_exists($products_file)) {
-    $products = json_decode(file_get_contents($products_file), true);
+$casestudies_file = CASESTUDIES_FILE;
+$casestudies = [];
+if (file_exists($casestudies_file)) {
+    $casestudies = json_decode(file_get_contents($casestudies_file), true);
 }
 
 // Handle deletion
 if (isset($_GET['delete'])) {
     $id_to_delete = $_GET['delete'];
-    $new_products = array_filter($products, function($p) use ($id_to_delete) {
-        return $p['id'] != $id_to_delete;
+    $new_casestudies = array_filter($casestudies, function($cs) use ($id_to_delete) {
+        return $cs['id'] != $id_to_delete;
     });
-    file_put_contents($products_file, json_encode(array_values($new_products), JSON_PRETTY_PRINT));
-    header('Location: products.php?msg=deleted');
+    file_put_contents($casestudies_file, json_encode(array_values($new_casestudies), JSON_PRETTY_PRINT));
+    header('Location: casestudies.php?msg=deleted');
     exit;
 }
 ?>
@@ -25,7 +25,7 @@ if (isset($_GET['delete'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Products - Imperium CMS</title>
+    <title>Manage Case Studies - Imperium CMS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light pb-5">
@@ -46,23 +46,23 @@ if (isset($_GET['delete'])) {
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-        <li class="breadcrumb-item active">Manage Products</li>
+        <li class="breadcrumb-item active">Manage Case Studies</li>
       </ol>
     </nav>
 
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2>Manage Products</h2>
-        <a href="edit_product.php" class="btn btn-primary">+ Add New Product</a>
+        <h2>Manage Case Studies</h2>
+        <a href="edit_casestudy.php" class="btn btn-primary">+ Add New Case Study</a>
     </div>
 
     <?php if (isset($_GET['msg']) && $_GET['msg'] === 'deleted'): ?>
         <div class="alert alert-success alert-dismissible fade show">
-            Product deleted successfully!
+            Case study deleted successfully!
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     <?php elseif (isset($_GET['msg']) && $_GET['msg'] === 'saved'): ?>
         <div class="alert alert-success alert-dismissible fade show">
-            Product saved successfully!
+            Case study saved successfully!
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     <?php endif; ?>
@@ -72,32 +72,32 @@ if (isset($_GET['delete'])) {
             <table class="table table-hover mb-0">
                 <thead class="table-light">
                     <tr>
-                        <th style="width: 100px;">Image</th>
+                        <th style="width: 100px;">Thumbnail</th>
                         <th>Title</th>
-                        <th>Link / Slug</th>
+                        <th>PDF Path</th>
                         <th class="text-end">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if (empty($products)): ?>
+                    <?php if (empty($casestudies)): ?>
                         <tr>
-                            <td colspan="4" class="text-center py-4 text-muted">No products found. Click "Add New Product" to create one.</td>
+                            <td colspan="4" class="text-center py-4 text-muted">No case studies found. Click "Add New Case Study" to create one.</td>
                         </tr>
                     <?php else: ?>
-                        <?php foreach ($products as $product): ?>
+                        <?php foreach ($casestudies as $cs): ?>
                             <tr>
                                 <td>
-                                    <?php if (!empty($product['image'])): ?>
-                                        <img src="<?php echo cms_asset($product['image']); ?>" style="width: 60px; height: 40px; object-fit: cover; border-radius: 4px;">
+                                    <?php if (!empty($cs['image'])): ?>
+                                        <img src="<?php echo cms_asset($cs['image']); ?>" style="width: 60px; height: 40px; object-fit: cover; border-radius: 4px;">
                                     <?php else: ?>
                                         <div class="bg-secondary opacity-25 rounded" style="width: 60px; height: 40px;"></div>
                                     <?php endif; ?>
                                 </td>
-                                <td class="align-middle fw-bold"><?php echo htmlspecialchars($product['title']); ?></td>
-                                <td class="align-middle text-muted"><?php echo htmlspecialchars($product['link'] ?? ''); ?></td>
+                                <td class="align-middle fw-bold"><?php echo htmlspecialchars($cs['title']); ?></td>
+                                <td class="align-middle text-muted small"><?php echo htmlspecialchars($cs['pdf'] ?? ''); ?></td>
                                 <td class="align-middle text-end">
-                                    <a href="edit_product.php?id=<?php echo urlencode($product['id']); ?>" class="btn btn-sm btn-outline-primary me-1">Edit</a>
-                                    <a href="products.php?delete=<?php echo urlencode($product['id']); ?>" class="btn btn-sm btn-outline-danger" onclick="return confirm('Are you sure you want to delete this product?')">Delete</a>
+                                    <a href="edit_casestudy.php?id=<?php echo urlencode($cs['id']); ?>" class="btn btn-sm btn-outline-primary me-1">Edit</a>
+                                    <a href="casestudies.php?delete=<?php echo urlencode($cs['id']); ?>" class="btn btn-sm btn-outline-danger" onclick="return confirm('Are you sure you want to delete this case study?')">Delete</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

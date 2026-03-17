@@ -151,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="d-flex align-items-start gap-4">
                         <?php if ($blog['image']): ?>
                             <div>
-                                <img src="<?php echo WEBSITE_URL . '/' . htmlspecialchars($blog['image']); ?>" class="image-preview mb-2 d-block">
+                                <img src="<?php echo cms_asset($blog['image']); ?>" class="image-preview mb-2 d-block">
                                 <span class="text-muted small"><?php echo htmlspecialchars($blog['image']); ?></span>
                             </div>
                         <?php endif; ?>
@@ -163,9 +163,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="mb-4">
-                    <label class="form-label fw-bold">Content</label>
-                    <textarea name="content" class="form-control" rows="15" placeholder="Write your blog content here..."><?php echo htmlspecialchars($blog['content']); ?></textarea>
-                    <p class="text-muted small mt-1">Note: You can use HTML tags for formatting.</p>
+                    <label class="form-label fw-bold">Content (Max 30 Words for Summary)</label>
+                    <textarea name="content" id="blog-content" class="form-control" rows="15" placeholder="Write your blog content here..."><?php echo htmlspecialchars($blog['content']); ?></textarea>
+                    <div class="form-text mt-1 d-flex justify-content-between">
+                        <span>Limit: 30 words</span>
+                        <span id="word-count" class="badge bg-secondary">0 / 30 words</span>
+                    </div>
                 </div>
 
                 <div class="pt-3 border-top d-flex gap-2">
@@ -178,5 +181,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    const contentInput = document.getElementById('blog-content');
+    // Strip HTML tags for word counting
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = contentInput.value;
+    const plainText = tempDiv.textContent || tempDiv.innerText || "";
+    
+    const words = plainText.trim().split(/\s+/).filter(word => word.length > 0);
+    if (words.length > 30) {
+        e.preventDefault();
+        alert('Validation error: Content exceeds 30 word limit.');
+    }
+});
+
+const contentInput = document.getElementById('blog-content');
+const countDisplay = document.getElementById('word-count');
+
+function updateCount() {
+    // Strip HTML tags for word counting
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = contentInput.value;
+    const plainText = tempDiv.textContent || tempDiv.innerText || "";
+    
+    const words = plainText.trim().split(/\s+/).filter(word => word.length > 0) : [];
+    const count = words.length;
+    
+    countDisplay.textContent = count + ' / 30 words';
+    
+    if (count > 30) {
+        countDisplay.className = 'badge bg-danger';
+        contentInput.classList.add('is-invalid');
+    } else {
+        countDisplay.className = 'badge bg-secondary';
+        contentInput.classList.remove('is-invalid');
+    }
+}
+
+contentInput.addEventListener('input', updateCount);
+window.addEventListener('DOMContentLoaded', updateCount);
+</script>
 </body>
 </html>

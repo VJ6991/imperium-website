@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <div>
                                         <p class="mb-1 text-muted small">Current Image:</p>
                                         <!-- Preview from the main website -->
-                                        <img src="<?php echo WEBSITE_URL . '/' . htmlspecialchars($field['value']); ?>" class="image-preview" alt="Preview">
+                                        <img src="<?php echo cms_asset($field['value']); ?>" class="image-preview" alt="Preview">
                                         <div class="small text-muted mt-1"><?php echo htmlspecialchars($field['value']); ?></div>
                                     </div>
                                 <?php else: ?>

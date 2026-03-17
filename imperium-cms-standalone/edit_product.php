@@ -142,10 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="d-flex align-items-start gap-4">
                         <?php if ($product['image']): ?>
                             <div>
-                                <?php 
-                                    $imgSrcPreview = (strpos($product['image'], 'http') === 0) ? $product['image'] : WEBSITE_URL . '/' . ltrim($product['image'], '/');
-                                ?>
-                                <img src="<?php echo $imgSrcPreview; ?>" class="image-preview mb-2 d-block">
+                                <img src="<?php echo cms_asset($product['image']); ?>" class="image-preview mb-2 d-block">
                                 <span class="text-muted small"><?php echo htmlspecialchars($product['image']); ?></span>
                             </div>
                         <?php endif; ?>
@@ -157,8 +154,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="mb-4">
-                    <label class="form-label fw-bold">Description</label>
-                    <textarea name="description" class="form-control" rows="8" placeholder="Enter short description here..."><?php echo htmlspecialchars($product['description']); ?></textarea>
+                    <label class="form-label fw-bold">Description (Max 30 Words)</label>
+                    <textarea name="description" id="prod-desc" class="form-control" rows="8" placeholder="Enter short description here..."><?php echo htmlspecialchars($product['description']); ?></textarea>
+                    <div class="form-text mt-1 d-flex justify-content-between">
+                        <span>Limit: 30 words</span>
+                        <span id="word-count" class="badge bg-secondary">0 / 30 words</span>
+                    </div>
                 </div>
 
                 <div class="pt-3 border-top d-flex gap-2">
@@ -170,6 +171,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    const descInput = document.getElementById('prod-desc');
+    let errorMessage = '';
+
+    // Word count check
+    const words = descInput.value.trim().split(/\s+/).filter(word => word.length > 0);
+    if (words.length > 30) {
+        errorMessage += 'Description exceeds 30 word limit.\n';
+    }
+
+    if (errorMessage) {
+        e.preventDefault();
+        alert('Validation error:\n' + errorMessage);
+    }
+});
+
+const descInput = document.getElementById('prod-desc');
+const countDisplay = document.getElementById('word-count');
+
+function updateCount() {
+    const text = descInput.value.trim();
+    const words = text ? text.split(/\s+/).filter(word => word.length > 0) : [];
+    const count = words.length;
+    
+    countDisplay.textContent = count + ' / 30 words';
+    
+    if (count > 30) {
+        countDisplay.className = 'badge bg-danger';
+        descInput.classList.add('is-invalid');
+    } else {
+        countDisplay.className = 'badge bg-secondary';
+        descInput.classList.remove('is-invalid');
+    }
+}
+
+descInput.addEventListener('input', updateCount);
+window.addEventListener('DOMContentLoaded', updateCount);
+</script>
 </body>
 </html>

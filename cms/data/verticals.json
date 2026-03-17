@@ -3,84 +3,84 @@
         "id": "1",
         "title": "Health Care ",
         "description": "\"Communication is an essential element of healthcare\" \u2013 Charles Grant. Good healthcare is the right of every human, and it is a necessity for the organizations in healthcare sector to be well connected to serve humanity.",
-        "image": "assets\/image\/healthcare.jpg",
+        "image": "image/healthcare.jpg",
         "link": "healthcare"
     },
     {
         "id": "2",
         "title": "Debt Collection",
         "description": "Providing Customer information and tracking history is critical for a debt collector where the interactions are legally bound. Avaya IP Office with Imperium Debt collection provides reliable and secured environment.",
-        "image": "assets\/image\/1338634_19af.jpg",
+        "image": "image/1338634_19af.jpg",
         "link": "debtcollection"
     },
     {
         "id": "3",
         "title": "Make Help Desk",
         "description": "Avaya IP Office Call center suite with Imperium Service desk module offers the best fit and cost-effective solution for the Customer service industry enabling them to provide effective call resolution for their customers.",
-        "image": "assets\/image\/cs1.jpg",
+        "image": "image/cs1.jpg",
         "link": "helpdesk"
     },
     {
         "id": "4",
         "title": "Business Center",
         "description": "Convergent Networks supporting voice, video and data are a standard in today's competitive busi-ness world and customers are looking for smarter systems to manage multi-layered networks.",
-        "image": "assets\/image\/Office-960x720.jpg",
+        "image": "image/Office-960x720.jpg",
         "link": "businesscenter"
     },
     {
         "id": "5",
         "title": "Logistics",
         "description": "\"The line between disorder and order lies in Logistics\" - Sun Tzu. A crucial sector that dramatically shapes other industries and their supply chains. Most companies outsource their logistics operations so that they can focus on their core job and improve efficiency.",
-        "image": "assets\/image\/logistic_new.jpg",
+        "image": "image/logistic_new.jpg",
         "link": "logistics"
     },
     {
         "id": "6",
         "title": "Education Sector",
         "description": "\"Learning is experience, everything else is just information\" - Albert Einstein. It is at Educational institutes that this principle find home.",
-        "image": "assets\/image\/education.jpg",
+        "image": "image/education.jpg",
         "link": "educationsector"
     },
     {
         "id": "7",
         "title": "E-Commerce",
         "description": "\"If your business is not on the internet, then your business will be out of business\" - Bill Gates. The power of E-commerce is amplifying as we move towards a global economy.",
-        "image": "assets\/image\/ecommerce.jpg",
+        "image": "image/ecommerce.jpg",
         "link": "ecommerce"
     },
     {
         "id": "8",
         "title": "Real Estate",
         "description": "\"Don't wait to buy real estate, buy real estate and wait\" - Will Roger. Customer service is very crucial in Real Estate. Customers are looking for more information about the investment they plan to make and they want to be sure they get the best deal for the price.",
-        "image": "assets\/image\/real-estate.jpg",
+        "image": "image/real-estate.jpg",
         "link": "realestate"
     },
     {
         "id": "9",
         "title": "Retail",
         "description": "\"People do not buy goods and services, they buy relations, stories and magic\" - Seth Gadin. Brink and Motor stores still hold the thrill of the fashionable shopping spree. In here - instant means instant. Retail is real and out-there, proactive, thriving with energy just as much on the backend as in the front.",
-        "image": "assets\/image\/retail.jpg",
+        "image": "image/retail.jpg",
         "link": "retail"
     },
     {
         "id": "10",
         "title": "Banking",
         "description": "\"In Banking or insurance trust is the only thing that you can sell\" - Patrix Dixon. A part of the society that servers as everyone\u2019s prerogative, the banking sector is liable for their client\u2019s data and security.",
-        "image": "assets\/image\/banking.jpg",
+        "image": "image/banking.jpg",
         "link": "banking"
     },
     {
         "id": "11",
         "title": "Finance",
         "description": "\u201cThe Financial services industry is a ward of the state\u201d. Financial services is a broad field that included activities such as risk management, debt collection, business reports and financial analysis, commercial investigations, debt collection and legal support.",
-        "image": "assets\/image\/finance.jpg",
+        "image": "image/finance.jpg",
         "link": "finance"
     },
     {
         "id": "12",
         "title": "Insurance",
         "description": "\"The Insurance sector can be a huge enabler, historically, it's been able to induce changes in behavior much more effectively than government has\" - Frank Kullofo. A fast growing sector worldwide, the insurance firms takes up the duty to defend its customers and protect them in difficult situations.",
-        "image": "assets\/image\/insurance.jpg",
+        "image": "image/insurance.jpg",
         "link": "insurance"
     }
 ]

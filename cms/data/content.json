@@ -10,7 +10,7 @@
             "slide1_heading_line2": {
                 "type": "text",
                 "label": "Slide 1 - Heading (Line 2)",
-                "value": "AI Powered Solutions"
+                "value": "AI Powered Solutions imperium"
             },
             "slide2_heading_line1": {
                 "type": "text",
@@ -40,7 +40,7 @@
             "customer_service_image": {
                 "type": "image",
                 "label": "Customer Service Image",
-                "value": "assets\/image\/cms\/1773381706_call.jpg"
+                "value": "image\/cms\/1773381706_call.jpg"
             },
             "vision_heading": {
                 "type": "text",
@@ -55,7 +55,7 @@
             "vision_image": {
                 "type": "image",
                 "label": "Vision Image",
-                "value": "assets\/image\/mission.jpg"
+                "value": "image\/mission.jpg"
             }
         }
     },
@@ -71,6 +71,356 @@
                 "type": "text",
                 "label": "Breadcrumb Text",
                 "value": "BLOGS"
+            }
+        }
+    },
+    "healthcare": {
+        "title": "Vertical: Healthcare",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Health Care"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Telemedicine & Healthcare Solutions"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"Communication is an essential element of healthcare\" - Charles Grant \n\nGood healthcare is the right of every human, and it is a necessity for the organizations in healthcare sector to be well connected to serve humanity. With all the medical advancements, it is only fair that Imperium has had the privilege to enhance the communication infrastructure and data management systems at clinics and hospitals across the UAE. \n\nWe have been offering fully customized solutions to the healthcare segment. Be it contact centers, Telephony customized reports and multi-channel support system or even a mobile consultancy system, we have it ready. We've enabled an organized way of booking, cancelling and rescheduling of appointments, for call to be routed to the correct department, and vital pieces of communication between the patients, doctors and the management, to reports and data security. Imperium software suite for health care is designed with the utmost attention to the industry\u2019s specific needs."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/healthcare.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Healthcare_Imperium_Products.png"
+            }
+        }
+    },
+    "helpdesk": {
+        "title": "Vertical: Help Desk",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Make Help Desk"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Help Desk Module"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "Avaya IP Office Call center suite with Imperium Service desk module offers the best fit and cost-effective solution for the Customer service industry enabling them to provide effective call resolution for their customers."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/cs1.jpg"
+            }
+        }
+    },
+    "businesscenter": {
+        "title": "Vertical: Business Center",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Business Center"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium: Converged Network Services"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "Convergent Networks supporting voice, video and data are a standard in today's competitive busi-ness world and customers are looking for smarter systems to manage multi-layered networks."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/Office-960x720.jpg"
+            }
+        }
+    },
+    "logistics": {
+        "title": "Vertical: Logistics",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Logistics"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Logistics"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"The line between disorder and order lies in Logistics\" - Sun Tzu. \n\nA crucial sector that dramatically shapes other industries and their supply chains. Most companies outsource their logistics operations so that they can focus on their core job and improve efficiency. The Logistics industry is always on the edge as the clients demand shorter lead times and core competency. \n\nImperium makes sure that the urgency of operations in sector is met with effective connectivity and communication between teams and as well as with clients. We implement Avaya IVR and TTS system which allow customers to track status of their shipment, avoid long queues and get instant information from specific database. \n\nWe have automated work to streamline human resource and put implement a long term investment strategy for basic activities such as request for new booking, collecting shipment \/ Location details via an IVR which capture data on voice and then transcribes to written text. \n\nCustomer service agents are benefitted with a Computer Telephony Integration which displays information about incoming calls along with case history. Whist a call back manager downloads booking requests from IVR database and allows agents to call back the customer to confirm request."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/logistic_new.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Logistics_Imperium_Products.png"
+            }
+        }
+    },
+    "educationsector": {
+        "title": "Vertical: Education",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Education Sector"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Education"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"Learning is experience, everything else is just information\" - Albert Einstein \n\nIt is at Educational institutes that this principle find home. Across the world, school, colleges, universities are considered prestigious hubs where learning of great values and knowledge takes place. \n\nThat is why, Imperium strives to empower the education sector with the best of communication facilities that shall help them reach out and become accessible to everyone. Moreover we want them to host the best of technological advancements of the era so that sector offers multi-channel experiences and the ease of communication to their students and patrons. \n\nICT solutions forms the backbone of a huge organization such as a school or university where priority is to connect a huge community seamlessly."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/education.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Education_Imperium_Products.png"
+            }
+        }
+    },
+    "ecommerce": {
+        "title": "Vertical: E-Commerce",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "E-Commerce"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "E-Commerce"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"If your business is not on the internet, then your business will be out of business\" - Bill Gates. \n\nThe power of E-commerce is amplifying as we move towards a global economy. Today, you can attain a great global presence for your business from a single location and whist your patrons are spread world-wide. The Omni-channel concept booming, brands require great logistics. \n\nAs your market broadens, so does the need for creating a fanatic customer interaction online and on telecom, along with being inclusive and super-responsive. \n\nImperium grants Ecommerce businesses an impeccable communication system with multichannel capabilities and order details and business sights to help the communication center run smoothly."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/ecommerce.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/E-Commerce_Imperium_Products.png"
+            }
+        }
+    },
+    "realestate": {
+        "title": "Vertical: Real Estate",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Real Estate"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Real Estate"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"Don't wait to buy real estate, buy real estate and wait\" - Will Roger. \n\nCustomer service is very crucial in Real Estate. Customers are looking for more information about the investment they plan to make and they want to be sure they get the best deal for the price. In order to win their trust, real estate sector needed to be back on a sturdy and reliable communication center. \n\nImperium offers real-time and multichannel communication solutions to real estate brokers. These solutions from Avaya are sturdy and all-rounder in terms of skill-based routing to the agent, call transfer, recording, social media and unified communication tools. Imperium compliments a real estate business center with applications for the ease of customers and agents. \n\nThese include customer's information on a pop up when a call comes. Reaching customers instantly via social media, voice, video, instant chat. This experience for customers helps them form a very good relationship over telecom and be sure of their purchase."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/real-estate.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Real-Estate_Imperium_Products.png"
+            }
+        }
+    },
+    "retail": {
+        "title": "Vertical: Retail",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Retail"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Retail"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"People do not buy goods and services, they buy relations, stories and magic\" - Seth Gadin. \n\nBrink and Motor stores still hold the thrill of the fashionable shopping spree. In here - instant means instant. Retail is real and out-there, proactive, thriving with energy just as much on the backend as in the front. It' is the classic way of creating customer experience and serving them over and above. \n\nImperium has custom telecom solutions for this industry to stay responsive to every customer-need and concerns. We offer to them a contact center with full-fledged functionality for customer service over-call and integration which would allow agent to understand where the customer is coming from, what\u2019s his demography, purchase, immediate concern and more. For retail we encourage solution which enhance availability and reduce hassle."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/retail.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Retail_Imperium_Products.png"
+            }
+        }
+    },
+    "banking": {
+        "title": "Vertical: Banking",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Banking"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Banking"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"In Banking or insurance trust is the only thing that you can sell\" - Patrix Dixon. \n\nA part of the society that servers as everyone\u2019s prerogative, the banking sector is liable for their client\u2019s data and security. Imperium's solution focuses on implementing a customized and secure communication center with seamless communication technology for the banking sector. We are very customer centric and understand the specific needs of our client and work flow that would fit them best. We also understand their values and vision and help them attain the same with great customer service. \n\nImperium's venture into cloud has made VoIP and data related to it very secure with local data center in the region which makes our solution legal and extensive."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/banking.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Banking_Imperium_Products.png"
+            }
+        }
+    },
+    "finance": {
+        "title": "Vertical: Finance",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Finance"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Finance"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"The Financial services industry is a ward of the state\". \n\nFinancial services is a broad field that included activities such as risk management, debt collection, business reports and financial analysis, commercial investigations, debt collection and legal support. With changes in regulation, rise in technology as well as demographic changes, the finance sector is bent on bringing transparency and becoming increasingly focused on customers. \n\nImperium offers a suite of tools which are customized for the finance sector. With years of technical expertise, we deliver Avaya solutions along with integration with 3rd party applications. We can build third party applications which as secure and intact with latest technology. Imperium has delivered an advanced debt collection system and reporting tools."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/finance.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Finance_Imperium_Products.png"
+            }
+        }
+    },
+    "insurance": {
+        "title": "Vertical: Insurance",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Insurance"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Insurance"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"The Insurance sector can be a huge enabler, historically, it\u2019s been able to induce changes in behavior much more effectively than government has\" - Frank Kullofo. \n\nA fast growing sector worldwide, the insurance firms takes up the duty to defend its customers and protect them in difficult situations. The communication center for an insurance firm will be buzzing with call for queries, question as the customer wants to exchange all necessary information about their claim, protection policy. Building trust is the primary aim of the sector. \n\nImperium has serviced major clients in finance sector to fortify their functionality and build trust. It\u2019s by enhancing customer service availability and accuracy."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/insurance.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Insurance_Imperium_Products.png"
+            }
+        }
+    },
+    "debtcollection": {
+        "title": "Vertical: Debt Collection",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Debt Collection System in Dubai "
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Debt Management Services"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "Providing Customer information and tracking history is critical for a debt collector where the interactions are legally bound. Avaya IP Office with Imperium Debt collection provides reliable and secured environment for Debt collection agencies to manage their day-today operations and reporting."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/cms\/1773660079_detailed_image_businesswoman-call-center-office_1098-984.avif"
+            },
+            "features": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "- Auto upload of Banking data inputs which can be defined separate for each Bank\/organization\r\n- Secure, modular and vertical hierarchy data management ensure each collection team data can be managed separately as per financial institutional requirements\r\n- Easy and custom format excel reporting for data-exchange with Banks to provide periodical reports on performance and communications\r\n- Screen-pop with complete financial history and interaction history provides the necessary information to enhance their collection portfolio and make efficient progress in tracking defaulted customers"
             }
         }
     }

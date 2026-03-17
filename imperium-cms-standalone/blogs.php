@@ -83,10 +83,7 @@ if (isset($_GET['delete'])) {
                             <tr>
                                 <td>
                                     <?php if (!empty($blog['image'])): ?>
-                                        <?php 
-                                            $imgSrc = (strpos($blog['image'], 'http') === 0) ? $blog['image'] : WEBSITE_URL . '/' . ltrim($blog['image'], '/');
-                                        ?>
-                                        <img src="<?php echo $imgSrc; ?>" style="width: 60px; height: 40px; object-fit: cover; border-radius: 4px;">
+                                        <img src="<?php echo cms_asset($blog['image']); ?>" style="width: 60px; height: 40px; object-fit: cover; border-radius: 4px;">
                                     <?php else: ?>
                                         <div class="bg-secondary opacity-25 rounded" style="width: 60px; height: 40px;"></div>
                                     <?php endif; ?>
