@@ -1,0 +1,20 @@
+# PHP Cache
+cache/*
+!cache/.gitignore
+
+# CMS Uploads (Static)
+# assets/image/cms/*
+# assets/pdf/cms/*
+
+# Temporary files
+*_temp.txt
+*.log
+.DS_Store
+Thumbs.db
+
+# OS specific
+Desktop.ini
+
+# CMS specific
+imperium-cms-standalone/phpinfo.php
+test_curl.php
