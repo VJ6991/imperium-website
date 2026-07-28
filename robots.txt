@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /casestudy
+
+sitemap: https://www.imperiumapp.com/sitemap.xml

@@ -1,0 +1,39 @@
+[
+    {
+        "name": "tbc/imk",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/VineshTradebuilder/tbc-imk-web.git",
+            "reference": "6b2c0601a99eb9a044099c8bea2ce59c25606ed2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/VineshTradebuilder/tbc-imk-web/zipball/6b2c0601a99eb9a044099c8bea2ce59c25606ed2",
+            "reference": "6b2c0601a99eb9a044099c8bea2ce59c25606ed2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "time": "2019-01-02T10:29:06+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "TBC\\IMK\\WEB\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "vinesh",
+                "email": "vinesh@tradebuilderinc.com"
+            }
+        ]
+    }
+]

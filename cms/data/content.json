@@ -1,0 +1,1072 @@
+{
+    "home": {
+        "title": "Home",
+        "fields": {
+            "slide1_heading_line1": {
+                "type": "text",
+                "label": "Slide 1 - Heading (Line 1)",
+                "value": "Enhance CX with "
+            },
+            "slide1_heading_line2": {
+                "type": "text",
+                "label": "Slide 1 - Heading (Line 2)",
+                "value": "AI Powered Solutions "
+            },
+            "slide2_heading_line1": {
+                "type": "text",
+                "label": "Slide 2 - Heading (Line 1)",
+                "value": "Streamline Business"
+            },
+            "slide2_heading_line2": {
+                "type": "text",
+                "label": "Slide 2 - Heading (Line 2)",
+                "value": "with Smart Solutions"
+            }
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "fields": {
+            "main_heading": {
+                "type": "text",
+                "label": "Main Heading",
+                "value": "We Help You Connect Your Business with ease"
+            },
+            "content_paragraph_1": {
+                "type": "textarea",
+                "label": "Content Paragraph 1",
+                "value": "Founded in the year 2005, Imperium Software Technologies FZCO is a subsidiary of a parent organization Protocol Systems and is dedicated to enabling better functionality of telephony.\r\n\r\nWe are an industry leader in CTI solutions and the only industry expert in the region to hold almost a decade of association with Avaya as a certified Avaya DevConnect Technology partner. Our expertise in complete ICT solutions endows us the status of a fully-charged software production house that develops value added products. We seamlessly integrate of varied business applications with a telephony system for smart workflow.\r\n\r\nWe enable complete business automation by providing advice, solution, implementation and applications all in one place. We are one-stop solution partner for all your ICT needs.\r\n\r\nThe Company moved from just implementing telephony systems to developing a brand of its own with applications built on top of a VoIP system to support additional features that allow better grip over business communication."
+            },
+            "customer_service_image": {
+                "type": "image",
+                "label": "Customer Service Image",
+                "value": "assets\/image\/cms\/1773381706_call.jpg"
+            },
+            "vision_heading": {
+                "type": "text",
+                "label": "Vision Heading",
+                "value": "Our Vision"
+            },
+            "vision_paragraph": {
+                "type": "textarea",
+                "label": "Vision Paragraph",
+                "value": "Imperium's vision is to expand its reach as a prime strategic partner creating telecommunication solutions and offering sustainable growth to businesses worldwide. We wish to present our simplified yet effective solutions and products to companies of every size and industry.\r\n\r\nWe envision a world that is technologically empowered and better connected where businesses and individuals are linked through premium communication systems and functionalities. This through a reliable and efficient marketing partner like us.\r\nImperium has been a dedicated Avaya partner for almost a decade. We have recently upgraded ourselves to be on-boarded as Avaya Powered By Cloud partner.\r\n\r\nCloud is the future. Alongside providing exceptional service to every client, Imperium shall focus on becoming an agile Cloud Provider in the region with high touch engagement process from end to end for a smooth the transition."
+            },
+            "vision_image": {
+                "type": "image",
+                "label": "Vision Image",
+                "value": "assets\/image\/mission.jpg"
+            }
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "fields": {
+            "banner_heading": {
+                "type": "text",
+                "label": "Banner Heading",
+                "value": "Blog and News "
+            },
+            "breadcrumb_text": {
+                "type": "text",
+                "label": "Breadcrumb Text",
+                "value": "BLOGS"
+            }
+        }
+    },
+    "healthcare": {
+        "title": "Vertical: Healthcare",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Health Care"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Telemedicine & Healthcare Solutions"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"Communication is an essential element of healthcare\" - Charles Grant \n\nGood healthcare is the right of every human, and it is a necessity for the organizations in healthcare sector to be well connected to serve humanity. With all the medical advancements, it is only fair that Imperium has had the privilege to enhance the communication infrastructure and data management systems at clinics and hospitals across the UAE. \n\nWe have been offering fully customized solutions to the healthcare segment. Be it contact centers, Telephony customized reports and multi-channel support system or even a mobile consultancy system, we have it ready. We've enabled an organized way of booking, cancelling and rescheduling of appointments, for call to be routed to the correct department, and vital pieces of communication between the patients, doctors and the management, to reports and data security. Imperium software suite for health care is designed with the utmost attention to the industry\u2019s specific needs."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/healthcare.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Healthcare_Imperium_Products.png"
+            }
+        }
+    },
+    "helpdesk": {
+        "title": "Vertical: Help Desk",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Make Help Desk"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Help Desk Module"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "Avaya IP Office Call center suite with Imperium Service desk module offers the best fit and cost-effective solution for the Customer service industry enabling them to provide effective call resolution for their customers."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/cs1.jpg"
+            }
+        }
+    },
+    "businesscenter": {
+        "title": "Vertical: Business Center",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Business Center"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium: Converged Network Services"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "Convergent Networks supporting voice, video and data are a standard in today's competitive busi-ness world and customers are looking for smarter systems to manage multi-layered networks."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/Office-960x720.jpg"
+            }
+        }
+    },
+    "logistics": {
+        "title": "Vertical: Logistics",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Logistics"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Logistics"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"The line between disorder and order lies in Logistics\" - Sun Tzu. \n\nA crucial sector that dramatically shapes other industries and their supply chains. Most companies outsource their logistics operations so that they can focus on their core job and improve efficiency. The Logistics industry is always on the edge as the clients demand shorter lead times and core competency. \n\nImperium makes sure that the urgency of operations in sector is met with effective connectivity and communication between teams and as well as with clients. We implement Avaya IVR and TTS system which allow customers to track status of their shipment, avoid long queues and get instant information from specific database. \n\nWe have automated work to streamline human resource and put implement a long term investment strategy for basic activities such as request for new booking, collecting shipment \/ Location details via an IVR which capture data on voice and then transcribes to written text. \n\nCustomer service agents are benefitted with a Computer Telephony Integration which displays information about incoming calls along with case history. Whist a call back manager downloads booking requests from IVR database and allows agents to call back the customer to confirm request."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/logistic_new.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Logistics_Imperium_Products.png"
+            }
+        }
+    },
+    "educationsector": {
+        "title": "Vertical: Education",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Education Sector"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Education"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"Learning is experience, everything else is just information\" - Albert Einstein \n\nIt is at Educational institutes that this principle find home. Across the world, school, colleges, universities are considered prestigious hubs where learning of great values and knowledge takes place. \n\nThat is why, Imperium strives to empower the education sector with the best of communication facilities that shall help them reach out and become accessible to everyone. Moreover we want them to host the best of technological advancements of the era so that sector offers multi-channel experiences and the ease of communication to their students and patrons. \n\nICT solutions forms the backbone of a huge organization such as a school or university where priority is to connect a huge community seamlessly."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/education.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Education_Imperium_Products.png"
+            }
+        }
+    },
+    "ecommerce": {
+        "title": "Vertical: E-Commerce",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "E-Commerce"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "E-Commerce"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"If your business is not on the internet, then your business will be out of business\" - Bill Gates. \n\nThe power of E-commerce is amplifying as we move towards a global economy. Today, you can attain a great global presence for your business from a single location and whist your patrons are spread world-wide. The Omni-channel concept booming, brands require great logistics. \n\nAs your market broadens, so does the need for creating a fanatic customer interaction online and on telecom, along with being inclusive and super-responsive. \n\nImperium grants Ecommerce businesses an impeccable communication system with multichannel capabilities and order details and business sights to help the communication center run smoothly."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/ecommerce.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/E-Commerce_Imperium_Products.png"
+            }
+        }
+    },
+    "realestate": {
+        "title": "Vertical: Real Estate",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Real Estate"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Real Estate"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"Don't wait to buy real estate, buy real estate and wait\" - Will Roger. \n\nCustomer service is very crucial in Real Estate. Customers are looking for more information about the investment they plan to make and they want to be sure they get the best deal for the price. In order to win their trust, real estate sector needed to be back on a sturdy and reliable communication center. \n\nImperium offers real-time and multichannel communication solutions to real estate brokers. These solutions from Avaya are sturdy and all-rounder in terms of skill-based routing to the agent, call transfer, recording, social media and unified communication tools. Imperium compliments a real estate business center with applications for the ease of customers and agents. \n\nThese include customer's information on a pop up when a call comes. Reaching customers instantly via social media, voice, video, instant chat. This experience for customers helps them form a very good relationship over telecom and be sure of their purchase."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/real-estate.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Real-Estate_Imperium_Products.png"
+            }
+        }
+    },
+    "retail": {
+        "title": "Vertical: Retail",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Retail"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Retail"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"People do not buy goods and services, they buy relations, stories and magic\" - Seth Gadin. \n\nBrink and Motor stores still hold the thrill of the fashionable shopping spree. In here - instant means instant. Retail is real and out-there, proactive, thriving with energy just as much on the backend as in the front. It' is the classic way of creating customer experience and serving them over and above. \n\nImperium has custom telecom solutions for this industry to stay responsive to every customer-need and concerns. We offer to them a contact center with full-fledged functionality for customer service over-call and integration which would allow agent to understand where the customer is coming from, what\u2019s his demography, purchase, immediate concern and more. For retail we encourage solution which enhance availability and reduce hassle."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/retail.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Retail_Imperium_Products.png"
+            }
+        }
+    },
+    "banking": {
+        "title": "Vertical: Banking",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Banking"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Banking"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"In Banking or insurance trust is the only thing that you can sell\" - Patrix Dixon. \n\nA part of the society that servers as everyone\u2019s prerogative, the banking sector is liable for their client\u2019s data and security. Imperium's solution focuses on implementing a customized and secure communication center with seamless communication technology for the banking sector. We are very customer centric and understand the specific needs of our client and work flow that would fit them best. We also understand their values and vision and help them attain the same with great customer service. \n\nImperium's venture into cloud has made VoIP and data related to it very secure with local data center in the region which makes our solution legal and extensive."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/banking.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Banking_Imperium_Products.png"
+            }
+        }
+    },
+    "finance": {
+        "title": "Vertical: Finance",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Finance"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Finance"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"The Financial services industry is a ward of the state\". \n\nFinancial services is a broad field that included activities such as risk management, debt collection, business reports and financial analysis, commercial investigations, debt collection and legal support. With changes in regulation, rise in technology as well as demographic changes, the finance sector is bent on bringing transparency and becoming increasingly focused on customers. \n\nImperium offers a suite of tools which are customized for the finance sector. With years of technical expertise, we deliver Avaya solutions along with integration with 3rd party applications. We can build third party applications which as secure and intact with latest technology. Imperium has delivered an advanced debt collection system and reporting tools."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/finance.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Finance_Imperium_Products.png"
+            }
+        }
+    },
+    "insurance": {
+        "title": "Vertical: Insurance",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Insurance"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Insurance"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "\"The Insurance sector can be a huge enabler, historically, it\u2019s been able to induce changes in behavior much more effectively than government has\" - Frank Kullofo. \n\nA fast growing sector worldwide, the insurance firms takes up the duty to defend its customers and protect them in difficult situations. The communication center for an insurance firm will be buzzing with call for queries, question as the customer wants to exchange all necessary information about their claim, protection policy. Building trust is the primary aim of the sector. \n\nImperium has serviced major clients in finance sector to fortify their functionality and build trust. It\u2019s by enhancing customer service availability and accuracy."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/insurance.jpg"
+            },
+            "extra_image": {
+                "type": "image",
+                "label": "Bottom Products Image",
+                "value": "image\/products\/core_poducts\/Insurance_Imperium_Products.png"
+            }
+        }
+    },
+    "debtcollection": {
+        "title": "Vertical: Debt Collection",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Debt Collection System in Dubai "
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Debt Management Services"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": "Providing Customer information and tracking history is critical for a debt collector where the interactions are legally bound. Avaya IP Office with Imperium Debt collection provides reliable and secured environment for Debt collection agencies to manage their day-today operations and reporting."
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": "image\/cms\/1773660079_detailed_image_businesswoman-call-center-office_1098-984.avif"
+            },
+            "features": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "- Auto upload of Banking data inputs which can be defined separate for each Bank\/organization\r\n- Secure, modular and vertical hierarchy data management ensure each collection team data can be managed separately as per financial institutional requirements\r\n- Easy and custom format excel reporting for data-exchange with Banks to provide periodical reports on performance and communications\r\n- Screen-pop with complete financial history and interaction history provides the necessary information to enhance their collection portfolio and make efficient progress in tracking defaulted customers"
+            }
+        }
+    },
+    "crmsolution": {
+        "title": "Product: CRM Solution",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Imperium CRM Solutions Dubai - IMCC"
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request\/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium-Customer Relationship Management System"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request\/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task.\n\nThe IMCC is a powerful desktop application integrates Avaya's real-time communications capabilities with leading Business Applications like Microsoft CRM\/Dynamics, JD-Edwards, and Salesforce to improve productivity & enhance customer services"
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/avaya-big.jpg"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title 1",
+                "value": "Product Highlights"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features Content 1 (HTML allowed)",
+                "value": "<ul>\n<li>Improves productivity through time saved not having to search for customer contact details, create customer activity records, or manually dial numbers.<\/li>\n<li>Users click to dial customers, colleagues and partners directly from customer records (including client case and customer opportunity records), and sales leads.<\/li>\n<li>A log of inbound and outbound calls can be generated automatically.<\/li>\n<li>Missed calls, call duration, and annotated notes are also included within the client record for easy retrieval at any time<\/li>\n<li>Users can click to call from the contact list and CRM customer records, for incoming & outgoing calls a desktop toast pop-up notification contextual information about the customer and gives the user the option to Hold or Release the call \/ Transfer the call \/ Enter notes during the call \/ Generate an activity record in the CRM database that includes automatically populated call details \/ View call history & missed calls.<\/li>\n<li>Enhances customer service by presenting the customer number or name and company within the toast pop-up. Users can greet the customer by name, click to open the customer record, and access relevant customer information, facilitating more personalized, well-informed conversations.<\/li>\n<\/ul>"
+            },
+            "features_title_2": {
+                "type": "text",
+                "label": "Features Title 2",
+                "value": "Key Features & Benefits"
+            },
+            "features_2": {
+                "type": "textarea",
+                "label": "Features Content 2 (HTML allowed)",
+                "value": "<ul>\n<li>Click to Dial from contact lists and customer records that contain phone numbers<\/li>\n<li>Automatic Call Logging of inbound and outbound calls stores call history within the client record, including call duration and missed calls.<\/li>\n<li>Call Annotation allows a user to enter personal notes during a call and stores the notes in the record along with call detail such as time and date.<\/li>\n<li>Call Duration automatically captures conversation time for inbound and outbound calls, rounds it to the nearest minute, and stores it in the customer record.<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "webrtc": {
+        "title": "Product: WebRTC",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Webrtc Solutions"
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "A technology that is the backbone of many stunning web-based real time communication applications."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "WebRTC Services"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "A technology that is the backbone of many stunning web-based real time communication applications. WebRTC blends the VoIP and the web to enable functionalities which are the best of both worlds, over the internet. It forms a crucial piece in the Unified Communication and some of the Imperium products.\n<br><br>\nImperium has a set team of developers with intensive knowledge of WebRTC in term of challenges and innovative skills. Our ingrained expertise gives use the capability to deliver customer built application which are for industry specific use.\n<br><br>\nImperium aided by Avaya offers its clients complete WebRTC solutions with browser implementation and backend support as well. These applications adapt well to the dynamic behavior of browsers offering your company the most stable WebRTC experience which proves beneficial."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/webrtc.png"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title 1",
+                "value": "Key Highlights"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features Content 1 (HTML allowed)",
+                "value": "<ol>\n<li>Connect with website Visitors instantly in real-time.<\/li>\n<li>Enabling Voice, Video Call, Instant Messaging and much more.<\/li>\n<li>Quick in lead generation and direct response for marketing online<\/li>\n<li>Enhanced customer support experience for clients<\/li>\n<li>Free medium for customer to connect to you<\/li>\n<li>Global Deployment making your business accessible from anywhere in the world.<\/li>\n<li>Desktop and Mobile friendly<\/li>\n<\/ol>"
+            }
+        }
+    },
+    "callmanagement": {
+        "title": "Product: Call Management",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Call Management System"
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "The Call Management system for Avaya IPO and IPOCC entails call reporting, real-time call management, Toll Fraud protection system and Budget control system."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium: Call Management Service"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "The Call Management system for Avaya IPO and IPOCC entails call reporting, real-time call management, Toll Fraud protection system and Budget control system.\n<br><br>\nIt\u2019s is Imperium's top notch and holistic software built on top of Avaya solutions as a value added product. Imperium CMS helps you leverage the potential of your telephony system of best results."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/call-management.jpg"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title 1",
+                "value": "Here is how:"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features Content 1 (HTML allowed)",
+                "value": "<ul>\n<li>Web based Application<\/li>\n<li>Improve your Employee productivity<\/li>\n<li>Maximize ROI<\/li>\n<li>Dash board on Trunk Utilizations, Missed calls, Long duration calls, Expensive calls.<\/li>\n<li>Reports which gives more transparency to your telephony usage<\/li>\n<li>Reduce and control your Cost on telephony<\/li>\n<li>Single Interface to Monitor Multiple branch activities.<\/li>\n<li>Predefined Reports Templates on Branch, Users, and Trunk Activities.<\/li>\n<li>Email alerts on Top Calls by Cost by Duration.<\/li>\n<li>Distribute reports via email.<\/li>\n<li>Track Emergency calls, suspicious call activities.<\/li>\n<li>Easily expandable with optional functionalities that adds value and grow with your business needs<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "callreporter": {
+        "title": "Product: Call Reporter",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Imperium Call Reporter"
+            },
+            "section_title": {
+                "type": "textarea",
+                "label": "Section Title",
+                "value": "An all-powerful web based call reporting system designed to discover toll fraud attackers and provide you an intricate analytical overview of your business telephony systems."
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Problems Title",
+                "value": "Problems Your Business Might Face"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Problems List HTML",
+                "value": "<div style=\"display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap; flex-wrap: wrap;\">\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image\/Data-Tracking.png\" class=\"title-pic\">\n<h6>Data Tracking<\/h6>\n<p>Businesses need to monitor its telephony data plans for controlled budgeting and to minimize any foreseeable loses. Having call transparency data over missed calls is very important for a business.<\/p>\n<\/div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image\/UnfilteredCalls.png\" class=\"title-pic\">\n<h6>Unfiltered Calls<\/h6>\n<p>Businesses might fall a victim of heavy pipeline of calls to attend, in such situations it is imperative to have a filtration system to provide you a segregation of unanswered and outbound calls.<\/p>\n<\/div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image\/Toll-Fraud.png\" class=\"title-pic\">\n<h6>Toll Fraud<\/h6>\n<p>If you are building a voice application, then you could be the target of toll fraud, Toll fraud attacks happen in a variety of ways, majority exploit a compromised VoIP server to generate large numbers of calls to high calling rate markets.<\/p>\n<\/div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image\/Providing-Analysis.png\" class=\"title-pic\">\n<h6>Providing Analysis<\/h6>\n<p>It is important for any business to understand the progress of their call activities with the help of analytics to benchmark and track their productivity.<\/p>\n<\/div>\n<\/div>"
+            },
+            "features_title_2": {
+                "type": "text",
+                "label": "Quick Remediation Title",
+                "value": "QUICK REMEDIATION:"
+            },
+            "features_2": {
+                "type": "textarea",
+                "label": "Quick Remediation Content",
+                "value": "<ul>\n<li>Provides your business analysis of the number of missed calls and helps provide complete call transparency and helps you set a budget for cost efficiency.<\/li>\n<li>Real time call log archival reports, quick search for call logs and filtration to empower effective productivity for call agents.<\/li>\n<li>Imperium Call Reporter has a powerful Toll Fraud system to detect threats and attackers and alerts the system against them.<\/li>\n<li>Generates customized reports for productivity analysis for each department along with ad hoc and scheduled analysis results.<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "tollfraud": {
+        "title": "Product: Toll Fraud",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Toll Fraud Protection"
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "The imperium Toll fraud protection system is a unique tool which monitors the usage pattern of your telephony system and detects anomalies in outbound calls if any. It takes inputs from the system and maps the usage trend which can also be pre-defined according to office hours."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium: Toll Fraud Protection System"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "The imperium Toll fraud protection system is a unique tool which monitors the usage pattern of your telephony system and detects anomalies in outbound calls if any. It takes inputs from the system and maps the usage trend which can also be pre-defined according to office hours. It then implements artificial intelligence in monitoring behavioral pattern of outbound calls consistently during the peak times of the day. For instance, if the office is working from 9 am to 6 pm and in rare cases office has been running till 9 or 10 pm, the Toll Fraud feature will detect any deviation from standard practice resulting into below actions:"
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/cm.jpg"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features HTML",
+                "value": "<h3>Fraud Alerts<\/h3>\n<ul>\n<li>On noticing a fluctuation in the call usage trend, the Call Reporter will send alerts to the system administrator for quick actions.<\/li>\n<\/ul>\n<h3>Call Barring<\/h3>\n<ul>\n<li>If necessary, the Call reporter can be used to block all activity for a particular phone which may be prone to suspicious activities.<\/li>\n<\/ul>\n<h3>Call Reports<\/h3>\n<ul>\n<li>Not just alerts, but the Call Reporter can generate accurate and real time reports about daily, monthly and yearly inbound calls, out bound calls, call duration and billing. These serve as completed historic call data that can help conduct regular checkups and analyze critical situations in a better manner.<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "budgetcontrol": {
+        "title": "Product: Budget Control",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Budget Control System"
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "Telecommunication is known to incur the highest business expense upsetting the fiscal plan of your enterprise."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Budget Control Module"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "Telecommunication is known to incur the highest business expense upsetting the fiscal plan of your enterprise. The Imperium Budget Control module is the ideal solution to this. It impose a definite and well-structure budget mechanism on your Telephone system to strategically enhance budget planning.\n<br>\nThere are no unforeseen expenses or additional bills to pay. This system itself instills efficiency in performance of the agents, better operational goals and lends a lot more accountability, transparency on telephony usage and costs.\n<br>\nImperium Call Budgeting can protect your business from the threat of toll fraud and internal phone abuse through real-time alerts on all possible users."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/cm.jpg"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "Key Features & Benefits"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>Budget analysis reports to optimize the allocation and overall budget.<\/li>\n<li>Alerts based on real time usage.<\/li>\n<li>Email alert to the user and concerned department upon reaching the allocated call limit.<\/li>\n<li>Blocks extension based on budget.<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "callassist": {
+        "title": "Product: Call Assist",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Call Back Assist Module"
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "A brilliant addition to upgrade your contact center and business communication center, Imperium's Call-back Assist is a versatile tool that restores missed opportunities of customer service."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Call Management System"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "A brilliant addition to upgrade your contact center and business communication center, Imperium's Call-back Assist is a versatile tool that restores missed opportunities of customer service.\n<br><br>\nA contact center is bound to have abandoned calls but that needn't limit your capability to assist every customer who reaches out to your enterprise.\n<br><br>\nThe Call-back Assist module is designed to regularly monitor dropped calls and collate a list of those customers. As and when agents are available, the list goes through an automated outbound calling process supported by an IVR which then routes the connected calls to those agents with all customer details.\n<br><br>\nThe Callback Assist also offers customers with IVR option for receiving callbacks based on their position in the queue. This way, your customer service remains impeccable and versatile to handle any situation. It's a powerful, fully functional method to execute the through that every caller matters."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/call-back.jpg"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Large Title",
+                "value": "Automated Dial-back System for Missed Calls Scheduled Call-Backs for Customers"
+            },
+            "features_title_2": {
+                "type": "text",
+                "label": "Features Small Title",
+                "value": "The Callback Assist is ideal for:"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>Time-efficient Work-flow.<\/li>\n<li>Efficiency in Time and Call Management<\/li>\n<li>Channelizing and segregating calls based on urgency and availability<\/li>\n<li>Satisfactory customer experience and resolution rate<\/li>\n<li>Recovering lost business and goodwill opportunity<\/li>\n<li>Leveling call traffic by shifting peak call volumes to non-peak times<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "customersurvey": {
+        "title": "Product: Customer Survey",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Customer Survey Module"
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "The Imperium Customer Survey Module is a multi-level application designed to conduct automated post-call survey for analyzing customer service quality and customer satisfaction."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Customer Survey App"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "The Imperium Customer Survey Module is a multi-level application designed to conduct automated post-call survey for analyzing customer service quality and customer satisfaction. Once a call is completed by an agent, the Imperium Customer Survey Module kicks in and directs the call to Avaya IPOCC IVR through an enabled integration. The IVR conducts scripted survey over the call and the input is processed and stored as customer survey reports in the CSM database.\n<br><br>\nThe product also allows for seamless integrated with an SMS service provider so that the customer can take the survey when it is convenient. The Imperium Customer Survey Module can initiate two types of SMS service. One where the survey in sent to the customer as a message that he can respond to. The CMS keeps a tab on the data received via push and pull SMS and the number of customer responses received. In other route the customer receives a URL link via SMS that can take him to an online portal for the survey."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/survey.png"
+            },
+            "description_2": {
+                "type": "textarea",
+                "label": "Bottom Description",
+                "value": "The CSM report includes the collective survey results and statistics in a comprehensive format accessible on web-browser user Interface as well as sent via emails. Regular email notification with complete survey details are sent about specific customers who were unsatisfied with the customer service provided to them. In addition, the product supports integration with third party database and applications for businesses to gather their data in a holistic manner.\n<br><br>\nImperium's Customer Survey Module is an organized way of collating customer response post customer service for enhancing the way a company interacts with its customer."
+            }
+        }
+    },
+    "pushpull": {
+        "title": "Product: Push\/Pull Notification",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Push \/ Pull Notification "
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "Imperium's Push \/ Pull Notification offers individualized and bulk messages which can be pushed to mobile devices."
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "Imperium\u2019s Push \/ Pull Notification offers individualized and bulk messages which can be pushed to mobile devices. All you need to do is to select the recipient or group, type the message and the message gets sent immediately.\n<br><br>\nThis solution is available in different variants such as web based system, window based client application and as an Outlook Plug-in which enables sending instant messages from Microsoft Outlook itself.\n<br><br>\nOur Push \/ Pull Notification Solution is feature-rich and cost-effective solution that can be integrated with CTI Solutions, CRM Solutions, Appointment systems, Business applications, Microsoft Outlook, Contact Managers and IVR systems, etc. enabling the Agents\/Users to send SMS instantly to the Customer\u2019s from within the application itself which increases the Agent\u2019s productivity and Call Center\u2019s efficiency."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/push.png"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "Highlights"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>User\/Admin\/Reporting Interface<\/li>\n<li>Contact Management: Contacts to have the following fields Name, Gender, Number, Profession, and Category (Normal or VIP or VVIP, etc.) Nationality, Address, Country<\/li>\n<li>Phonebook support<\/li>\n<li>Database lookup<\/li>\n<li>Contact import from Excel, CSV or text file<\/li>\n<li>Contact import from external DB or via web services<\/li>\n<li>Sender IDsupport<\/li>\n<li>Personalized Bulk Messages<\/li>\n<li>Tracking: SMS Gateway to keep track of the sent SMS, User who sent the SMS, Recipient, time stamp and keywords<\/li>\n<li>Scheduling the SMS<\/li>\n<li>Multi-language support<\/li>\n<li>Integration with third-party applications and Database<\/li>\n<li>Fully Customizable solution<\/li>\n<li>Reporting<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "payroll": {
+        "title": "Product: Payroll Software",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "HR and Payroll Software Dubai "
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "This system maintains the Employee Attendance and Payroll Details."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium HRMS Payroll Software"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "This system maintains the <b>Employee Attendance and Payroll Details<\/b> in the custom build application environment to analyze, verify, validate and report for operational and statistical purposes of your business. \n<br><br>\nThe HRMS Payroll application developed by our team is a multi-tier web-based application which can be hosted anywhere for online access for internal users and customers alike. \n<br><br>\nThe application provides the necessary interface for the staff and customers with the respective privilege to amend and add the necessary information to ensure the data is verified and certified true in the due course."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/cm.jpg"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "The system gives "
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>Efficiency of Administration<\/li>\n<li>Reduced cost and automation of process<\/li>\n<li>Easy data collection and management<\/li>\n<li>Maintaining Employee Records and keeping track of Insurance and privileges, Time off and sick leaves and more.<\/li>\n<li>Quick access to information<\/li>\n<li>Processing of documents and steps for HR functionality<\/li>\n<li>Holistic Reports and Data Analysis<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "islamicprayer": {
+        "title": "Product: Islamic Prayer",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Islamic Prayer"
+            },
+            "banner_description": {
+                "type": "textarea",
+                "label": "Banner Description",
+                "value": "Automate Prayer announcement for your colleagues with Imperium."
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Islamic Prayer Announcement Module"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "Automate Prayer announcement for your colleagues with Imperium.\n<br>\nWe promote a kind of workplace culture that makes everyone that they belong. What better than spiritual well-being at work. \n<br>\nThe all new Imperium Islamic Prayer announcement module helps you to record your prayers on your telephone system which is then automatically played at the appropriate time. \n<br>\nIt\u2019s is an attractive and useful application for Muslim colleagues to benefit from at work place. <br>\nImperium has gone the extra mile to enable you to create a great work life balance at your office."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/islamicprayer.png"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "Key Features:"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>Prayer call and announcement with precise prayer timings based on server time zone.<\/li>\n<li>Supports each city worldwide<\/li>\n<li>If required the prayer time can also be changed instantly by Administrators<\/li>\n<li>Web based Admin interface to view and modify the announcement timings and status of prayer announcement<\/li>\n<li>Supports Avaya 96xx,14xx, 16xx series Phones<\/li>\n<li>Announcements can be made to all the users in the network or to a selected group of users based on client preference<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "icep": {
+        "title": "Product: ICEP",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Imperium Customer Experience Portal - ICEP"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Imperium Customer Experience Portal - ICEP"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "An all-in-one work space platform to handle every type of business communication for your customer service center. The ICEP lends you the benefit for an Omni-present customer service leading to a full-filling customer experience. <br><br>\nThe elegance and simplicity of ICEP application allows an agent to provide proactive and customized services and establish a deeper level of engagement with each customer regardless of the channel."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/icep.png"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "HIGHLIGHTS AND FEATURES"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>Agent-customer interaction for AVAYA IPOCC<\/li>\n<li>Omni Channel Ready<\/li>\n<li>Ticketing System with 360* Customer view<\/li>\n<li>BI Reporting \/ QM \/ Real time monitoring<\/li>\n<li>Customer Profiling with Mini CRM<\/li>\n<li>Connectors \u2013 API to integrate business applications<\/li>\n<li>Customized work-flow and process for industries such as healthcare, Insurance, Real Estate, Service Sector and more.<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "chatbot": {
+        "title": "Product: Chatbot",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Chatbot"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Chatbot"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "Customer Support of the era is edging towards virtual chats and artificial intelligence to support the customers at fast pace. The Imperium Chatbot is conversational agent designed to serve as a support system for your customer on any digital platform. It stimulates a conversation with customers based on the customer availability and case history. \n<br><br>\nIt's a pre-trained pop up with brand language and information for visitors on website or social media page. It understands the requirement of the customer and suggest industry specific solution and knowledge. The bot can undertake complex reasoning without human intervention. It can suggest solutions as well and direct to the connect functionality and follow up on customer activities."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/chatbot.jpg"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "FEATURES"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>Conversational Maturity<\/li>\n<li>Omni-capable - converse and retains data and context for a seamless experiences. seamlessly across every channel<\/li>\n<li>Free to Explore<\/li>\n<li>Escalate to connect with live Agent over Voice\/Video<\/li>\n<li>Pre-Trained<\/li>\n<li>Integrated with CRM and Customer Service Portal<\/li>\n<li>Resonate with brand's customers<\/li>\n<li>Purpose specific functionality<\/li>\n<li>Exit to Connect to live agent<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "socialmedia": {
+        "title": "Product: Social Media Integrator",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Social Media Integrator"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "Social Media Integrator"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "Connect with your customer in a single go. The Imperium social media integrator places all your business social media touch points on a single interface that is easy to manage. Customer service agents can respond to customer queries and assist customers from platforms such as Facebook, LinkedIn, Instagram, Twitter while still on call. Create a complete customer experience most effectively by being where you customer are. A reliable solution for Avaya IPOCC and ACCS from a certified Avaya DevConnect Technology partner."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/social-media.png"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "HIGHLIGHTS"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>All social media channels Integrated with Avaya IPO, IPOCC and ACCS<\/li>\n<li>Notifications for customer queries from all channels and all routes<\/li>\n<li>Basic control in IPO, IPOCC and ACCS for chats<\/li>\n<li>Full control from Imperium CEP for Comments and post reply<\/li>\n<li>Switching from social media channel to conventional channel based on customer request.<\/li>\n<li>Predefined AI Chabot can be enabled<\/li>\n<li>Advanced skill based privileges for agents which are customizable<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "zohoconnector": {
+        "title": "Product: ZOHO Connector",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Imperium ZOHO Connector"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "AN IMPERIUM SOLUTION FOR ZOHO CRM"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "Take your business to a whole new level of customer engagement with personalized customer service on the go. Imperium bring you Voice as Service for your ZOHO CRM.\n<br><br>\nImperium's Zoho CRM Connector is a supreme CTI solution designed specifically for ZOHO CRM to be integrated with Avaya Communication systems."
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "A POWERFUL INTEGRATION SOLUTION NOW AVAILABLE ON ZOHO MARKETPLACE"
+            },
+            "description_2": {
+                "type": "textarea",
+                "label": "Second Description",
+                "value": "A well designed system that allows you to make voice calls from within your CRM platform, the Imperium ZOHO CRM connector is built with strong APIs. A unified integrator that allows you to bank on the power of your ZOHO CRM.<br><br>\nAccess your ZOHO CRM and Avaya Communication systems on a single interface and get multi-channel capable with voice, video and chat available on desktop, mobile and universal platforms."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/ZOHO.jpg"
+            },
+            "features_title_2": {
+                "type": "text",
+                "label": "Features Title 2",
+                "value": "IMPERIUM ZOHO CONNECTOR IS UNIQUE"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>Built on latest web RTC platform<\/li>\n<li>Enables real time voice and video communication on a softphone<\/li>\n<li>Available for Mobile CTI client<\/li>\n<li>Captures and syncs business insights and call logging with ZOHO CRM<\/li>\n<li>Screen pop-up with customer data and call notifications with in CRM<\/li>\n<li>Unified application that allows seamless access to data and call annotation<\/li>\n<li>Supports integration with thin client on web browser<\/li>\n<li>Offers desktop notification for incoming and outgoing calls, detailed screen pop up with historic data of the customer on call<\/li>\n<li>Provides quick call managing options such as call answering, hold, retrieve held call, transfer call to another contact or telephone number, view call history and list of missed calls<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "clicktocall": {
+        "title": "Product: Click To Call",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": "Imperium ZOHO Connector"
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": "AN IMPERIUM SOLUTION FOR ZOHO CRM"
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Main Description",
+                "value": "Covert your web traffic into immediate footfall and sales using the robust Inaipi Click-to-Call service on Cloud. It's a functional tool that opens up multiple channels on your website for customers to connect to your helpdesk on the go, on your website.<br><br>\nThe Inaipi Click-to-Call service built on Avaya WebRTC links your VoIP to your website and quickly enables browser-based real time communication via video, voice and web conferencing capabilities.\n<br><br>\nYour customers can call you with a click and enquire, place orders or ask for support without the hassle of dialing a new number. These calls would land on an agent desk who can answer the phone on a regular telephony or even a softphone."
+            },
+            "image_1": {
+                "type": "image",
+                "label": "Main Image",
+                "value": "image\/products\/INAIPI_Click-to-Call_2.jpg"
+            },
+            "features_title_1": {
+                "type": "text",
+                "label": "Features Title",
+                "value": "BENEFITS"
+            },
+            "features_1": {
+                "type": "textarea",
+                "label": "Features List",
+                "value": "<ul>\n<li>Get multiple channels without purchasing additional telephone lines<\/li>\n<li>On web browser and independent of any software downloads or Plugins for callers<\/li>\n<li>AvVoice-mail collection service can be enabled in case of limitation in agents' availability<\/li>\n<li>Potential customers who like your website \/ the product or service you offer online can call you on the spot to place orders without loss of engagement<\/li>\n<li>Unlimited number of calls can be made from desktop client or from mobile phone<\/li>\n<li>Have Iniapi Click-to-Call set-up at your workplace in maximum 2 days<\/li>\n<\/ul>"
+            }
+        }
+    },
+    "new": {
+        "title": "Vertical: new",
+        "fields": {
+            "banner_title": {
+                "type": "text",
+                "label": "Banner Title",
+                "value": ""
+            },
+            "section_title": {
+                "type": "text",
+                "label": "Section Title",
+                "value": ""
+            },
+            "description": {
+                "type": "textarea",
+                "label": "Description",
+                "value": ""
+            },
+            "image": {
+                "type": "image",
+                "label": "Side Image",
+                "value": ""
+            }
+        }
+    }
+}

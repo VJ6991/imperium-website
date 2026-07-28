@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    # Serve static assets and images directly (no front-controller rewrite).
+    RewriteRule ^(assets|images)($|/) - [L]
+
+    # Forbid direct web access to server-side folders (source, data, compile cache).
+    RewriteRule ^(cms|cache|controllers|libs|helpers|package|views)(/|$) - [F,L]
+
+    # Front controller: send everything that is not a real file/folder to index.php.
+    # Works at the domain root or inside any sub-folder (paths stay relative to this
+    # .htaccess), so the zip can be dropped into a sub-directory as-is.
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?uri=$1 [L,QSA]
+</IfModule>

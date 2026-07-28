@@ -1,0 +1,13 @@
+# Compiled Blade views — regenerated on request, must not be committed.
+# A stale .bladec silently serves old markup after a view is edited.
+cache/*
+!cache/.gitkeep
+
+# Build/deploy archives
+*.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
