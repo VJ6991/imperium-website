@@ -40,7 +40,7 @@
             "customer_service_image": {
                 "type": "image",
                 "label": "Customer Service Image",
-                "value": "assets/image/cms/1773381706_call.jpg"
+                "value": "assets\/image\/cms\/1773381706_call.jpg"
             },
             "vision_heading": {
                 "type": "text",
@@ -55,7 +55,7 @@
             "vision_image": {
                 "type": "image",
                 "label": "Vision Image",
-                "value": "assets/image/mission.jpg"
+                "value": "assets\/image\/mission.jpg"
             }
         }
     },
@@ -80,7 +80,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Healthcare Contact Center Solutions"
+                "value": "Health Care"
             },
             "section_title": {
                 "type": "text",
@@ -90,17 +90,17 @@
             "description": {
                 "type": "textarea",
                 "label": "Description",
-                "value": "\"Communication is an essential element of healthcare\" - Charles Grant \n\nGood healthcare is the right of every human, and it is a necessity for the organizations in healthcare sector to be well connected to serve humanity. With all the medical advancements, it is only fair that Imperium has had the privilege to enhance the communication infrastructure and data management systems at clinics and hospitals across the UAE. \n\nWe have been offering fully customized solutions to the healthcare segment. Be it contact centers, Telephony customized reports and multi-channel support system or even a mobile consultancy system, we have it ready. We've enabled an organized way of booking, cancelling and rescheduling of appointments, for call to be routed to the correct department, and vital pieces of communication between the patients, doctors and the management, to reports and data security. Imperium software suite for health care is designed with the utmost attention to the industry’s specific needs."
+                "value": "\"Communication is an essential element of healthcare\" - Charles Grant \n\nGood healthcare is the right of every human, and it is a necessity for the organizations in healthcare sector to be well connected to serve humanity. With all the medical advancements, it is only fair that Imperium has had the privilege to enhance the communication infrastructure and data management systems at clinics and hospitals across the UAE. \n\nWe have been offering fully customized solutions to the healthcare segment. Be it contact centers, Telephony customized reports and multi-channel support system or even a mobile consultancy system, we have it ready. We've enabled an organized way of booking, cancelling and rescheduling of appointments, for call to be routed to the correct department, and vital pieces of communication between the patients, doctors and the management, to reports and data security. Imperium software suite for health care is designed with the utmost attention to the industry\u2019s specific needs."
             },
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/healthcare.jpg"
+                "value": "image\/healthcare.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/Healthcare_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/Healthcare_Imperium_Products.png"
             }
         }
     },
@@ -110,7 +110,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Help Desk & Service Desk Solutions"
+                "value": "Make Help Desk"
             },
             "section_title": {
                 "type": "text",
@@ -125,7 +125,7 @@
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/cs1.jpg"
+                "value": "image\/cs1.jpg"
             }
         }
     },
@@ -135,7 +135,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Communication Solutions for Business Centers"
+                "value": "Business Center"
             },
             "section_title": {
                 "type": "text",
@@ -150,7 +150,7 @@
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/Office-960x720.jpg"
+                "value": "image\/Office-960x720.jpg"
             }
         }
     },
@@ -160,7 +160,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Communication Solutions for Logistics & Supply Chain"
+                "value": "Logistics"
             },
             "section_title": {
                 "type": "text",
@@ -170,17 +170,17 @@
             "description": {
                 "type": "textarea",
                 "label": "Description",
-                "value": "\"The line between disorder and order lies in Logistics\" - Sun Tzu. \n\nA crucial sector that dramatically shapes other industries and their supply chains. Most companies outsource their logistics operations so that they can focus on their core job and improve efficiency. The Logistics industry is always on the edge as the clients demand shorter lead times and core competency. \n\nImperium makes sure that the urgency of operations in sector is met with effective connectivity and communication between teams and as well as with clients. We implement Avaya IVR and TTS system which allow customers to track status of their shipment, avoid long queues and get instant information from specific database. \n\nWe have automated work to streamline human resource and put implement a long term investment strategy for basic activities such as request for new booking, collecting shipment / Location details via an IVR which capture data on voice and then transcribes to written text. \n\nCustomer service agents are benefitted with a Computer Telephony Integration which displays information about incoming calls along with case history. Whist a call back manager downloads booking requests from IVR database and allows agents to call back the customer to confirm request."
+                "value": "\"The line between disorder and order lies in Logistics\" - Sun Tzu. \n\nA crucial sector that dramatically shapes other industries and their supply chains. Most companies outsource their logistics operations so that they can focus on their core job and improve efficiency. The Logistics industry is always on the edge as the clients demand shorter lead times and core competency. \n\nImperium makes sure that the urgency of operations in sector is met with effective connectivity and communication between teams and as well as with clients. We implement Avaya IVR and TTS system which allow customers to track status of their shipment, avoid long queues and get instant information from specific database. \n\nWe have automated work to streamline human resource and put implement a long term investment strategy for basic activities such as request for new booking, collecting shipment \/ Location details via an IVR which capture data on voice and then transcribes to written text. \n\nCustomer service agents are benefitted with a Computer Telephony Integration which displays information about incoming calls along with case history. Whist a call back manager downloads booking requests from IVR database and allows agents to call back the customer to confirm request."
             },
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/logistic_new.jpg"
+                "value": "image\/logistic_new.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/Logistics_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/Logistics_Imperium_Products.png"
             }
         }
     },
@@ -190,7 +190,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Communication Solutions for the Education Sector"
+                "value": "Education Sector"
             },
             "section_title": {
                 "type": "text",
@@ -205,12 +205,12 @@
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/education.jpg"
+                "value": "image\/education.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/Education_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/Education_Imperium_Products.png"
             }
         }
     },
@@ -220,7 +220,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Customer Engagement Solutions for E-Commerce"
+                "value": "E-Commerce"
             },
             "section_title": {
                 "type": "text",
@@ -235,12 +235,12 @@
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/ecommerce.jpg"
+                "value": "image\/ecommerce.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/E-Commerce_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/E-Commerce_Imperium_Products.png"
             }
         }
     },
@@ -250,7 +250,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Communication Solutions for Real Estate"
+                "value": "Real Estate"
             },
             "section_title": {
                 "type": "text",
@@ -265,12 +265,12 @@
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/real-estate.jpg"
+                "value": "image\/real-estate.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/Real-Estate_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/Real-Estate_Imperium_Products.png"
             }
         }
     },
@@ -280,7 +280,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Customer Experience Solutions for Retail"
+                "value": "Retail"
             },
             "section_title": {
                 "type": "text",
@@ -290,17 +290,17 @@
             "description": {
                 "type": "textarea",
                 "label": "Description",
-                "value": "\"People do not buy goods and services, they buy relations, stories and magic\" - Seth Gadin. \n\nBrink and Motor stores still hold the thrill of the fashionable shopping spree. In here - instant means instant. Retail is real and out-there, proactive, thriving with energy just as much on the backend as in the front. It' is the classic way of creating customer experience and serving them over and above. \n\nImperium has custom telecom solutions for this industry to stay responsive to every customer-need and concerns. We offer to them a contact center with full-fledged functionality for customer service over-call and integration which would allow agent to understand where the customer is coming from, what’s his demography, purchase, immediate concern and more. For retail we encourage solution which enhance availability and reduce hassle."
+                "value": "\"People do not buy goods and services, they buy relations, stories and magic\" - Seth Gadin. \n\nBrink and Motor stores still hold the thrill of the fashionable shopping spree. In here - instant means instant. Retail is real and out-there, proactive, thriving with energy just as much on the backend as in the front. It' is the classic way of creating customer experience and serving them over and above. \n\nImperium has custom telecom solutions for this industry to stay responsive to every customer-need and concerns. We offer to them a contact center with full-fledged functionality for customer service over-call and integration which would allow agent to understand where the customer is coming from, what\u2019s his demography, purchase, immediate concern and more. For retail we encourage solution which enhance availability and reduce hassle."
             },
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/retail.jpg"
+                "value": "image\/retail.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/Retail_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/Retail_Imperium_Products.png"
             }
         }
     },
@@ -310,7 +310,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Contact Center Solutions for Banking"
+                "value": "Banking"
             },
             "section_title": {
                 "type": "text",
@@ -320,17 +320,17 @@
             "description": {
                 "type": "textarea",
                 "label": "Description",
-                "value": "\"In Banking or insurance trust is the only thing that you can sell\" - Patrix Dixon. \n\nA part of the society that servers as everyone’s prerogative, the banking sector is liable for their client’s data and security. Imperium's solution focuses on implementing a customized and secure communication center with seamless communication technology for the banking sector. We are very customer centric and understand the specific needs of our client and work flow that would fit them best. We also understand their values and vision and help them attain the same with great customer service. \n\nImperium's venture into cloud has made VoIP and data related to it very secure with local data center in the region which makes our solution legal and extensive."
+                "value": "\"In Banking or insurance trust is the only thing that you can sell\" - Patrix Dixon. \n\nA part of the society that servers as everyone\u2019s prerogative, the banking sector is liable for their client\u2019s data and security. Imperium's solution focuses on implementing a customized and secure communication center with seamless communication technology for the banking sector. We are very customer centric and understand the specific needs of our client and work flow that would fit them best. We also understand their values and vision and help them attain the same with great customer service. \n\nImperium's venture into cloud has made VoIP and data related to it very secure with local data center in the region which makes our solution legal and extensive."
             },
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/banking.jpg"
+                "value": "image\/banking.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/Banking_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/Banking_Imperium_Products.png"
             }
         }
     },
@@ -340,7 +340,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Contact Center Solutions for Financial Services"
+                "value": "Finance"
             },
             "section_title": {
                 "type": "text",
@@ -355,12 +355,12 @@
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/finance.jpg"
+                "value": "image\/finance.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/Finance_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/Finance_Imperium_Products.png"
             }
         }
     },
@@ -370,7 +370,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Customer Engagement Solutions for Insurance"
+                "value": "Insurance"
             },
             "section_title": {
                 "type": "text",
@@ -380,17 +380,17 @@
             "description": {
                 "type": "textarea",
                 "label": "Description",
-                "value": "\"The Insurance sector can be a huge enabler, historically, it’s been able to induce changes in behavior much more effectively than government has\" - Frank Kullofo. \n\nA fast growing sector worldwide, the insurance firms takes up the duty to defend its customers and protect them in difficult situations. The communication center for an insurance firm will be buzzing with call for queries, question as the customer wants to exchange all necessary information about their claim, protection policy. Building trust is the primary aim of the sector. \n\nImperium has serviced major clients in finance sector to fortify their functionality and build trust. It’s by enhancing customer service availability and accuracy."
+                "value": "\"The Insurance sector can be a huge enabler, historically, it\u2019s been able to induce changes in behavior much more effectively than government has\" - Frank Kullofo. \n\nA fast growing sector worldwide, the insurance firms takes up the duty to defend its customers and protect them in difficult situations. The communication center for an insurance firm will be buzzing with call for queries, question as the customer wants to exchange all necessary information about their claim, protection policy. Building trust is the primary aim of the sector. \n\nImperium has serviced major clients in finance sector to fortify their functionality and build trust. It\u2019s by enhancing customer service availability and accuracy."
             },
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/insurance.jpg"
+                "value": "image\/insurance.jpg"
             },
             "extra_image": {
                 "type": "image",
                 "label": "Bottom Products Image",
-                "value": "image/products/core_poducts/Insurance_Imperium_Products.png"
+                "value": "image\/products\/core_poducts\/Insurance_Imperium_Products.png"
             }
         }
     },
@@ -400,7 +400,7 @@
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Debt Collection System in Dubai"
+                "value": "Debt Collection System in Dubai "
             },
             "section_title": {
                 "type": "text",
@@ -415,12 +415,12 @@
             "image": {
                 "type": "image",
                 "label": "Side Image",
-                "value": "image/cms/1773660079_detailed_image_businesswoman-call-center-office_1098-984.avif"
+                "value": "image\/cms\/1773660079_detailed_image_businesswoman-call-center-office_1098-984.avif"
             },
             "features": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "- Auto upload of Banking data inputs which can be defined separate for each Bank/organization\r\n- Secure, modular and vertical hierarchy data management ensure each collection team data can be managed separately as per financial institutional requirements\r\n- Easy and custom format excel reporting for data-exchange with Banks to provide periodical reports on performance and communications\r\n- Screen-pop with complete financial history and interaction history provides the necessary information to enhance their collection portfolio and make efficient progress in tracking defaulted customers"
+                "value": "- Auto upload of Banking data inputs which can be defined separate for each Bank\/organization\r\n- Secure, modular and vertical hierarchy data management ensure each collection team data can be managed separately as per financial institutional requirements\r\n- Easy and custom format excel reporting for data-exchange with Banks to provide periodical reports on performance and communications\r\n- Screen-pop with complete financial history and interaction history provides the necessary information to enhance their collection portfolio and make efficient progress in tracking defaulted customers"
             }
         }
     },
@@ -435,7 +435,7 @@
             "banner_description": {
                 "type": "textarea",
                 "label": "Banner Description",
-                "value": "Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task."
+                "value": "Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request\/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task."
             },
             "section_title": {
                 "type": "text",
@@ -445,12 +445,12 @@
             "description": {
                 "type": "textarea",
                 "label": "Main Description",
-                "value": "Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task.\n\nThe IMCC is a powerful desktop application integrates Avaya's real-time communications capabilities with leading Business Applications like Microsoft CRM/Dynamics, JD-Edwards, and Salesforce to improve productivity & enhance customer services"
+                "value": "Today's Customer service representative are multi-tasking, handling basic customer service inquires taking request\/complaints, booking appointments etc. As a result, demand is steadily growing for tools that enable agents to effectively multi-task.\n\nThe IMCC is a powerful desktop application integrates Avaya's real-time communications capabilities with leading Business Applications like Microsoft CRM\/Dynamics, JD-Edwards, and Salesforce to improve productivity & enhance customer services"
             },
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/avaya-big.jpg"
+                "value": "image\/avaya-big.jpg"
             },
             "features_title_1": {
                 "type": "text",
@@ -460,7 +460,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features Content 1 (HTML allowed)",
-                "value": "<ul>\n<li>Improves productivity through time saved not having to search for customer contact details, create customer activity records, or manually dial numbers.</li>\n<li>Users click to dial customers, colleagues and partners directly from customer records (including client case and customer opportunity records), and sales leads.</li>\n<li>A log of inbound and outbound calls can be generated automatically.</li>\n<li>Missed calls, call duration, and annotated notes are also included within the client record for easy retrieval at any time</li>\n<li>Users can click to call from the contact list and CRM customer records, for incoming & outgoing calls a desktop toast pop-up notification contextual information about the customer and gives the user the option to Hold or Release the call / Transfer the call / Enter notes during the call / Generate an activity record in the CRM database that includes automatically populated call details / View call history & missed calls.</li>\n<li>Enhances customer service by presenting the customer number or name and company within the toast pop-up. Users can greet the customer by name, click to open the customer record, and access relevant customer information, facilitating more personalized, well-informed conversations.</li>\n</ul>"
+                "value": "<ul>\n<li>Improves productivity through time saved not having to search for customer contact details, create customer activity records, or manually dial numbers.<\/li>\n<li>Users click to dial customers, colleagues and partners directly from customer records (including client case and customer opportunity records), and sales leads.<\/li>\n<li>A log of inbound and outbound calls can be generated automatically.<\/li>\n<li>Missed calls, call duration, and annotated notes are also included within the client record for easy retrieval at any time<\/li>\n<li>Users can click to call from the contact list and CRM customer records, for incoming & outgoing calls a desktop toast pop-up notification contextual information about the customer and gives the user the option to Hold or Release the call \/ Transfer the call \/ Enter notes during the call \/ Generate an activity record in the CRM database that includes automatically populated call details \/ View call history & missed calls.<\/li>\n<li>Enhances customer service by presenting the customer number or name and company within the toast pop-up. Users can greet the customer by name, click to open the customer record, and access relevant customer information, facilitating more personalized, well-informed conversations.<\/li>\n<\/ul>"
             },
             "features_title_2": {
                 "type": "text",
@@ -470,7 +470,7 @@
             "features_2": {
                 "type": "textarea",
                 "label": "Features Content 2 (HTML allowed)",
-                "value": "<ul>\n<li>Click to Dial from contact lists and customer records that contain phone numbers</li>\n<li>Automatic Call Logging of inbound and outbound calls stores call history within the client record, including call duration and missed calls.</li>\n<li>Call Annotation allows a user to enter personal notes during a call and stores the notes in the record along with call detail such as time and date.</li>\n<li>Call Duration automatically captures conversation time for inbound and outbound calls, rounds it to the nearest minute, and stores it in the customer record.</li>\n</ul>"
+                "value": "<ul>\n<li>Click to Dial from contact lists and customer records that contain phone numbers<\/li>\n<li>Automatic Call Logging of inbound and outbound calls stores call history within the client record, including call duration and missed calls.<\/li>\n<li>Call Annotation allows a user to enter personal notes during a call and stores the notes in the record along with call detail such as time and date.<\/li>\n<li>Call Duration automatically captures conversation time for inbound and outbound calls, rounds it to the nearest minute, and stores it in the customer record.<\/li>\n<\/ul>"
             }
         }
     },
@@ -500,7 +500,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/webrtc.png"
+                "value": "image\/products\/webrtc.png"
             },
             "features_title_1": {
                 "type": "text",
@@ -510,7 +510,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features Content 1 (HTML allowed)",
-                "value": "<ol>\n<li>Connect with website Visitors instantly in real-time.</li>\n<li>Enabling Voice, Video Call, Instant Messaging and much more.</li>\n<li>Quick in lead generation and direct response for marketing online</li>\n<li>Enhanced customer support experience for clients</li>\n<li>Free medium for customer to connect to you</li>\n<li>Global Deployment making your business accessible from anywhere in the world.</li>\n<li>Desktop and Mobile friendly</li>\n</ol>"
+                "value": "<ol>\n<li>Connect with website Visitors instantly in real-time.<\/li>\n<li>Enabling Voice, Video Call, Instant Messaging and much more.<\/li>\n<li>Quick in lead generation and direct response for marketing online<\/li>\n<li>Enhanced customer support experience for clients<\/li>\n<li>Free medium for customer to connect to you<\/li>\n<li>Global Deployment making your business accessible from anywhere in the world.<\/li>\n<li>Desktop and Mobile friendly<\/li>\n<\/ol>"
             }
         }
     },
@@ -535,12 +535,12 @@
             "description": {
                 "type": "textarea",
                 "label": "Main Description",
-                "value": "The Call Management system for Avaya IPO and IPOCC entails call reporting, real-time call management, Toll Fraud protection system and Budget control system.\n<br><br>\nIt’s is Imperium's top notch and holistic software built on top of Avaya solutions as a value added product. Imperium CMS helps you leverage the potential of your telephony system of best results."
+                "value": "The Call Management system for Avaya IPO and IPOCC entails call reporting, real-time call management, Toll Fraud protection system and Budget control system.\n<br><br>\nIt\u2019s is Imperium's top notch and holistic software built on top of Avaya solutions as a value added product. Imperium CMS helps you leverage the potential of your telephony system of best results."
             },
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/call-management.jpg"
+                "value": "image\/products\/call-management.jpg"
             },
             "features_title_1": {
                 "type": "text",
@@ -550,7 +550,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features Content 1 (HTML allowed)",
-                "value": "<ul>\n<li>Web based Application</li>\n<li>Improve your Employee productivity</li>\n<li>Maximize ROI</li>\n<li>Dash board on Trunk Utilizations, Missed calls, Long duration calls, Expensive calls.</li>\n<li>Reports which gives more transparency to your telephony usage</li>\n<li>Reduce and control your Cost on telephony</li>\n<li>Single Interface to Monitor Multiple branch activities.</li>\n<li>Predefined Reports Templates on Branch, Users, and Trunk Activities.</li>\n<li>Email alerts on Top Calls by Cost by Duration.</li>\n<li>Distribute reports via email.</li>\n<li>Track Emergency calls, suspicious call activities.</li>\n<li>Easily expandable with optional functionalities that adds value and grow with your business needs</li>\n</ul>"
+                "value": "<ul>\n<li>Web based Application<\/li>\n<li>Improve your Employee productivity<\/li>\n<li>Maximize ROI<\/li>\n<li>Dash board on Trunk Utilizations, Missed calls, Long duration calls, Expensive calls.<\/li>\n<li>Reports which gives more transparency to your telephony usage<\/li>\n<li>Reduce and control your Cost on telephony<\/li>\n<li>Single Interface to Monitor Multiple branch activities.<\/li>\n<li>Predefined Reports Templates on Branch, Users, and Trunk Activities.<\/li>\n<li>Email alerts on Top Calls by Cost by Duration.<\/li>\n<li>Distribute reports via email.<\/li>\n<li>Track Emergency calls, suspicious call activities.<\/li>\n<li>Easily expandable with optional functionalities that adds value and grow with your business needs<\/li>\n<\/ul>"
             }
         }
     },
@@ -575,7 +575,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Problems List HTML",
-                "value": "<div style=\"display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap; flex-wrap: wrap;\">\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image/Data-Tracking.png\" class=\"title-pic\">\n<h6>Data Tracking</h6>\n<p>Businesses need to monitor its telephony data plans for controlled budgeting and to minimize any foreseeable loses. Having call transparency data over missed calls is very important for a business.</p>\n</div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image/UnfilteredCalls.png\" class=\"title-pic\">\n<h6>Unfiltered Calls</h6>\n<p>Businesses might fall a victim of heavy pipeline of calls to attend, in such situations it is imperative to have a filtration system to provide you a segregation of unanswered and outbound calls.</p>\n</div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image/Toll-Fraud.png\" class=\"title-pic\">\n<h6>Toll Fraud</h6>\n<p>If you are building a voice application, then you could be the target of toll fraud, Toll fraud attacks happen in a variety of ways, majority exploit a compromised VoIP server to generate large numbers of calls to high calling rate markets.</p>\n</div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image/Providing-Analysis.png\" class=\"title-pic\">\n<h6>Providing Analysis</h6>\n<p>It is important for any business to understand the progress of their call activities with the help of analytics to benchmark and track their productivity.</p>\n</div>\n</div>"
+                "value": "<div style=\"display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap; flex-wrap: wrap;\">\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image\/Data-Tracking.png\" class=\"title-pic\">\n<h6>Data Tracking<\/h6>\n<p>Businesses need to monitor its telephony data plans for controlled budgeting and to minimize any foreseeable loses. Having call transparency data over missed calls is very important for a business.<\/p>\n<\/div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image\/UnfilteredCalls.png\" class=\"title-pic\">\n<h6>Unfiltered Calls<\/h6>\n<p>Businesses might fall a victim of heavy pipeline of calls to attend, in such situations it is imperative to have a filtration system to provide you a segregation of unanswered and outbound calls.<\/p>\n<\/div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image\/Toll-Fraud.png\" class=\"title-pic\">\n<h6>Toll Fraud<\/h6>\n<p>If you are building a voice application, then you could be the target of toll fraud, Toll fraud attacks happen in a variety of ways, majority exploit a compromised VoIP server to generate large numbers of calls to high calling rate markets.<\/p>\n<\/div>\n<div class=\"inner-box\">\n<img src=\"{asset_prefix}image\/Providing-Analysis.png\" class=\"title-pic\">\n<h6>Providing Analysis<\/h6>\n<p>It is important for any business to understand the progress of their call activities with the help of analytics to benchmark and track their productivity.<\/p>\n<\/div>\n<\/div>"
             },
             "features_title_2": {
                 "type": "text",
@@ -585,7 +585,7 @@
             "features_2": {
                 "type": "textarea",
                 "label": "Quick Remediation Content",
-                "value": "<ul>\n<li>Provides your business analysis of the number of missed calls and helps provide complete call transparency and helps you set a budget for cost efficiency.</li>\n<li>Real time call log archival reports, quick search for call logs and filtration to empower effective productivity for call agents.</li>\n<li>Imperium Call Reporter has a powerful Toll Fraud system to detect threats and attackers and alerts the system against them.</li>\n<li>Generates customized reports for productivity analysis for each department along with ad hoc and scheduled analysis results.</li>\n</ul>"
+                "value": "<ul>\n<li>Provides your business analysis of the number of missed calls and helps provide complete call transparency and helps you set a budget for cost efficiency.<\/li>\n<li>Real time call log archival reports, quick search for call logs and filtration to empower effective productivity for call agents.<\/li>\n<li>Imperium Call Reporter has a powerful Toll Fraud system to detect threats and attackers and alerts the system against them.<\/li>\n<li>Generates customized reports for productivity analysis for each department along with ad hoc and scheduled analysis results.<\/li>\n<\/ul>"
             }
         }
     },
@@ -615,12 +615,12 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/cm.jpg"
+                "value": "image\/products\/cm.jpg"
             },
             "features_1": {
                 "type": "textarea",
                 "label": "Features HTML",
-                "value": "<h3>Fraud Alerts</h3>\n<ul>\n<li>On noticing a fluctuation in the call usage trend, the Call Reporter will send alerts to the system administrator for quick actions.</li>\n</ul>\n<h3>Call Barring</h3>\n<ul>\n<li>If necessary, the Call reporter can be used to block all activity for a particular phone which may be prone to suspicious activities.</li>\n</ul>\n<h3>Call Reports</h3>\n<ul>\n<li>Not just alerts, but the Call Reporter can generate accurate and real time reports about daily, monthly and yearly inbound calls, out bound calls, call duration and billing. These serve as completed historic call data that can help conduct regular checkups and analyze critical situations in a better manner.</li>\n</ul>"
+                "value": "<h3>Fraud Alerts<\/h3>\n<ul>\n<li>On noticing a fluctuation in the call usage trend, the Call Reporter will send alerts to the system administrator for quick actions.<\/li>\n<\/ul>\n<h3>Call Barring<\/h3>\n<ul>\n<li>If necessary, the Call reporter can be used to block all activity for a particular phone which may be prone to suspicious activities.<\/li>\n<\/ul>\n<h3>Call Reports<\/h3>\n<ul>\n<li>Not just alerts, but the Call Reporter can generate accurate and real time reports about daily, monthly and yearly inbound calls, out bound calls, call duration and billing. These serve as completed historic call data that can help conduct regular checkups and analyze critical situations in a better manner.<\/li>\n<\/ul>"
             }
         }
     },
@@ -650,7 +650,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/cm.jpg"
+                "value": "image\/products\/cm.jpg"
             },
             "features_title_1": {
                 "type": "text",
@@ -660,7 +660,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>Budget analysis reports to optimize the allocation and overall budget.</li>\n<li>Alerts based on real time usage.</li>\n<li>Email alert to the user and concerned department upon reaching the allocated call limit.</li>\n<li>Blocks extension based on budget.</li>\n</ul>"
+                "value": "<ul>\n<li>Budget analysis reports to optimize the allocation and overall budget.<\/li>\n<li>Alerts based on real time usage.<\/li>\n<li>Email alert to the user and concerned department upon reaching the allocated call limit.<\/li>\n<li>Blocks extension based on budget.<\/li>\n<\/ul>"
             }
         }
     },
@@ -690,7 +690,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/call-back.jpg"
+                "value": "image\/products\/call-back.jpg"
             },
             "features_title_1": {
                 "type": "text",
@@ -705,7 +705,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>Time-efficient Work-flow.</li>\n<li>Efficiency in Time and Call Management</li>\n<li>Channelizing and segregating calls based on urgency and availability</li>\n<li>Satisfactory customer experience and resolution rate</li>\n<li>Recovering lost business and goodwill opportunity</li>\n<li>Leveling call traffic by shifting peak call volumes to non-peak times</li>\n</ul>"
+                "value": "<ul>\n<li>Time-efficient Work-flow.<\/li>\n<li>Efficiency in Time and Call Management<\/li>\n<li>Channelizing and segregating calls based on urgency and availability<\/li>\n<li>Satisfactory customer experience and resolution rate<\/li>\n<li>Recovering lost business and goodwill opportunity<\/li>\n<li>Leveling call traffic by shifting peak call volumes to non-peak times<\/li>\n<\/ul>"
             }
         }
     },
@@ -735,7 +735,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/survey.png"
+                "value": "image\/products\/survey.png"
             },
             "description_2": {
                 "type": "textarea",
@@ -745,27 +745,27 @@
         }
     },
     "pushpull": {
-        "title": "Product: Push/Pull Notification",
+        "title": "Product: Push\/Pull Notification",
         "fields": {
             "banner_title": {
                 "type": "text",
                 "label": "Banner Title",
-                "value": "Push / Pull Notification "
+                "value": "Push \/ Pull Notification "
             },
             "banner_description": {
                 "type": "textarea",
                 "label": "Banner Description",
-                "value": "Imperium's Push / Pull Notification offers individualized and bulk messages which can be pushed to mobile devices."
+                "value": "Imperium's Push \/ Pull Notification offers individualized and bulk messages which can be pushed to mobile devices."
             },
             "description": {
                 "type": "textarea",
                 "label": "Main Description",
-                "value": "Imperium’s Push / Pull Notification offers individualized and bulk messages which can be pushed to mobile devices. All you need to do is to select the recipient or group, type the message and the message gets sent immediately.\n<br><br>\nThis solution is available in different variants such as web based system, window based client application and as an Outlook Plug-in which enables sending instant messages from Microsoft Outlook itself.\n<br><br>\nOur Push / Pull Notification Solution is feature-rich and cost-effective solution that can be integrated with CTI Solutions, CRM Solutions, Appointment systems, Business applications, Microsoft Outlook, Contact Managers and IVR systems, etc. enabling the Agents/Users to send SMS instantly to the Customer’s from within the application itself which increases the Agent’s productivity and Call Center’s efficiency."
+                "value": "Imperium\u2019s Push \/ Pull Notification offers individualized and bulk messages which can be pushed to mobile devices. All you need to do is to select the recipient or group, type the message and the message gets sent immediately.\n<br><br>\nThis solution is available in different variants such as web based system, window based client application and as an Outlook Plug-in which enables sending instant messages from Microsoft Outlook itself.\n<br><br>\nOur Push \/ Pull Notification Solution is feature-rich and cost-effective solution that can be integrated with CTI Solutions, CRM Solutions, Appointment systems, Business applications, Microsoft Outlook, Contact Managers and IVR systems, etc. enabling the Agents\/Users to send SMS instantly to the Customer\u2019s from within the application itself which increases the Agent\u2019s productivity and Call Center\u2019s efficiency."
             },
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/push.png"
+                "value": "image\/products\/push.png"
             },
             "features_title_1": {
                 "type": "text",
@@ -775,7 +775,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>User/Admin/Reporting Interface</li>\n<li>Contact Management: Contacts to have the following fields Name, Gender, Number, Profession, and Category (Normal or VIP or VVIP, etc.) Nationality, Address, Country</li>\n<li>Phonebook support</li>\n<li>Database lookup</li>\n<li>Contact import from Excel, CSV or text file</li>\n<li>Contact import from external DB or via web services</li>\n<li>Sender IDsupport</li>\n<li>Personalized Bulk Messages</li>\n<li>Tracking: SMS Gateway to keep track of the sent SMS, User who sent the SMS, Recipient, time stamp and keywords</li>\n<li>Scheduling the SMS</li>\n<li>Multi-language support</li>\n<li>Integration with third-party applications and Database</li>\n<li>Fully Customizable solution</li>\n<li>Reporting</li>\n</ul>"
+                "value": "<ul>\n<li>User\/Admin\/Reporting Interface<\/li>\n<li>Contact Management: Contacts to have the following fields Name, Gender, Number, Profession, and Category (Normal or VIP or VVIP, etc.) Nationality, Address, Country<\/li>\n<li>Phonebook support<\/li>\n<li>Database lookup<\/li>\n<li>Contact import from Excel, CSV or text file<\/li>\n<li>Contact import from external DB or via web services<\/li>\n<li>Sender IDsupport<\/li>\n<li>Personalized Bulk Messages<\/li>\n<li>Tracking: SMS Gateway to keep track of the sent SMS, User who sent the SMS, Recipient, time stamp and keywords<\/li>\n<li>Scheduling the SMS<\/li>\n<li>Multi-language support<\/li>\n<li>Integration with third-party applications and Database<\/li>\n<li>Fully Customizable solution<\/li>\n<li>Reporting<\/li>\n<\/ul>"
             }
         }
     },
@@ -800,12 +800,12 @@
             "description": {
                 "type": "textarea",
                 "label": "Main Description",
-                "value": "This system maintains the <b>Employee Attendance and Payroll Details</b> in the custom build application environment to analyze, verify, validate and report for operational and statistical purposes of your business. \n<br><br>\nThe HRMS Payroll application developed by our team is a multi-tier web-based application which can be hosted anywhere for online access for internal users and customers alike. \n<br><br>\nThe application provides the necessary interface for the staff and customers with the respective privilege to amend and add the necessary information to ensure the data is verified and certified true in the due course."
+                "value": "This system maintains the <b>Employee Attendance and Payroll Details<\/b> in the custom build application environment to analyze, verify, validate and report for operational and statistical purposes of your business. \n<br><br>\nThe HRMS Payroll application developed by our team is a multi-tier web-based application which can be hosted anywhere for online access for internal users and customers alike. \n<br><br>\nThe application provides the necessary interface for the staff and customers with the respective privilege to amend and add the necessary information to ensure the data is verified and certified true in the due course."
             },
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/cm.jpg"
+                "value": "image\/products\/cm.jpg"
             },
             "features_title_1": {
                 "type": "text",
@@ -815,7 +815,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>Efficiency of Administration</li>\n<li>Reduced cost and automation of process</li>\n<li>Easy data collection and management</li>\n<li>Maintaining Employee Records and keeping track of Insurance and privileges, Time off and sick leaves and more.</li>\n<li>Quick access to information</li>\n<li>Processing of documents and steps for HR functionality</li>\n<li>Holistic Reports and Data Analysis</li>\n</ul>"
+                "value": "<ul>\n<li>Efficiency of Administration<\/li>\n<li>Reduced cost and automation of process<\/li>\n<li>Easy data collection and management<\/li>\n<li>Maintaining Employee Records and keeping track of Insurance and privileges, Time off and sick leaves and more.<\/li>\n<li>Quick access to information<\/li>\n<li>Processing of documents and steps for HR functionality<\/li>\n<li>Holistic Reports and Data Analysis<\/li>\n<\/ul>"
             }
         }
     },
@@ -840,12 +840,12 @@
             "description": {
                 "type": "textarea",
                 "label": "Main Description",
-                "value": "Automate Prayer announcement for your colleagues with Imperium.\n<br>\nWe promote a kind of workplace culture that makes everyone that they belong. What better than spiritual well-being at work. \n<br>\nThe all new Imperium Islamic Prayer announcement module helps you to record your prayers on your telephone system which is then automatically played at the appropriate time. \n<br>\nIt’s is an attractive and useful application for Muslim colleagues to benefit from at work place. <br>\nImperium has gone the extra mile to enable you to create a great work life balance at your office."
+                "value": "Automate Prayer announcement for your colleagues with Imperium.\n<br>\nWe promote a kind of workplace culture that makes everyone that they belong. What better than spiritual well-being at work. \n<br>\nThe all new Imperium Islamic Prayer announcement module helps you to record your prayers on your telephone system which is then automatically played at the appropriate time. \n<br>\nIt\u2019s is an attractive and useful application for Muslim colleagues to benefit from at work place. <br>\nImperium has gone the extra mile to enable you to create a great work life balance at your office."
             },
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/islamicprayer.png"
+                "value": "image\/products\/islamicprayer.png"
             },
             "features_title_1": {
                 "type": "text",
@@ -855,7 +855,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>Prayer call and announcement with precise prayer timings based on server time zone.</li>\n<li>Supports each city worldwide</li>\n<li>If required the prayer time can also be changed instantly by Administrators</li>\n<li>Web based Admin interface to view and modify the announcement timings and status of prayer announcement</li>\n<li>Supports Avaya 96xx,14xx, 16xx series Phones</li>\n<li>Announcements can be made to all the users in the network or to a selected group of users based on client preference</li>\n</ul>"
+                "value": "<ul>\n<li>Prayer call and announcement with precise prayer timings based on server time zone.<\/li>\n<li>Supports each city worldwide<\/li>\n<li>If required the prayer time can also be changed instantly by Administrators<\/li>\n<li>Web based Admin interface to view and modify the announcement timings and status of prayer announcement<\/li>\n<li>Supports Avaya 96xx,14xx, 16xx series Phones<\/li>\n<li>Announcements can be made to all the users in the network or to a selected group of users based on client preference<\/li>\n<\/ul>"
             }
         }
     },
@@ -880,7 +880,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/icep.png"
+                "value": "image\/products\/icep.png"
             },
             "features_title_1": {
                 "type": "text",
@@ -890,7 +890,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>Agent-customer interaction for AVAYA IPOCC</li>\n<li>Omni Channel Ready</li>\n<li>Ticketing System with 360* Customer view</li>\n<li>BI Reporting / QM / Real time monitoring</li>\n<li>Customer Profiling with Mini CRM</li>\n<li>Connectors – API to integrate business applications</li>\n<li>Customized work-flow and process for industries such as healthcare, Insurance, Real Estate, Service Sector and more.</li>\n</ul>"
+                "value": "<ul>\n<li>Agent-customer interaction for AVAYA IPOCC<\/li>\n<li>Omni Channel Ready<\/li>\n<li>Ticketing System with 360* Customer view<\/li>\n<li>BI Reporting \/ QM \/ Real time monitoring<\/li>\n<li>Customer Profiling with Mini CRM<\/li>\n<li>Connectors \u2013 API to integrate business applications<\/li>\n<li>Customized work-flow and process for industries such as healthcare, Insurance, Real Estate, Service Sector and more.<\/li>\n<\/ul>"
             }
         }
     },
@@ -915,7 +915,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/chatbot.jpg"
+                "value": "image\/products\/chatbot.jpg"
             },
             "features_title_1": {
                 "type": "text",
@@ -925,7 +925,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>Conversational Maturity</li>\n<li>Omni-capable - converse and retains data and context for a seamless experiences. seamlessly across every channel</li>\n<li>Free to Explore</li>\n<li>Escalate to connect with live Agent over Voice/Video</li>\n<li>Pre-Trained</li>\n<li>Integrated with CRM and Customer Service Portal</li>\n<li>Resonate with brand's customers</li>\n<li>Purpose specific functionality</li>\n<li>Exit to Connect to live agent</li>\n</ul>"
+                "value": "<ul>\n<li>Conversational Maturity<\/li>\n<li>Omni-capable - converse and retains data and context for a seamless experiences. seamlessly across every channel<\/li>\n<li>Free to Explore<\/li>\n<li>Escalate to connect with live Agent over Voice\/Video<\/li>\n<li>Pre-Trained<\/li>\n<li>Integrated with CRM and Customer Service Portal<\/li>\n<li>Resonate with brand's customers<\/li>\n<li>Purpose specific functionality<\/li>\n<li>Exit to Connect to live agent<\/li>\n<\/ul>"
             }
         }
     },
@@ -950,7 +950,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/social-media.png"
+                "value": "image\/products\/social-media.png"
             },
             "features_title_1": {
                 "type": "text",
@@ -960,7 +960,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>All social media channels Integrated with Avaya IPO, IPOCC and ACCS</li>\n<li>Notifications for customer queries from all channels and all routes</li>\n<li>Basic control in IPO, IPOCC and ACCS for chats</li>\n<li>Full control from Imperium CEP for Comments and post reply</li>\n<li>Switching from social media channel to conventional channel based on customer request.</li>\n<li>Predefined AI Chabot can be enabled</li>\n<li>Advanced skill based privileges for agents which are customizable</li>\n</ul>"
+                "value": "<ul>\n<li>All social media channels Integrated with Avaya IPO, IPOCC and ACCS<\/li>\n<li>Notifications for customer queries from all channels and all routes<\/li>\n<li>Basic control in IPO, IPOCC and ACCS for chats<\/li>\n<li>Full control from Imperium CEP for Comments and post reply<\/li>\n<li>Switching from social media channel to conventional channel based on customer request.<\/li>\n<li>Predefined AI Chabot can be enabled<\/li>\n<li>Advanced skill based privileges for agents which are customizable<\/li>\n<\/ul>"
             }
         }
     },
@@ -995,7 +995,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/ZOHO.jpg"
+                "value": "image\/products\/ZOHO.jpg"
             },
             "features_title_2": {
                 "type": "text",
@@ -1005,7 +1005,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>Built on latest web RTC platform</li>\n<li>Enables real time voice and video communication on a softphone</li>\n<li>Available for Mobile CTI client</li>\n<li>Captures and syncs business insights and call logging with ZOHO CRM</li>\n<li>Screen pop-up with customer data and call notifications with in CRM</li>\n<li>Unified application that allows seamless access to data and call annotation</li>\n<li>Supports integration with thin client on web browser</li>\n<li>Offers desktop notification for incoming and outgoing calls, detailed screen pop up with historic data of the customer on call</li>\n<li>Provides quick call managing options such as call answering, hold, retrieve held call, transfer call to another contact or telephone number, view call history and list of missed calls</li>\n</ul>"
+                "value": "<ul>\n<li>Built on latest web RTC platform<\/li>\n<li>Enables real time voice and video communication on a softphone<\/li>\n<li>Available for Mobile CTI client<\/li>\n<li>Captures and syncs business insights and call logging with ZOHO CRM<\/li>\n<li>Screen pop-up with customer data and call notifications with in CRM<\/li>\n<li>Unified application that allows seamless access to data and call annotation<\/li>\n<li>Supports integration with thin client on web browser<\/li>\n<li>Offers desktop notification for incoming and outgoing calls, detailed screen pop up with historic data of the customer on call<\/li>\n<li>Provides quick call managing options such as call answering, hold, retrieve held call, transfer call to another contact or telephone number, view call history and list of missed calls<\/li>\n<\/ul>"
             }
         }
     },
@@ -1030,7 +1030,7 @@
             "image_1": {
                 "type": "image",
                 "label": "Main Image",
-                "value": "image/products/INAIPI_Click-to-Call_2.jpg"
+                "value": "image\/products\/INAIPI_Click-to-Call_2.jpg"
             },
             "features_title_1": {
                 "type": "text",
@@ -1040,7 +1040,7 @@
             "features_1": {
                 "type": "textarea",
                 "label": "Features List",
-                "value": "<ul>\n<li>Get multiple channels without purchasing additional telephone lines</li>\n<li>On web browser and independent of any software downloads or Plugins for callers</li>\n<li>AvVoice-mail collection service can be enabled in case of limitation in agents' availability</li>\n<li>Potential customers who like your website / the product or service you offer online can call you on the spot to place orders without loss of engagement</li>\n<li>Unlimited number of calls can be made from desktop client or from mobile phone</li>\n<li>Have Iniapi Click-to-Call set-up at your workplace in maximum 2 days</li>\n</ul>"
+                "value": "<ul>\n<li>Get multiple channels without purchasing additional telephone lines<\/li>\n<li>On web browser and independent of any software downloads or Plugins for callers<\/li>\n<li>AvVoice-mail collection service can be enabled in case of limitation in agents' availability<\/li>\n<li>Potential customers who like your website \/ the product or service you offer online can call you on the spot to place orders without loss of engagement<\/li>\n<li>Unlimited number of calls can be made from desktop client or from mobile phone<\/li>\n<li>Have Iniapi Click-to-Call set-up at your workplace in maximum 2 days<\/li>\n<\/ul>"
             }
         }
     },

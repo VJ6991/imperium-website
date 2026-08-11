@@ -4,11 +4,108 @@
         Options -MultiViews
     </IfModule>
 
+    # ------------------------------------------------------------------ canonical host
+    # Force ONE origin: https://www.imperiumapp.com. The site currently answers on
+    # both the bare domain and www, which makes Google index two copies of every
+    # page and split the ranking signals between them.
+    # Scoped to the production hostnames on purpose so localhost, staging and
+    # sub-folder deployments are untouched.
+    RewriteCond %{HTTP_HOST} ^imperiumapp\.com$ [NC]
+    RewriteRule ^(.*)$ https://www.imperiumapp.com/$1 [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^www\.imperiumapp\.com$ [NC]
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://www.imperiumapp.com/$1 [R=301,L]
+
+    # ---------------------------------------------------- legacy URL redirects (301)
+    # This trimmed build drops many pages that the previous site had indexed. Without
+    # these, every one of those URLs becomes a 404 on launch and its accumulated link
+    # equity is thrown away.
+    #
+    # Each target is the CLOSEST relevant page, not a blanket redirect to the
+    # homepage — Google treats a mass redirect-to-root as a soft 404 and drops the
+    # URL anyway, so relevance is what preserves the ranking.
+    #
+    # IMPORTANT: this list was assembled from the live site's navigation, its
+    # legacy in-page JS and public search results. It is NOT guaranteed complete.
+    # Before launch, export Search Console > Indexing > Pages (and the top-pages
+    # report in Analytics) and add anything here that is missing.
+
+    # SOURCE OF TRUTH: this map was rebuilt on 2026-08-07 by enumerating every
+    # controller and controller-method in the codebase currently deployed on the
+    # domain (D:\programming_D\imperium-website). That build has NO route whitelist,
+    # so every file in its controllers/ folder is a live URL, and every public method
+    # on a controller is a live sub-URL. 44 top-level routes and 40+ sub-routes.
+    #
+    # These 15 URLs need NO redirect because imperium-lite serves the same slugs:
+    #   /banking /businesscenter /casestudy /contact /debtcollection /ecommerce
+    #   /educationsector /finance /healthcare /helpdesk /industry-influence
+    #   /insurance /logistics /realestate /retail
+
+    # Vertical/solution pages -> their lite equivalents (exact topical match)
+    RewriteRule ^solutions-healthcare/?$        /healthcare      [R=301,L]
+    RewriteRule ^solutions-debt-collection/?$   /debtcollection  [R=301,L]
+    RewriteRule ^solutions-logistics/?$         /logistics       [R=301,L]
+    RewriteRule ^solutions-business-center/?$   /businesscenter  [R=301,L]
+    RewriteRule ^solutions-service-industry/?$  /helpdesk        [R=301,L]
+    RewriteRule ^solutions/?$                   /industry-influence [R=301,L]
+
+    # The /cx React app (nav linked /cx/#/solutions, /cx/#/Avaya_CX). It does not
+    # ship in this build, so /cx would 404 outright.
+    RewriteRule ^cx(/.*)?$                      /industry-influence [R=301,L]
+
+    # Product pages -> the homepage products section (nearest surviving content).
+    # The wildcard covers all 16 /products/<name> sub-pages (crmsolution,
+    # callmanagement, webrtc, tollfraud, budgetcontrol, callassistmodule,
+    # customersurvey, pushpull, payroll, islamicprayer, icep, chatbot, socialmedia,
+    # zoho, clicktocall, callreporter) plus /products/avayaaura, which Google has
+    # indexed but which no longer exists in the deployed code.
+    RewriteRule ^products/(.*)$                 /#products [R=301,L]
+    RewriteRule ^products/?$                    /#products [R=301,L]
+    RewriteRule ^products-cti-solutions/?$      /#products [R=301,L]
+    RewriteRule ^products-ivrsolutions/?$       /#products [R=301,L]
+    RewriteRule ^products-sms-solutions/?$      /#products [R=301,L]
+    RewriteRule ^products-fax-server/?$         /#products [R=301,L]
+    RewriteRule ^products-call-reporter/?$      /#products [R=301,L]
+    RewriteRule ^products-cti-crm-connecter/?$  /#products [R=301,L]
+    RewriteRule ^products-cti-outlook-connecter/?$ /#products [R=301,L]
+    RewriteRule ^1products(/.*)?$               /#products [R=301,L]
+    RewriteRule ^multimedia/?$                  /#products [R=301,L]
+    RewriteRule ^contact-center/?$              /#products [R=301,L]
+
+    # Partner pages -> the homepage technology-partners section
+    RewriteRule ^partners-avaya/?$              /#partners [R=301,L]
+    RewriteRule ^partners-cisco/?$              /#partners [R=301,L]
+    RewriteRule ^partners-microsoft-lync/?$     /#partners [R=301,L]
+    RewriteRule ^strategic-partnerships/?$      /#partners [R=301,L]
+    RewriteRule ^partners/?$                    /#partners [R=301,L]
+
+    # Cloud / brand pages -> products section
+    RewriteRule ^inaipi/?$                      /#products [R=301,L]
+    RewriteRule ^avaya/?$                       /#products [R=301,L]
+
+    # Company pages -> the closest surviving destination.
+    # /blog-news has post/archive/category sub-routes, so it needs the wildcard.
+    RewriteRule ^registration/?$                /contact [R=301,L]
+    RewriteRule ^about(/.*)?$                   /        [R=301,L]
+    RewriteRule ^faqs/?$                        /        [R=301,L]
+    RewriteRule ^blog-news(/.*)?$               /        [R=301,L]
+    RewriteRule ^resources(/.*)?$               /        [R=301,L]
+    RewriteRule ^lic/?$                         /        [R=301,L]
+    RewriteRule ^index/?$                       /        [R=301,L]
+
+    # DELIBERATELY NOT REDIRECTED: /services, /team1, /videos, /not-found.
+    # Their controllers exist in the deployed build but have no matching view, so
+    # they already error rather than serve a page and are almost certainly not
+    # indexed. Redirecting dead routes to / only manufactures soft-404 signals.
+    # If Search Console shows any of them indexed, add a rule here.
+
+    # ------------------------------------------------------------------ front controller
     # Serve static assets and images directly (no front-controller rewrite).
     RewriteRule ^(assets|images)($|/) - [L]
 
     # Forbid direct web access to server-side folders (source, data, compile cache).
-    RewriteRule ^(cms|cache|controllers|libs|helpers|package|views)(/|$) - [F,L]
+    RewriteRule ^(cms|cache|controllers|libs|helpers|package|views|seo|tools)(/|$) - [F,L]
 
     # Front controller: send everything that is not a real file/folder to index.php.
     # Works at the domain root or inside any sub-folder (paths stay relative to this
@@ -16,4 +113,52 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ index.php?uri=$1 [L,QSA]
+</IfModule>
+
+# ---------------------------------------------------------------- compression
+# Text assets compress by roughly 70-80%. This is the single cheapest Core Web
+# Vitals win available and needs no code change.
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE application/json application/ld+json
+    AddOutputFilterByType DEFLATE application/xml application/rss+xml
+    AddOutputFilterByType DEFLATE image/svg+xml font/woff2 application/font-woff2
+</IfModule>
+
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/javascript
+    AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+    AddOutputFilterByType BROTLI_COMPRESS application/ld+json image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------- browser caching
+# Assets are versioned with ?v= query strings, so they can be cached hard.
+# HTML is deliberately NOT cached long — the homepage controller already sends
+# no-cache so a deploy is visible immediately.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg              "access plus 1 year"
+    ExpiresByType image/png               "access plus 1 year"
+    ExpiresByType image/gif               "access plus 1 year"
+    ExpiresByType image/webp              "access plus 1 year"
+    ExpiresByType image/avif              "access plus 1 year"
+    ExpiresByType image/svg+xml           "access plus 1 year"
+    ExpiresByType image/x-icon            "access plus 1 year"
+    ExpiresByType font/woff2              "access plus 1 year"
+    ExpiresByType application/font-woff2  "access plus 1 year"
+    ExpiresByType text/css                "access plus 1 month"
+    ExpiresByType application/javascript  "access plus 1 month"
+    ExpiresByType text/javascript         "access plus 1 month"
+    ExpiresByType text/html               "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|woff2|ttf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    # Security headers. Not direct ranking factors, but HTTPS/security hygiene is
+    # part of the "trust" side of page experience and costs nothing here.
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>

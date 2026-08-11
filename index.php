@@ -63,6 +63,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'localhost:
 }
 
 require __DIR__ . '/helpers/Helper.php';
+require __DIR__ . '/helpers/Seo.php';
 require __DIR__ . '/libs/config.php';
 require __DIR__ . '/helpers.php';
 require __DIR__ . '/package/autoload.php';
@@ -72,6 +73,23 @@ require __DIR__ . '/libs/Input.php';
 
 
 define('SITE_NAME', 'Imperium');
+
+/**
+ * Canonical origin used for <link rel="canonical">, og:url and sitemap.xml.
+ *
+ * Pinned to the www host in production because the site answers on BOTH
+ * imperiumapp.com and www.imperiumapp.com — without a fixed canonical, Google
+ * treats those as two competing copies of every page and splits the ranking
+ * signals between them. Any other host (localhost, staging, a sub-folder
+ * deployment) leaves SITE_URL empty so Seo::siteUrl() derives it from the
+ * request instead.
+ */
+$canonicalHost = isset($_SERVER['HTTP_HOST']) ? strtolower($_SERVER['HTTP_HOST']) : '';
+if ($canonicalHost === 'imperiumapp.com' || $canonicalHost === 'www.imperiumapp.com') {
+    define('SITE_URL', 'https://www.imperiumapp.com');
+} else {
+    define('SITE_URL', '');
+}
 
 
 

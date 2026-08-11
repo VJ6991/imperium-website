@@ -9,7 +9,7 @@ class ecommerce extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('ecommerce'),'title'=>'Cloud Communication for Ecommerce Industry | Contact Center Solution', "keywords" => ""];
+	    $meta = Seo::page('ecommerce');
 		return $this->view->render('ecommerce', ['meta'=>$meta]);
 	}
 }

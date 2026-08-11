@@ -9,7 +9,7 @@ class businesscenter extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('businesscenter'),'title'=>'Business Center', 'description'=>"", "keywords" => ""];
+	    $meta = Seo::page('businesscenter');
 		return $this->view->render('businesscenter', ['meta'=>$meta]);
 	}
 }

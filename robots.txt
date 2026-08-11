@@ -1,4 +1,56 @@
-User-agent: *
-Disallow: /casestudy
+# robots.txt — https://www.imperiumapp.com
+#
+# Policy: every public page is crawlable. Only server-side folders (source code,
+# templates, compiled cache, CMS data) are blocked — those return no useful HTML
+# and only waste crawl budget.
+#
+# NOTE: the previous version contained "Disallow: /casestudy", which blocked the
+# case-study page even though it is linked from the main nav and the footer. Case
+# studies are the strongest E-E-A-T / proof content on the site, so it is now
+# crawlable. If those pages must stay private for client-confidentiality reasons,
+# re-add the Disallow line AND remove the links from the nav, footer and sitemap.
 
-sitemap: https://www.imperiumapp.com/sitemap.xml
+User-agent: *
+Allow: /
+
+Disallow: /cms/
+Disallow: /cache/
+Disallow: /controllers/
+Disallow: /libs/
+Disallow: /helpers/
+Disallow: /package/
+Disallow: /views/
+Disallow: /seo/
+Disallow: /tools/
+
+# AI answer engines are allowed on purpose. Imperium wants to be cited in
+# ChatGPT / Claude / Perplexity / Google AI Overviews answers about contact
+# center and CX software in the UAE — blocking these crawlers forfeits that.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://www.imperiumapp.com/sitemap.xml

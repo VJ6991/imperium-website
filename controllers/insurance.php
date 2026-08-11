@@ -9,7 +9,7 @@ class insurance extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('insurance'),'title'=>'Insurance Services in Dubai', "keywords" => ""];
+	    $meta = Seo::page('insurance');
 		return $this->view->render('insurance', ['meta'=>$meta]);
 	}
 }

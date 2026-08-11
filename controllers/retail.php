@@ -9,7 +9,7 @@ class retail extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('retail'),'title'=>'Retail Services in Dubai', "keywords" => ""];
+	    $meta = Seo::page('retail');
 		return $this->view->render('retail', ['meta'=>$meta]);
 	}
 }

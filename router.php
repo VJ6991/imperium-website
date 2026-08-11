@@ -14,7 +14,10 @@ if (!is_string($path) || $path === '') {
 $path = '/' . ltrim((string) $path, '/');
 
 // Special case for static assets or the /cx directory - return false to serve directly
-if (preg_match('/\.(?:html|htm|png|jpg|jpeg|gif|avif|webp|css|js|ico|woff|woff2|ttf|svg|mp4|pdf)$/i', $path) || strpos($path, '/cx') === 0 || $path === '/get_solutions.php' || $path === '/get_content.php') {
+// xml + txt are in the list so /sitemap.xml and /robots.txt are served as the real
+// static files they are. Without them the front controller swallows both and hands
+// crawlers a 404 — which is exactly what production was doing to sitemap.xml.
+if (preg_match('/\.(?:html|htm|xml|txt|png|jpg|jpeg|gif|avif|webp|css|js|ico|woff|woff2|ttf|svg|mp4|pdf)$/i', $path) || strpos($path, '/cx') === 0 || $path === '/get_solutions.php' || $path === '/get_content.php') {
     return false;
 }
 

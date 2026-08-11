@@ -175,13 +175,12 @@ ul{
   pointer-events: none;
 }
 
-.main-container-div-2 {
-  background-image: url('/assets/image/female-programmer-scanning-her-face-with-biometric-security-technology-virtual-screen-digital-remix.jpg');
-}
-
-.main-container-div-2-image-2 {
-  background-image: url('/assets/image/friendly-customer-support-workers-respond-customers-inquiries.jpg');
-}
+/* Removed 2026-08-07: these two rules pointed at 10.6 MB and 9.8 MB background
+   images. Neither selector (.main-container-div-2 / .main-container-div-2-image-2)
+   appears in any page markup — they exist only in this stylesheet and in
+   redesign-responsive.css — so the images never loaded but still shipped in every
+   deploy. Both files were deleted (recoverable via git). If these selectors are ever
+   used again, restore the images first: git checkout HEAD -- assets/image/ */
 .main-container-div-1 .hero-content-wrapper {
   margin-top: 0;
   padding: 60px 60px 60px 40px;

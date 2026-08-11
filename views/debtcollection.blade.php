@@ -23,7 +23,8 @@
                  <h1>{{ Helper::cms('debtcollection', 'banner_title', 'Debt Collection System in Dubai') }}</h1>
                  <div class="breadcroumb">
                    <a href="{{ url('') }}">Home</a> &gt;
-                   <span class="current">{{ Helper::cms('debtcollection', 'banner_title', 'Debt Collection System') }}</span>
+                  <a href="{{ url('industry-influence') }}">Verticals</a> &gt;
+                  <span class="current">{{ Seo::name('debtcollection') }}</span>
                 </div>
              </div>
          </div>

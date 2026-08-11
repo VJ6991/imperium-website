@@ -9,7 +9,7 @@ class realestate extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('realestate'),'title'=>'Communication Technology Solution for Real Estate in Dubai ', "keywords" => ""];
+	    $meta = Seo::page('realestate');
 		return $this->view->render('realestate', ['meta'=>$meta]);
 	}
 }

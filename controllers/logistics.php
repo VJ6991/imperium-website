@@ -9,7 +9,7 @@ class logistics extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('logistics'),'title'=>'Supply Chain & Logistics Solutions | Cloud Software | Imperium', 'Logistics'=>"", "keywords" => ""];
+	    $meta = Seo::page('logistics');
 		return $this->view->render('logistics', ['meta'=>$meta]);
 	}
 }

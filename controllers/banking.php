@@ -9,7 +9,7 @@ class banking extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('banking'),'title'=>'Digital Communication for Banking and Financial Services', "keywords" => ""];
+	    $meta = Seo::page('banking');
 		return $this->view->render('banking', ['meta'=>$meta]);
 	}
 }

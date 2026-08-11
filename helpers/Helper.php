@@ -43,40 +43,82 @@ class Helper
         return implode(" ", array_splice($words, 0, $word_limit)).$endStr;
     }
 
+    /**
+     * Render the per-page <head> SEO block.
+     *
+     * Emits title, description, canonical, Open Graph, Twitter Card and any JSON-LD
+     * the page carries. $meta normally comes straight from Seo::page('<slug>').
+     *
+     * Two things here are deliberate and easy to break by "tidying":
+     *   - The title is printed EXACTLY as supplied. It is not suffixed with
+     *     SITE_NAME, because seo/pages.php already writes the brand into every
+     *     title; appending would produce "... | Imperium Software | Imperium".
+     *   - Every value is escaped. Descriptions contain apostrophes and ampersands,
+     *     which silently truncated the old unescaped attributes.
+     */
     public static function setMetaTags($meta = Array())
     {
-
-        if (count($meta)) {
-            $metaStr = '';
-
-            if (isset($meta['title'])) {
-                $metaStr .= "<title> " . $meta['title'] . " | " . SITE_NAME . "</title><meta name='title' content='" . $meta['title'] . "'><meta property='og:title' content='" . $meta['title'] . "'>";
-            }
-            if (isset($meta['description'])) {
-                $metaStr .= '<meta name="twitter:description" content="' . $meta['description'] . '"><meta property="og:description" content="' . $meta['description'] . '"> <meta name="description" content="' . $meta['description'] . '">';
-            }
-
-            if (isset($meta['url'])) {
-                $metaStr .= '<meta property="og:url" content="' . $meta['url'] . '" /><meta name="twitter:SITE_NAME" content="' . $meta['url'] . '">';
-            }
-
-            if (isset($meta['author'])) {
-                $metaStr .= '<meta name="author" content="' . $meta['author'] . '">';
-            }
-
-             if (isset($meta['keywords'])) {
-                $metaStr .= '<meta name="keywords" content="' . $meta['keywords'] . '">';
-            }
-
-            if (isset($meta['image'])) {
-                $metaStr .= '<meta property="og:image" content="' . $meta['image'] . '">';
-            }
-            if (!empty(SITE_NAME)) {
-                $metaStr .= '<meta property="og:site_name" content="' . SITE_NAME . '">';
-            }
-            $metaStr .= '<meta property="og:type" content="article" />';
-            return $metaStr;
+        if (!count($meta)) {
+            return '';
         }
+
+        $e = function ($v) {
+            return htmlspecialchars((string) $v, ENT_QUOTES, 'UTF-8');
+        };
+
+        $out = '';
+
+        if (!empty($meta['title'])) {
+            $out .= '<title>' . $e($meta['title']) . '</title>';
+            $out .= '<meta property="og:title" content="' . $e($meta['title']) . '">';
+            $out .= '<meta name="twitter:title" content="' . $e($meta['title']) . '">';
+        }
+
+        if (!empty($meta['description'])) {
+            $out .= '<meta name="description" content="' . $e($meta['description']) . '">';
+            $out .= '<meta property="og:description" content="' . $e($meta['description']) . '">';
+            $out .= '<meta name="twitter:description" content="' . $e($meta['description']) . '">';
+        }
+
+        // Canonical — the single most important tag for a site reachable at both
+        // www and non-www. Falls back to 'url' for any caller that predates Seo::page().
+        $canonical = !empty($meta['canonical']) ? $meta['canonical'] : (!empty($meta['url']) ? $meta['url'] : '');
+        if ($canonical !== '') {
+            $out .= '<link rel="canonical" href="' . $e($canonical) . '">';
+            $out .= '<meta property="og:url" content="' . $e($canonical) . '">';
+        }
+
+        if (!empty($meta['image'])) {
+            $out .= '<meta property="og:image" content="' . $e($meta['image']) . '">';
+            $out .= '<meta name="twitter:image" content="' . $e($meta['image']) . '">';
+        }
+
+        if (!empty($meta['author'])) {
+            $out .= '<meta name="author" content="' . $e($meta['author']) . '">';
+        }
+
+        // Only emit keywords when actually populated. An empty keywords tag is noise.
+        if (!empty($meta['keywords'])) {
+            $out .= '<meta name="keywords" content="' . $e($meta['keywords']) . '">';
+        }
+
+        $out .= '<meta property="og:type" content="' . $e(!empty($meta['type']) ? $meta['type'] : 'website') . '">';
+        $out .= '<meta property="og:locale" content="en_AE">';
+        if (!empty(SITE_NAME)) {
+            $out .= '<meta property="og:site_name" content="' . $e(SITE_NAME) . '">';
+        }
+        $out .= '<meta name="twitter:card" content="summary_large_image">';
+
+        if (class_exists('Seo')) {
+            if (!empty($meta['breadcrumb'])) {
+                $out .= Seo::jsonLd($meta['breadcrumb']);
+            }
+            if (!empty($meta['schema'])) {
+                $out .= Seo::jsonLd($meta['schema']);
+            }
+        }
+
+        return $out;
     }
 
     public static function input($arr, $field)

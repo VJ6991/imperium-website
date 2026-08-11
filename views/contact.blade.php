@@ -5,8 +5,13 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     {!! Helper::setMetaTags($meta) !!}
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="theme-color" content="#14110f" />
+    <!-- This page does not extend layouts.app, so it would otherwise ship without
+         the brand's identity record. Contact pages are exactly where search engines
+         look for NAP (name / address / phone) confirmation, so emit it explicitly. -->
+    {!! Seo::jsonLd(Seo::organizationSchema()) !!}
+    {!! Seo::jsonLd(Seo::websiteSchema()) !!}
     <link rel="shortcut icon" href="{{ asset('image/fav.png') }}" type="image/png">
 
     <!-- Critical CSS: applied before the Tailwind CDN injects its reset, so the fixed
@@ -27,8 +32,9 @@
     </style>
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&amp;display=swap" rel="stylesheet" />
+    <!-- Fontshare's Satoshi stylesheet was removed: Satoshi is already self-hosted
+         via the @font-face above (assets/fonts/Satoshi-Variable.woff2), so the CDN
+         request was a redundant render-blocking round-trip to a third-party host. -->
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
@@ -134,16 +140,6 @@
             border-radius: 12px;
         }
 
-        select.fld {
-            appearance: none;
-            -webkit-appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2378716c' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 12px center;
-            background-size: 18px;
-            padding-right: 38px;
-        }
-
         input.fld::placeholder,
         textarea.fld::placeholder { color: #A8A29E; }
 
@@ -190,9 +186,14 @@
         @keyframes spin { to { transform: rotate(360deg); } }
 
         /* Partner logos are opaque white-background files, so on this light page
-           they sit directly on the surface — no white tile needed. */
+           they sit directly on the surface — no white tile needed.
+           One uniform height for all seven, with max-width so a wide mark can't
+           dominate the row. Note: the source files bake in differing amounts of
+           surrounding whitespace, so at a shared height some marks (Google Cloud
+           most of all) read smaller than the rest — that is the source images,
+           not the CSS. Per-logo heights would even it out at the cost of
+           uniformity. */
         .logo-mark {
-            height: 34px;
             width: auto;
             object-fit: contain;
             filter: grayscale(1);
@@ -202,7 +203,75 @@
 
         .logo-mark:hover { filter: none; opacity: 1; }
 
+        /* Heights are per-logo because a shared height cannot look even here.
+           Two things differ across the source files: aspect ratio (Zoom 3.86,
+           Sestek 4.10 and Globitel 3.92 are long wordmarks, while AWS 1.67,
+           Google Cloud 1.78 and Avaya 2.00 are squarish) and the amount of white
+           space baked into the PNG — Google Cloud has by far the most, which is
+           why it needs roughly twice Avaya's height to read the same size.
+           These are the homepage reel's tuned values at ~80%, so the whole row
+           stays compact enough for a single line (~740px of logo + gaps). */
+        .logo-google    { height: 88px; }
+        .logo-microsoft { height: 46px; }
+        .logo-avaya     { height: 42px; }
+        .logo-aws       { height: 35px; }
+        .logo-globitel  { height: 27px; }
+        .logo-zoom      { height: 26px; }
+        .logo-sestek    { height: 26px; }
+
+        /* Seven logos can't fit one line on a phone without becoming illegible,
+           so the row wraps below sm and stays single-line above it. */
+        @media (max-width: 640px) {
+            .logo-google    { height: 62px; }
+            .logo-microsoft { height: 32px; }
+            .logo-avaya     { height: 30px; }
+            .logo-aws       { height: 25px; }
+            .logo-globitel  { height: 19px; }
+            .logo-zoom      { height: 18px; }
+            .logo-sestek    { height: 18px; }
+        }
+
         .map-frame { filter: saturate(.85) contrast(1.02); }
+
+        /* Office switcher above the map */
+        .map-tab {
+            font-family: 'Satoshi', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #57534E;
+            background: #fff;
+            border: 1px solid #E4DCD4;
+            border-radius: 999px;
+            padding: 8px 18px;
+            transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+        }
+
+        .map-tab:hover { border-color: #FFC9AE; color: #14110F; }
+
+        .map-tab.is-active {
+            background: #FF6B35;
+            border-color: #FF6B35;
+            color: #fff;
+        }
+
+        /* Mobile: keep all four office tabs on one line (they wrapped before). Shrink the
+           pills slightly and let the row scroll horizontally on very narrow screens rather
+           than wrap. Desktop (>= 641px) is unaffected. */
+        @media (max-width: 640px) {
+            #mapTabs {
+                flex-wrap: nowrap;
+                gap: 6px;
+                overflow-x: auto;
+                scrollbar-width: none;
+            }
+            #mapTabs::-webkit-scrollbar { display: none; }
+            .map-tab {
+                flex: 0 0 auto;
+                font-size: 12px;
+                padding: 6px 10px;
+                white-space: nowrap;
+            }
+        }
 
         html, body { overflow-x: hidden; max-width: 100%; }
     </style>
@@ -268,11 +337,11 @@
                 <div class="max-w-3xl">
                     <h1
                         class="font-headline text-white text-[38px] sm:text-[54px] lg:text-[64px] font-bold leading-[1.05] tracking-[-0.03em]">
-                        Let's talk about your<br class="hidden sm:block"> customer experience
+                        Let's start a<br class="hidden sm:block"> conversation.
                     </h1>
                     <p class="mt-6 text-white/65 text-base sm:text-lg leading-relaxed max-w-2xl">
-                        Whether you're replacing an ageing PBX, moving your contact centre to the cloud, or adding AI
-                        to a journey that already works — tell us where you are and we'll bring the right people.
+                        Have questions about our platform? Tell us what you're working on and
+                        we'll connect you with the right specialist.
                     </p>
                 </div>
 
@@ -299,6 +368,7 @@
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_340px] gap-6">
 
                 <div class="card-lift rounded-2xl p-6 sm:p-10">
+                  <div id="ctcFormWrap">
                     <h2 class="font-headline text-2xl font-bold tracking-tight">Send us a message</h2>
                     <p class="mt-2 mb-8 text-sm text-stone-500">
                         Fields marked <span class="text-brand font-semibold">*</span> are required.
@@ -346,55 +416,6 @@
                                 <p class="fld-error"></p>
                             </div>
 
-                            <div class="fld-wrap">
-                                <label class="fld-label" for="country">Country <span class="req">*</span></label>
-                                <select class="fld" id="country">
-                                    <option value="">Please select</option>
-                                    <option>United Arab Emirates</option>
-                                    <option>Saudi Arabia</option>
-                                    <option>Qatar</option>
-                                    <option>Kuwait</option>
-                                    <option>Bahrain</option>
-                                    <option>Oman</option>
-                                    <option>India</option>
-                                    <option>Singapore</option>
-                                    <option>Malaysia</option>
-                                    <option>United Kingdom</option>
-                                    <option>United States</option>
-                                    <option>Other</option>
-                                </select>
-                                <p class="fld-error"></p>
-                            </div>
-
-                            <div class="fld-wrap">
-                                <label class="fld-label" for="companySize">Company size</label>
-                                <select class="fld" id="companySize">
-                                    <option value="">Please select</option>
-                                    <option>1 &ndash; 50</option>
-                                    <option>51 &ndash; 200</option>
-                                    <option>201 &ndash; 1,000</option>
-                                    <option>1,001 &ndash; 5,000</option>
-                                    <option>5,000+</option>
-                                </select>
-                                <p class="fld-error"></p>
-                            </div>
-
-                            <div class="fld-wrap sm:col-span-2">
-                                <label class="fld-label" for="topic">What can we help with? <span
-                                        class="req">*</span></label>
-                                <select class="fld" id="topic">
-                                    <option value="">Please select</option>
-                                    <option>Omnichannel contact center</option>
-                                    <option>Enterprise telephony / CTI</option>
-                                    <option>IVR &amp; automation</option>
-                                    <option>Cloud &amp; hosted solutions</option>
-                                    <option>Hospitality solutions</option>
-                                    <option>Partnership enquiry</option>
-                                    <option>Something else</option>
-                                </select>
-                                <p class="fld-error"></p>
-                            </div>
-
                             <div class="fld-wrap sm:col-span-2">
                                 <label class="fld-label" for="message">How can we help? <span
                                         class="req">*</span></label>
@@ -412,24 +433,44 @@
                                 <span class="spinner" aria-hidden="true"></span>
                                 <span id="ctcSubmitText">Submit enquiry</span>
                             </button>
+                            {{-- Mirrors the status banner next to the button, so the outcome is
+                                 visible without scrolling back to the top of a long form. --}}
+                            <p id="ctcInlineNote" class="hidden text-sm font-semibold"></p>
                         </div>
                     </form>
+                  </div>
+
+                    {{-- Success state: replaces the whole form so there is no ambiguity
+                         about whether the enquiry went through. --}}
+                    <div id="ctcSuccess" class="hidden text-center py-6" role="status" aria-live="assertive">
+                        <div
+                            class="mx-auto w-16 h-16 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-emerald-600" style="font-size:36px">check_circle</span>
+                        </div>
+                        <h2 class="font-headline text-2xl font-bold tracking-tight mt-5">Enquiry received</h2>
+                        <p class="mt-3 text-stone-500 text-sm leading-relaxed max-w-md mx-auto">
+                            Thanks — your message is with our team. We'll reply within one business day to the email
+                            address you gave us.
+                        </p>
+                        <button type="button" id="ctcAgain"
+                            class="mt-7 text-sm font-bold text-brand hover:underline underline-offset-4"
+                            style="cursor:pointer">Send another enquiry</button>
+                    </div>
                 </div>
 
                 <!-- Side rail -->
                 <aside class="flex flex-col gap-4">
 
                     <div class="rounded-2xl p-6 bg-ink text-white">
-                        <h2 class="font-headline text-base font-bold">Prefer to call?</h2>
-                        <p class="mt-1 text-[13px] text-white/55">Sales &amp; new projects</p>
+                        <h2 class="font-headline text-base font-bold">Talk to sales</h2>
+                        <p class="mt-1 text-[13px] text-white/55">New projects, pricing and demos</p>
                         <a href="tel:+97142443417"
-                            class="mt-4 flex items-center gap-2.5 text-lg font-bold hover:text-brand transition-colors">
-                            <span class="material-symbols-outlined text-brand">call</span> +971 4 244 3417
+                            class="mt-4 flex items-center gap-2.5 text-sm font-semibold hover:text-brand transition-colors">
+                            <span class="material-symbols-outlined text-brand text-xl">call</span> +971 4 244 3417
                         </a>
-                        <p class="mt-1.5 text-xs text-white/45 pl-9">Sun &ndash; Thu, 9:00 &ndash; 18:00 GST</p>
                         <a href="mailto:sales@imperiumapp.com"
-                            class="mt-4 flex items-center gap-2.5 text-sm font-semibold break-all hover:text-brand transition-colors">
-                            <span class="material-symbols-outlined text-brand">mail</span> sales@imperiumapp.com
+                            class="mt-3 flex items-center gap-2.5 text-sm font-semibold break-all hover:text-brand transition-colors">
+                            <span class="material-symbols-outlined text-brand text-xl">mail</span> sales@imperiumapp.com
                         </a>
                     </div>
 
@@ -471,14 +512,14 @@
                 <p class="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-stone-400">
                     We partner with the world's leading technology providers
                 </p>
-                <div class="mt-9 flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
-                    <img class="logo-mark" src="{{ url('images/reel%20logos/avaya.png') }}" alt="Avaya" loading="lazy">
-                    <img class="logo-mark" src="{{ url('images/reel%20logos/microsft.png') }}" alt="Microsoft" loading="lazy">
-                    <img class="logo-mark" src="{{ url('images/reel%20logos/aws.png') }}" alt="AWS" loading="lazy">
-                    <img class="logo-mark" src="{{ url('images/reel%20logos/google%20cloud.png') }}" alt="Google Cloud" loading="lazy">
-                    <img class="logo-mark" src="{{ url('images/reel%20logos/zoom.png') }}" alt="Zoom" loading="lazy">
-                    <img class="logo-mark" src="{{ url('images/reel%20logos/sestek-logo-dark.png') }}" alt="Sestek" loading="lazy">
-                    <img class="logo-mark" src="{{ url('images/reel%20logos/globitel.png') }}" alt="Globitel" loading="lazy">
+                <div class="mt-9 flex flex-wrap sm:flex-nowrap items-center justify-center gap-x-6 md:gap-x-10 gap-y-6">
+                    <img class="logo-mark logo-avaya" src="{{ url('images/reel%20logos/avaya.png') }}" alt="Avaya" loading="lazy">
+                    <img class="logo-mark logo-microsoft" src="{{ url('images/reel%20logos/microsft.png') }}" alt="Microsoft" loading="lazy">
+                    <img class="logo-mark logo-aws" src="{{ url('images/reel%20logos/aws.png') }}" alt="AWS" loading="lazy">
+                    <img class="logo-mark logo-google" src="{{ url('images/reel%20logos/google%20cloud.png') }}" alt="Google Cloud" loading="lazy">
+                    <img class="logo-mark logo-zoom" src="{{ url('images/reel%20logos/zoom.png') }}" alt="Zoom" loading="lazy">
+                    <img class="logo-mark logo-sestek" src="{{ url('images/reel%20logos/sestek-logo-dark.png') }}" alt="Sestek" loading="lazy">
+                    <img class="logo-mark logo-globitel" src="{{ url('images/reel%20logos/globitel.png') }}" alt="Globitel" loading="lazy">
                 </div>
             </div>
         </section>
@@ -526,7 +567,7 @@
                     <div class="card-lift rounded-2xl p-6 flex flex-col">
                         <h3 class="font-headline text-lg font-bold">Chennai</h3>
                         <address class="mt-3 not-italic text-sm leading-relaxed text-stone-500 flex-1">
-                            #1, Model House, Double Tank Colony Road,<br>KK Nagar, Chennai,<br>India 600078
+                            47/2 Ashok Nagar, 53rd Street,<br>Indira Colony, Chennai,<br>Tamil Nadu 600083
                         </address>
                         <div class="mt-5 pt-4 border-t border-stone-200 text-sm">
                             <a class="block font-semibold hover:text-brand transition-colors" href="tel:+914442122440">+91 44 421 22440</a>
@@ -536,8 +577,8 @@
                     <div class="card-lift rounded-2xl p-6 flex flex-col">
                         <h3 class="font-headline text-lg font-bold">Bengaluru</h3>
                         <address class="mt-3 not-italic text-sm leading-relaxed text-stone-500 flex-1">
-                            #870, 1st Floor, Geethanjali House,<br>BDA Layout, New Thippassandra,<br>Bengaluru,
-                            Karnataka 560075
+                            WMMX+H5X, Kaverappa Layout,<br>Kadubeesanahalli,<br>Bengaluru,
+                            Karnataka 560103
                         </address>
                         <div class="mt-5 pt-4 border-t border-stone-200 text-sm">
                             <a class="block font-semibold hover:text-brand transition-colors" href="tel:+918041622894">+91 80 416 22894</a>
@@ -548,14 +589,44 @@
             </div>
         </section>
 
-        <!-- ===== Map ===== -->
+        <!-- ===== Map =====
+             A Google `output=embed` iframe takes a single query, so it cannot pin
+             four offices at once (multi-pin needs a My Maps map or the paid Embed
+             API). Instead one iframe is re-pointed on click — which also means
+             only the selected city's map is ever loaded. -->
         <section class="px-5 sm:px-8 pb-20">
             <div class="max-w-7xl mx-auto">
+                <div class="flex flex-wrap gap-2 mb-5" id="mapTabs">
+                    <button type="button" data-city="Dubai"
+                        data-q="1%20Lake%20Plaza%2C%20Cluster%20T%2C%20Jumeirah%20Lakes%20Towers%2C%20Dubai"
+                        class="map-tab is-active" style="cursor:pointer">Dubai</button>
+                    {{-- Use a street address, not lat/long. A bare `q=<lat>,<lng>` pins
+                         the right spot but Google then looks for a place entity at that
+                         coordinate, finds none, and overlays "Place info couldn't load".
+                         Labelling it as `q=lat,lng(Name)` does not help — Google strips
+                         the label: both forms redirect to the same embed
+                         (…!1s1.298707,103.856363!6i16), verified by request. An address
+                         survives the redirect intact and resolves to a real place, so
+                         the info card populates. Lead with the street, not the building
+                         name — "Heritage Place, …" geocoded poorly. --}}
+                    <button type="button" data-city="Singapore"
+                        data-q="21%20Tan%20Quee%20Lan%20Street%2C%20Singapore%20188108"
+                        class="map-tab" style="cursor:pointer">Singapore</button>
+                    <button type="button" data-city="Chennai"
+                        data-q="53rd%20Street%2C%20Ashok%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu%20600083"
+                        class="map-tab" style="cursor:pointer">Chennai</button>
+                    {{-- Bengaluru uses the official Google Maps "Share > Embed a map"
+                         URL (data-embed) — a precise place pin + info card with no
+                         "Place info couldn't load" error. --}}
+                    <button type="button" data-city="Bengaluru"
+                        data-embed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.53992890868!2d77.5413961304097!3d12.922699710126205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13001725add5%3A0x13bed68d065414de!2sINAIPI%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1785298232644!5m2!1sen!2sin"
+                        class="map-tab" style="cursor:pointer">Bengaluru</button>
+                </div>
                 <div class="rounded-2xl overflow-hidden border border-stone-200 h-[380px]">
-                    <iframe class="map-frame w-full h-full" style="border:0" loading="lazy"
+                    <iframe id="officeMap" class="map-frame w-full h-full" style="border:0" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" allowfullscreen
-                        title="Imperium head office, Jumeirah Lakes Towers, Dubai"
-                        src="https://www.google.com/maps?q=1%20Lake%20Plaza%2C%20Cluster%20T%2C%20Jumeirah%20Lakes%20Towers%2C%20Dubai&output=embed"></iframe>
+                        title="Imperium office location — Dubai"
+                        src="https://www.google.com/maps?q=1%20Lake%20Plaza%2C%20Cluster%20T%2C%20Jumeirah%20Lakes%20Towers%2C%20Dubai&z=16&output=embed"></iframe>
                 </div>
             </div>
         </section>
@@ -563,22 +634,71 @@
 
     <!-- Footer — dark anchor. Offices are omitted here; the page lists them above. -->
     <footer class="bg-[#121211]">
-        <div class="relative bg-cover bg-center py-24 px-5"
-            style="background-image:url('{{ asset('image/customercare-banner.png') }}')">
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative z-10 max-w-3xl mx-auto text-center text-white">
-                <h2 class="text-3xl sm:text-4xl font-light mb-3">24 x 7 Support</h2>
-                <p class="text-white/80 mb-8">Experience World-class support From our expert team.</p>
-                <div class="flex flex-col items-center gap-4 text-lg font-light">
-                    <a href="tel:+97142443417"
-                        class="inline-flex items-center gap-3 hover:text-orange-300 transition-colors"><span
-                            class="material-symbols-outlined text-2xl">smartphone</span> +9714 2443417</a>
+        <!-- Support / contact band — mirrors the homepage footer so the two pages read as
+             one site. Channels are differentiated by PURPOSE (each says who it is for)
+             rather than presented as equal boxes, which tells the visitor nothing about
+             which to pick.
+             NOTE: this page's Tailwind config does NOT define the homepage's Material
+             tokens (surface-container-lowest / on-surface-variant / primary-container),
+             so their values are inlined as arbitrary classes — #0e0e0e, #D1D5DB, #ff6b35.
+             Copying the homepage markup verbatim renders unstyled here. -->
+        <section class="relative py-20 sm:py-28 px-5 sm:px-8 bg-[#0e0e0e] overflow-hidden">
+            <div class="absolute -top-24 -left-32 w-[520px] max-w-full h-[320px] bg-[#ff6b35]/10 blur-[130px] rounded-full pointer-events-none"></div>
+            <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-12 lg:gap-20 items-start">
+
+                <div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-bold font-headline text-white leading-[1.1] tracking-tight">
+                        Support that answers,<br class="hidden sm:block"> not a ticket queue
+                    </h2>
+                    <p class="mt-5 text-[#D1D5DB] leading-relaxed max-w-md">
+                        Every Imperium deployment is backed by engineers who know the platform.
+                        Pick the route that fits — we'll route you to the right desk.
+                    </p>
+                    <div class="mt-7 inline-flex items-center gap-2.5 text-sm text-[#D1D5DB]">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        Support desk staffed 24 / 7, every day of the year
+                    </div>
+                </div>
+
+                <div class="border-t border-white/10">
                     <a href="mailto:support@imperiumapp.com"
-                        class="inline-flex items-center gap-3 hover:text-orange-300 transition-colors"><span
-                            class="material-symbols-outlined text-2xl">mail</span> support@imperiumapp.com</a>
+                        class="group flex items-center justify-between gap-6 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
+                        <span class="min-w-0">
+                            <span class="block text-white font-bold text-lg">Technical support</span>
+                            <span class="block text-sm text-[#D1D5DB] mt-1">Already running Imperium? Raise an issue any hour.</span>
+                        </span>
+                        <span class="shrink-0 text-right">
+                            <span class="block text-[#ff6b35] font-semibold text-sm break-all">support@imperiumapp.com</span>
+                            <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">24 / 7</span>
+                        </span>
+                    </a>
+
+                    <a href="mailto:sales@imperiumapp.com"
+                        class="group flex items-center justify-between gap-6 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
+                        <span class="min-w-0">
+                            <span class="block text-white font-bold text-lg">Sales &amp; new projects</span>
+                            <span class="block text-sm text-[#D1D5DB] mt-1">Pricing, demos and scoping a new deployment.</span>
+                        </span>
+                        <span class="shrink-0 text-right">
+                            <span class="block text-[#ff6b35] font-semibold text-sm break-all">sales@imperiumapp.com</span>
+                            <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">Replies in 1 day</span>
+                        </span>
+                    </a>
+
+                    <a href="tel:+97142443417"
+                        class="group flex items-center justify-between gap-6 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
+                        <span class="min-w-0">
+                            <span class="block text-white font-bold text-lg">Speak to someone</span>
+                            <span class="block text-sm text-[#D1D5DB] mt-1">Straight through to the Dubai head office.</span>
+                        </span>
+                        <span class="shrink-0 text-right">
+                            <span class="block text-[#ff6b35] font-semibold text-sm">+971 4 244 3417</span>
+                            <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">Head office</span>
+                        </span>
+                    </a>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="bg-[#121211] border-t border-white/10 py-6 px-5 sm:px-8">
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
@@ -605,9 +725,9 @@
                     <a href="https://www.instagram.com/imperiumsoftware/" target="_blank" rel="noopener"
                         aria-label="Instagram"
                         class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
-                            viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                            viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
                             <path
-                                d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.3-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.3.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.3.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.3-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.3-.1-1.7-.1-4.8-.1zm0 3.1a4.9 4.9 0 100 9.8 4.9 4.9 0 000-9.8zm0 8.1a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5-8.3a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z" />
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
                         </svg></a>
                     <a href="https://www.youtube.com/@imperiumsoftwaretechnologi9361" target="_blank" rel="noopener"
                         aria-label="YouTube"
@@ -619,9 +739,9 @@
                     <a href="https://www.linkedin.com/company/imperium-software-technologies/" target="_blank"
                         rel="noopener" aria-label="LinkedIn"
                         class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
-                            viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                            viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
                             <path
-                                d="M6.9 8.4H3.9V21h3V8.4zM5.4 3.3C4.4 3.3 3.7 4 3.7 5s.7 1.7 1.7 1.7S7.1 6 7.1 5s-.7-1.7-1.7-1.7zM21 13.9c0-2.9-.6-5.1-4-5.1-1.6 0-2.7.9-3.1 1.7h-.1V8.4H10.9V21h3v-6.2c0-1.3.2-2.5 1.8-2.5s1.6 1.5 1.6 2.6V21h3v-7.1z" />
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
                         </svg></a>
                 </div>
             </div>
@@ -643,13 +763,66 @@
             });
         })();
 
+        // ---- Office map switcher ----
+        (function () {
+            var tabs = document.getElementById('mapTabs');
+            var map = document.getElementById('officeMap');
+            if (!tabs || !map) { return; }
+
+            tabs.addEventListener('click', function (e) {
+                var btn = e.target.closest('.map-tab');
+                if (!btn) { return; }
+
+                tabs.querySelectorAll('.map-tab').forEach(function (b) {
+                    b.classList.remove('is-active');
+                });
+                btn.classList.add('is-active');
+
+                // A tab may supply a full ready-made embed URL (Google Maps
+                // "Share > Embed a map", the /maps/embed?pb=... form) via data-embed —
+                // used when a plain q= search won't pin the place cleanly. Otherwise
+                // build a q= search. z=16 keeps the q= pin at street level — without it
+                // Google picks a zoom from the match type, so a city-level match renders
+                // as an unreadable region with no obvious marker.
+                var embed = btn.getAttribute('data-embed');
+                map.src = embed ? embed : 'https://www.google.com/maps?q=' + btn.getAttribute('data-q') + '&z=16&output=embed';
+                map.title = 'Imperium office location — ' + btn.getAttribute('data-city');
+            });
+        })();
+
         // ---- Enquiry form ----
         (function () {
             var form = document.getElementById('ctcForm');
             var submit = document.getElementById('ctcSubmit');
             var submitText = document.getElementById('ctcSubmitText');
             var status = document.getElementById('ctcStatus');
+            var formWrap = document.getElementById('ctcFormWrap');
+            var successPanel = document.getElementById('ctcSuccess');
+            var againBtn = document.getElementById('ctcAgain');
+            var inlineNote = document.getElementById('ctcInlineNote');
             if (!form) { return; }
+
+            // The banner sits above a long form while the submit button sits below it,
+            // so feedback shown only at the top is off-screen at the moment you click.
+            // Every outcome therefore also scrolls itself into view.
+            function reveal(el) {
+                if (!el || typeof el.scrollIntoView !== 'function') { return; }
+                try { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+                catch (e) { el.scrollIntoView(); }
+            }
+
+            function setInlineNote(type, text) {
+                if (!inlineNote) { return; }
+                inlineNote.className = 'text-sm font-semibold ' +
+                    (type === 'error' ? 'text-red-600' : 'text-stone-500');
+                inlineNote.textContent = text;
+            }
+
+            function clearInlineNote() {
+                if (!inlineNote) { return; }
+                inlineNote.className = 'hidden text-sm font-semibold';
+                inlineNote.textContent = '';
+            }
 
             // Consumer domains are rejected — enquiries are expected from a company address.
             var blockedDomains = ['gmail.com', 'outlook.com', 'hotmail.com', 'yahoo.com'];
@@ -715,9 +888,6 @@
                     contactNumber: val('contactNumber').replace(/[-() ]+/g, ''),
                     companyName: val('companyName'),
                     designation: val('designation'),
-                    country: val('country'),
-                    companySize: val('companySize'),
-                    topic: val('topic'),
                     message: val('message')
                 };
 
@@ -728,8 +898,6 @@
                     ['emailId', values.emailId, 'Please enter your work email.'],
                     ['contactNumber', values.contactNumber, 'Please enter a phone number.'],
                     ['companyName', values.companyName, 'Please enter your company name.'],
-                    ['country', values.country, 'Please select your country.'],
-                    ['topic', values.topic, 'Please choose what this is about.'],
                     ['message', values.message, 'Please tell us how we can help.']
                 ];
 
@@ -758,8 +926,14 @@
 
                 if (!ok) {
                     setStatus('error', 'Please correct the highlighted fields and try again.');
+                    setInlineNote('error', 'Check the highlighted fields above.');
                     var firstBad = form.querySelector('.fld-wrap.is-invalid .fld');
-                    if (firstBad) { firstBad.focus(); }
+                    if (firstBad) {
+                        // Centre it first, then focus without a second jump — a bare
+                        // focus() can land the field underneath the fixed header.
+                        reveal(firstBad);
+                        try { firstBad.focus({ preventScroll: true }); } catch (e) { firstBad.focus(); }
+                    }
                     return;
                 }
 
@@ -767,10 +941,11 @@
                 submit.classList.add('is-busy');
                 submitText.textContent = 'Sending…';
                 setStatus('info', 'Submitting your enquiry…');
+                setInlineNote('info', 'Sending your enquiry…');
 
                 var body = new URLSearchParams();
                 body.append('meta', JSON.stringify(values));
-                body.append('subject', 'Website enquiry — ' + values.topic);
+                body.append('subject', 'Website enquiry');
                 body.append('message', values.message);
 
                 fetch('https://inaipi.ae/imperiumapp/email.php', {
@@ -785,13 +960,27 @@
                     .then(function (text) {
                         if (text.trim() === 'Email sent successfully!') {
                             form.reset();
-                            setStatus('success', 'Thanks — we\'ve received your enquiry and will be in touch within one business day.');
+                            clearStatus();
+                            clearInlineNote();
+                            // Swap the whole form out for the confirmation panel, so the
+                            // result cannot be missed or mistaken for "nothing happened".
+                            if (formWrap && successPanel) {
+                                formWrap.classList.add('hidden');
+                                successPanel.classList.remove('hidden');
+                                reveal(successPanel);
+                            } else {
+                                setStatus('success', 'Thanks — we\'ve received your enquiry.');
+                            }
                         } else {
                             setStatus('error', 'We could not submit your enquiry: ' + text);
+                            setInlineNote('error', 'Could not send — see the message above.');
+                            reveal(status);
                         }
                     })
                     .catch(function () {
                         setStatus('error', 'Something went wrong while submitting your enquiry. Please try again, or email sales@imperiumapp.com directly.');
+                        setInlineNote('error', 'Could not send — see the message above.');
+                        reveal(status);
                     })
                     .then(function () {
                         submit.disabled = false;
@@ -799,6 +988,18 @@
                         submitText.textContent = 'Submit enquiry';
                     });
             });
+
+            // "Send another enquiry" — back to a clean form.
+            if (againBtn) {
+                againBtn.addEventListener('click', function () {
+                    successPanel.classList.add('hidden');
+                    formWrap.classList.remove('hidden');
+                    clearStatus();
+                    clearInlineNote();
+                    clearErrors();
+                    reveal(formWrap);
+                });
+            }
         })();
     </script>
 </body>

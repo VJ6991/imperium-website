@@ -13,7 +13,8 @@
             <h1>{{ Helper::cms('educationsector', 'banner_title', 'Education Sector') }}</h1>
             <div class="breadcroumb">
                <a href="{{ url('') }}">Home</a> &gt;
-               <span class="current">{{ Helper::cms('educationsector', 'banner_title', 'Education Sector') }}</span>
+                  <a href="{{ url('industry-influence') }}">Verticals</a> &gt;
+                  <span class="current">{{ Seo::name('educationsector') }}</span>
             </div>
          </div>
       </div>

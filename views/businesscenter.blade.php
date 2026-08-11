@@ -12,8 +12,9 @@
          <div class="col-md-12">
             <h1>{{ Helper::cms('businesscenter', 'banner_title', 'Business Center') }}</h1>
             <div class="breadcroumb">
-               <a href="./">Home</a> &gt;
-               <span class="current">{{ Helper::cms('businesscenter', 'banner_title', 'Business Center') }}</span>
+               <a href="{{ url('') }}">Home</a> &gt;
+                  <a href="{{ url('industry-influence') }}">Verticals</a> &gt;
+                  <span class="current">{{ Seo::name('businesscenter') }}</span>
             </div>
          </div>
       </div>

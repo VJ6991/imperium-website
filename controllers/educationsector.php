@@ -9,7 +9,7 @@ class educationsector extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('educationsector'),'title'=>'ICT Solution for Education Industry | Industry Leading Software', 'Make Help Desk'=>"", "keywords" => ""];
+	    $meta = Seo::page('educationsector');
 		return $this->view->render('educationsector', ['meta'=>$meta]);
 	}
 }

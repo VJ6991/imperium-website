@@ -11,7 +11,8 @@
             <h1>{{ Helper::cms('finance', 'banner_title', 'Finance') }}</h1>
             <div class="breadcroumb">
                <a href="{{ url('') }}">Home</a> &gt;
-               <span class="current">{{ Helper::cms('finance', 'banner_title', 'Finance') }}</span>
+                  <a href="{{ url('industry-influence') }}">Verticals</a> &gt;
+                  <span class="current">{{ Seo::name('finance') }}</span>
             </div>
          </div>
       </div>

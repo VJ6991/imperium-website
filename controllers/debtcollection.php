@@ -9,7 +9,7 @@ class debtcollection extends Controller
 		parent::__construct();
 	}
 	function index(){
-	    $meta = ['url'=>url('debtcollection'),'title'=>'Dubai Debt Solutions | Debt Management Services', 'description'=>"Need debt solutions system in Dubai to manage your agency's day-to-day operations? We provide secured debt management and collection system. For more information, visit Imperium.", "keywords" => ""];
+	    $meta = Seo::page('debtcollection');
 		return $this->view->render('debtcollection', ['meta'=>$meta]);
 	}
 }

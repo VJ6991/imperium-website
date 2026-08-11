@@ -13,7 +13,8 @@
             <h1>{{ Helper::cms('logistics', 'banner_title', 'Logistics') }}</h1>
             <div class="breadcroumb">
                <a href="{{ url('') }}">Home</a> &gt;
-               <span class="current">{{ Helper::cms('logistics', 'banner_title', 'Logistics') }}</span>
+                  <a href="{{ url('industry-influence') }}">Verticals</a> &gt;
+                  <span class="current">{{ Seo::name('logistics') }}</span>
             </div>
          </div>
       </div>
