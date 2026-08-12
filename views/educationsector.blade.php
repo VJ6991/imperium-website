@@ -47,11 +47,17 @@
          @if($extra_img)
          <div class="row">
            <div class="col-md-12">
-             <img src="{{ asset($extra_img) }}" alt="Education Products">
+             <img src="{{ asset($extra_img) }}" alt="Imperium education sector products deployed at Al Falah University, Al Ain University and Meric Training Institute: Avaya IPOCC, CTI Connect, Enterprise Contact Center and CRM Connect for Salesforce">
            </div>
          </div>
          @endif
       </div>
+   </div>
+</section>
+
+<section class="section-padding">
+   <div class="container">
+      @include('layouts.components.aeo', ['slug' => 'educationsector'])
    </div>
 </section>
 @endsection

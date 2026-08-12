@@ -48,11 +48,17 @@
          @if($extra_img)
          <div class="row">
            <div class="col-md-12">
-             <img src="{{ asset($extra_img) }}" alt="Logistics Products">
+             <img src="{{ asset($extra_img) }}" alt="Imperium logistics products: Avaya CCR with IVR integration deployed at Skynet Courier, plus Call Management System, WebRTC click-to-call and Toll Fraud Protection & Budget Control Module">
            </div>
          </div>
          @endif
       </div>
+   </div>
+</section>
+
+<section class="section-padding">
+   <div class="container">
+      @include('layouts.components.aeo', ['slug' => 'logistics'])
    </div>
 </section>
 @endsection

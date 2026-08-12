@@ -64,6 +64,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'localhost:
 
 require __DIR__ . '/helpers/Helper.php';
 require __DIR__ . '/helpers/Seo.php';
+require __DIR__ . '/helpers/Aeo.php';
 require __DIR__ . '/libs/config.php';
 require __DIR__ . '/helpers.php';
 require __DIR__ . '/package/autoload.php';

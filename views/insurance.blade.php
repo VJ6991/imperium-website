@@ -57,11 +57,17 @@
          @if($extra_img)
          <div class="row">
            <div class="col-md-12">
-             <img src="{{ asset($extra_img) }}" alt="Insurance Products">
+             <img src="{{ asset($extra_img) }}" alt="Imperium insurance products deployed at NAS Administration Service: Avaya IPOCC with Custom Reports, Imperium CTI Connect and Imperium SMS Gateway">
            </div>
          </div>
          @endif
       </div>
+   </div>
+</section>
+
+<section class="section-padding">
+   <div class="container">
+      @include('layouts.components.aeo', ['slug' => 'insurance'])
    </div>
 </section>
 @endsection

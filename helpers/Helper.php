@@ -116,6 +116,15 @@ class Helper
             if (!empty($meta['schema'])) {
                 $out .= Seo::jsonLd($meta['schema']);
             }
+            // Additional JSON-LD blocks beyond the single primary $meta['schema'] —
+            // currently just FAQPage (AEO phase), auto-attached by Seo::page() when
+            // cms/data/aeo.json has FAQ content for the slug. Each one must correspond
+            // to content actually rendered visibly on the page; see Aeo::faqSchema().
+            if (!empty($meta['schema_extra']) && is_array($meta['schema_extra'])) {
+                foreach ($meta['schema_extra'] as $schema) {
+                    $out .= Seo::jsonLd($schema);
+                }
+            }
         }
 
         return $out;

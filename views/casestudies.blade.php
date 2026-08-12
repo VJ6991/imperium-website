@@ -20,9 +20,9 @@
     <div class="container">
 
         <div class="section-title seclink text-center">
-            <h2>Imperium Case Studies</h2>
+            <h2>What results has Imperium delivered for real clients?</h2>
             <p>
-                Learn More from Companies Like Yours. Learn how we have significantly improved businesses in the region with efficiently applied solutions.
+                Learn more from companies like yours. Learn how we have significantly improved businesses in the region with efficiently applied solutions.
             <!-- Providing Customer information and tracking history is critical for a debt
                 collector where the interactions are legally bound. Avaya IP Office with
                 Imperium Debt collection provides reliable and secured environment for Debt
@@ -46,9 +46,9 @@
                                 style="width: 100%; height: 200px; object-fit: cover;">
                         </div>
                         <div class="post_header entry-header">
-                            <h2 class="post_title entry-title match-height" style="min-height: 60px; margin-top: 15px;">
+                            <h3 class="post_title entry-title match-height" style="min-height: 60px; margin-top: 15px;">
                                 {{ $cs['title'] }}
-                            </h2>
+                            </h3>
                         </div>
                         <div class="post_content entry-content" style="flex-grow: 1; display: flex; flex-direction: column;">
                             <div class="post_content_inner" style="flex-grow: 1;">
@@ -64,6 +64,9 @@
                 @endforeach
             </ul>
         </div>
+
+        @include('layouts.components.aeo', ['slug' => 'casestudy'])
+    </div>
     </section>
 
     @endsection

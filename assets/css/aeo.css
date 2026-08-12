@@ -1,0 +1,189 @@
+/*
+ * Shared AEO content styling — TL;DR box, "how it works" step list, comparison
+ * table and FAQ section. Framework-agnostic plain CSS on purpose: this is linked
+ * from both the Bootstrap-based inner pages (layouts/app.blade.php) and the
+ * Tailwind-compiled homepage/contact page, which share none of their utility
+ * classes. Self-contained card styling (its own background/shadow) so it reads
+ * clearly whether it lands on a light Bootstrap page or a dark homepage section.
+ * Classes are prefixed .imp-aeo- to stay clear of both frameworks.
+ */
+
+.imp-aeo {
+    max-width: 900px;
+    margin: 0 auto 8px;
+}
+
+.imp-aeo-tldr {
+    background: #FFF8F4;
+    border: 1px solid #FFDBC7;
+    border-left: 4px solid #FF6B35;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 0 0 36px;
+}
+
+.imp-aeo-tldr-kicker {
+    margin: 0 0 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FF6B35;
+}
+
+.imp-aeo-tldr-text {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #262220;
+}
+
+.imp-aeo-updated {
+    margin: 12px 0 0;
+    font-size: 12.5px;
+    color: #8a8078;
+}
+
+.imp-aeo-block {
+    margin: 0 0 40px;
+}
+
+.imp-aeo-h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: #1a1714;
+    margin: 0 0 18px;
+}
+
+.imp-aeo-steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: imp-aeo-step;
+}
+
+.imp-aeo-steps > li {
+    position: relative;
+    counter-increment: imp-aeo-step;
+    padding: 0 0 0 44px;
+    margin: 0 0 18px;
+    min-height: 30px;
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: #3a352f;
+}
+
+.imp-aeo-steps > li::before {
+    content: counter(imp-aeo-step);
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FF6B35;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imp-aeo-steps > li:last-child {
+    margin-bottom: 0;
+}
+
+.imp-aeo-table-wrap {
+    overflow-x: auto;
+    border: 1px solid #ECE5DD;
+    border-radius: 10px;
+}
+
+.imp-aeo-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 640px;
+}
+
+.imp-aeo-table th,
+.imp-aeo-table td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ECE5DD;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.imp-aeo-table thead th {
+    background: #FAF7F4;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6b6259;
+    border-bottom: 1px solid #ECE5DD;
+}
+
+.imp-aeo-table tbody th[scope="row"] {
+    font-weight: 700;
+    color: #1a1714;
+    white-space: nowrap;
+}
+
+.imp-aeo-table tbody tr:last-child th,
+.imp-aeo-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.imp-aeo-source-note {
+    margin: 10px 2px 0;
+    font-size: 12.5px;
+    font-style: italic;
+    color: #8a8078;
+}
+
+.imp-aeo-faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #ECE5DD;
+}
+
+.imp-aeo-faq-item:first-of-type {
+    border-top: 1px solid #ECE5DD;
+}
+
+.imp-aeo-faq-q {
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #1a1714;
+    margin: 0 0 8px;
+    line-height: 1.4;
+}
+
+.imp-aeo-faq-a {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #453f38;
+    margin: 0;
+}
+
+.imp-aeo a {
+    color: #FF6B35;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 107, 53, 0.35);
+    text-underline-offset: 2px;
+}
+
+.imp-aeo a:hover {
+    text-decoration-color: currentColor;
+}
+
+@media (max-width: 640px) {
+    .imp-aeo-tldr { padding: 16px 18px; }
+    .imp-aeo-tldr-text { font-size: 16px; }
+    .imp-aeo-h2 { font-size: 21px; }
+}

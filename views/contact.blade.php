@@ -36,6 +36,7 @@
          via the @font-face above (assets/fonts/Satoshi-Variable.woff2), so the CDN
          request was a redundant render-blocking round-trip to a third-party host. -->
     <link rel="stylesheet" href="{{ asset('css/material-symbols.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/aeo.css') }}?v=1">
     <!-- cdn.tailwindcss.com (Play CDN) and the fonts.googleapis.com Material Symbols
          request were both replaced with the static stylesheets above. This page's
          tailwind.config now lives at build/tailwind.contact.config.js and is compiled
@@ -608,6 +609,12 @@
                         title="Imperium office location — Dubai"
                         src="https://www.google.com/maps?q=1%20Lake%20Plaza%2C%20Cluster%20T%2C%20Jumeirah%20Lakes%20Towers%2C%20Dubai&z=16&output=embed"></iframe>
                 </div>
+            </div>
+        </section>
+
+        <section class="px-5 sm:px-8 pb-20">
+            <div class="max-w-3xl mx-auto">
+                @include('layouts.components.aeo', ['slug' => 'contact'])
             </div>
         </section>
     </main>

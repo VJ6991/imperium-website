@@ -45,11 +45,17 @@
          @if($extra_img)
          <div class="row">
            <div class="col-md-12">
-             <img src="{{ asset($extra_img) }}" alt="Health Care Products">
+             <img src="{{ asset($extra_img) }}" alt="Imperium healthcare products deployed at Emirates Hospital Group, Mobile Doctors 24/7, Emirates Home Nursing and Al Tadawi Medical Care: Avaya IPOCC, Imperium SMS Gateway, Customer Survey Module and INAIPI">
            </div>
          </div>
          @endif
       </div>
+   </div>
+</section>
+
+<section class="section-padding">
+   <div class="container">
+      @include('layouts.components.aeo', ['slug' => 'healthcare'])
    </div>
 </section>
 @endsection

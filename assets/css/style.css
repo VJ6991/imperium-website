@@ -1702,7 +1702,7 @@ div#pagecontainer ul {
     font-size: 13px;
 }
 
-.topcontent h2.post_title.entry-title {
+.topcontent .post_title.entry-title {
     font-size: 22px;
     margin: 0;
     padding: 0;

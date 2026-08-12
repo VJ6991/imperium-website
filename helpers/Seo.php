@@ -112,6 +112,20 @@ class Seo
             $meta['schema'] = self::serviceSchema($slug, $p);
         }
 
+        // AEO: auto-attach FAQPage schema when cms/data/aeo.json has FAQ content
+        // for this slug, so no controller has to remember to wire it up per page.
+        // Aeo::page() is the same read path the FAQ partial renders from, so this
+        // can never mark up a question that isn't visibly answered on the page.
+        if (class_exists('Aeo')) {
+            $aeo = Aeo::page($slug);
+            if (!empty($aeo['faqs'])) {
+                $faqSchema = Aeo::faqSchema($aeo['faqs']);
+                if ($faqSchema) {
+                    $meta['schema_extra'][] = $faqSchema;
+                }
+            }
+        }
+
         return array_merge($meta, $overrides);
     }
 

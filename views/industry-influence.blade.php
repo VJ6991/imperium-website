@@ -23,7 +23,7 @@
          <div class="row">
              <div class="col-md-12 text-center">
                 <div class="section-title">
-                   <h2>Vertical based customized ICT solutions for a winning edge </h2>
+                   <h2>Which industries does Imperium build contact center solutions for?</h2>
                 </div>
              </div>
          </div>
@@ -56,12 +56,9 @@
                 @endforeach
             </div>
          </div>
-   </div>
-
-
-            </div>
-         </div>
       </div>
+
+      @include('layouts.components.aeo', ['slug' => 'industry-influence'])
    </div>
 </section>
 @endsection

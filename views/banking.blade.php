@@ -45,11 +45,17 @@
          @if($extra_img)
          <div class="row">
            <div class="col-md-12">
-             <img src="{{ asset($extra_img) }}" alt="Banking Products">
+             <img src="{{ asset($extra_img) }}" alt="Imperium banking products deployed at ICICI Bank Singapore and Al Masraf Bank: Imperium Voice Logger Solution and Imperium Call Reporter">
            </div>
          </div>
          @endif
       </div>
+   </div>
+</section>
+
+<section class="section-padding">
+   <div class="container">
+      @include('layouts.components.aeo', ['slug' => 'banking'])
    </div>
 </section>
 @endsection

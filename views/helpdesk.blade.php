@@ -46,5 +46,11 @@
       </div>
    </div>
 </section>
+
+<section class="section-padding">
+   <div class="container">
+      @include('layouts.components.aeo', ['slug' => 'helpdesk'])
+   </div>
+</section>
 @endsection
 
