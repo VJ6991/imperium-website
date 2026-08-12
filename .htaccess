@@ -105,7 +105,10 @@
     RewriteRule ^(assets|images)($|/) - [L]
 
     # Forbid direct web access to server-side folders (source, data, compile cache).
-    RewriteRule ^(cms|cache|controllers|libs|helpers|package|views|seo|tools)(/|$) - [F,L]
+    # build/ and node_modules/ are the Tailwind CLI's dev-only tooling (see
+    # package.json) — they must never ship, but this rule blocks them too in case
+    # a deploy copies more than it should.
+    RewriteRule ^(cms|cache|controllers|libs|helpers|package|views|seo|tools|build|node_modules)(/|$) - [F,L]
 
     # Front controller: send everything that is not a real file/folder to index.php.
     # Works at the domain root or inside any sub-folder (paths stay relative to this

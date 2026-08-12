@@ -31,37 +31,17 @@
         }
     </style>
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="{{ asset('css/tailwind-contact.min.css') }}">
     <!-- Fontshare's Satoshi stylesheet was removed: Satoshi is already self-hosted
          via the @font-face above (assets/fonts/Satoshi-Variable.woff2), so the CDN
          request was a redundant render-blocking round-trip to a third-party host. -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            theme: {
-                extend: {
-                    "colors": {
-                        "ink": "#14110F",
-                        "cream": "#FAF7F4",
-                        "brand": "#FF6B35"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Satoshi", "sans-serif"],
-                        "body": ["Satoshi", "sans-serif"],
-                        "label": ["Satoshi", "sans-serif"]
-                    }
-                },
-            },
-        }
-    </script>
+    <link rel="stylesheet" href="{{ asset('css/material-symbols.css') }}">
+    <!-- cdn.tailwindcss.com (Play CDN) and the fonts.googleapis.com Material Symbols
+         request were both replaced with the static stylesheets above. This page's
+         tailwind.config now lives at build/tailwind.contact.config.js and is compiled
+         via `npm run build:css:contact` — keep it in sync with any class changes on
+         this page and re-run the build, since there is no more JIT compiler in the
+         browser. -->
 
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 

@@ -6,6 +6,13 @@ cache/*
 # Build/deploy archives
 *.zip
 
+# Tailwind CLI build tooling (package.json/build/) is dev-only — it produces
+# assets/css/tailwind-*.min.css, which IS committed and IS what ships. The
+# node_modules tree must never be committed or deployed: router.php/.htaccess
+# serve any matching .js/.css path directly off disk, so a shipped node_modules
+# would be publicly requestable.
+node_modules/
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

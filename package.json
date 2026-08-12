@@ -1,0 +1,16 @@
+{
+  "name": "imperium-lite-assets",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build-time-only dependencies for compiling the static Tailwind CSS bundles shipped in assets/css. Not required at runtime — the site itself is plain PHP and serves the compiled output.",
+  "scripts": {
+    "build:css": "npm run build:css:home && npm run build:css:contact",
+    "build:css:home": "tailwindcss -c build/tailwind.home.config.js -i build/tailwind.home.input.css -o assets/css/tailwind-home.min.css --minify",
+    "build:css:contact": "tailwindcss -c build/tailwind.contact.config.js -i build/tailwind.contact.input.css -o assets/css/tailwind-contact.min.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.19",
+    "@tailwindcss/forms": "0.5.11",
+    "@tailwindcss/container-queries": "0.1.1"
+  }
+}
