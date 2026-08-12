@@ -8,6 +8,20 @@
 module.exports = {
     darkMode: 'class',
     content: ['imperium homepage_final/index.html'],
+    // controllers/index.php injects the AEO TL;DR/FAQ sections at runtime (from
+    // cms/data/aeo.json) rather than them living in the static HTML file above,
+    // so Tailwind's content scan never sees those classes. Safelist the ones
+    // used only in that PHP-generated markup (checked against the scan output —
+    // everything else those methods use already appears verbatim in the HTML).
+    // If you add a new utility class to renderAeoTldr()/renderAeoFaq(), add it
+    // here too, or it will silently compile to nothing.
+    safelist: [
+        'max-w-4xl',
+        'sm:text-lg',
+        'border-y',
+        'space-y-8',
+        'opacity-70',
+    ],
     theme: {
         extend: {
             colors: {
