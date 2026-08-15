@@ -1,11 +1,16 @@
 {{--
-    Renders a page's AEO content (TL;DR, how-it-works steps, comparison table,
-    FAQ) from cms/data/aeo.json via the Aeo helper. Include this file passing a
+    Renders a page's AEO content (how-it-works steps, comparison table, FAQ)
+    from cms/data/aeo.json via the Aeo helper. Include this file passing a
     'slug' variable naming the page (see any vertical view for the call site).
     Silently renders nothing if the slug has no AEO content yet. This is the
     ONLY place these pages render FAQ text — Seo::page() builds the matching
     FAQPage JSON-LD from the exact same Aeo::page() array, so schema can never
     claim a question the page doesn't actually show.
+
+    The TL;DR ("In short") band this used to also render was removed
+    2026-08-15 at the owner's request — see reports/30-geo-implementation-log.md
+    §5/§6. cms/data/aeo.json's tldr/last_updated fields are left in place as
+    inert data, not rendered anywhere by this partial anymore.
 
     NOTE: do not write a literal "at-sign include(" example anywhere in this
     comment block, even inside @php/@verbatim — the Blade compiler matches
@@ -18,26 +23,12 @@
 @if($aeoData)
 <div class="imp-aeo">
 
-    @if(!empty($aeoData['tldr']))
-    <section class="imp-aeo-tldr" aria-label="Quick answer">
-        <p class="imp-aeo-tldr-kicker">In short</p>
-        {{-- Raw output: tldr/faq answers/table cells may contain hand-authored
-             <a href> internal links (cms/data/aeo.json is our own trusted content,
-             never user input). Google's FAQPage guidelines explicitly allow <a>,
-             <b>, <em> etc. inside answer text, so this is schema-safe too. --}}
-        <p class="imp-aeo-tldr-text">{!! $aeoData['tldr'] !!}</p>
-        @if(!empty($aeoData['last_updated']))
-        <p class="imp-aeo-updated">Reviewed by the Imperium team &middot; last updated {{ date('j F Y', strtotime($aeoData['last_updated'])) }}</p>
-        @endif
-    </section>
-    @endif
-
     @if(!empty($aeoData['how_it_works']))
     <section class="imp-aeo-block">
         <h2 class="imp-aeo-h2">{{ !empty($aeoData['how_it_works_heading']) ? $aeoData['how_it_works_heading'] : 'How does it work?' }}</h2>
         <ol class="imp-aeo-steps">
             {{-- Raw output: how_it_works steps may contain trusted <a href>
-                 internal links, same as tldr/faq-a/table cells above. --}}
+                 internal links, same as faq-a/table cells below. --}}
             @foreach($aeoData['how_it_works'] as $step)
             <li>{!! $step !!}</li>
             @endforeach

@@ -1,47 +1,20 @@
 /*
- * Shared AEO content styling — TL;DR box, "how it works" step list, comparison
- * table and FAQ section. Framework-agnostic plain CSS on purpose: this is linked
- * from both the Bootstrap-based inner pages (layouts/app.blade.php) and the
+ * Shared AEO content styling — "how it works" step list, comparison table and
+ * FAQ section. Framework-agnostic plain CSS on purpose: this is linked from
+ * both the Bootstrap-based inner pages (layouts/app.blade.php) and the
  * Tailwind-compiled homepage/contact page, which share none of their utility
  * classes. Self-contained card styling (its own background/shadow) so it reads
  * clearly whether it lands on a light Bootstrap page or a dark homepage section.
  * Classes are prefixed .imp-aeo- to stay clear of both frameworks.
+ *
+ * The TL;DR ("In short") box this used to also style (.imp-aeo-tldr and
+ * friends) was removed 2026-08-15 at the owner's request — see
+ * reports/30-geo-implementation-log.md §5/§6.
  */
 
 .imp-aeo {
     max-width: 900px;
     margin: 0 auto 8px;
-}
-
-.imp-aeo-tldr {
-    background: #FFF8F4;
-    border: 1px solid #FFDBC7;
-    border-left: 4px solid #FF6B35;
-    border-radius: 10px;
-    padding: 20px 24px;
-    margin: 0 0 36px;
-}
-
-.imp-aeo-tldr-kicker {
-    margin: 0 0 6px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #FF6B35;
-}
-
-.imp-aeo-tldr-text {
-    margin: 0;
-    font-size: 17px;
-    line-height: 1.65;
-    color: #262220;
-}
-
-.imp-aeo-updated {
-    margin: 12px 0 0;
-    font-size: 12.5px;
-    color: #8a8078;
 }
 
 .imp-aeo-block {
@@ -183,7 +156,5 @@
 }
 
 @media (max-width: 640px) {
-    .imp-aeo-tldr { padding: 16px 18px; }
-    .imp-aeo-tldr-text { font-size: 16px; }
     .imp-aeo-h2 { font-size: 21px; }
 }

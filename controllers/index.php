@@ -69,16 +69,20 @@ class index extends Controller
         $e = function ($v) { return htmlspecialchars((string) $v, ENT_QUOTES, 'UTF-8'); };
 
         $out  = '<section class="pt-12 pb-16 px-5 sm:px-8 max-w-7xl mx-auto" id="faq">';
-        $out .= '<h2 class="text-3xl lg:text-4xl font-bold font-headline text-white mb-10">Frequently asked questions</h2>';
-        $out .= '<div class="max-w-3xl space-y-8">';
+        $out .= '<h2 class="text-3xl lg:text-4xl font-bold font-headline text-white mb-10 text-center">Frequently asked questions</h2>';
+        $out .= '<div class="max-w-3xl mx-auto">';
         foreach ($aeo['faqs'] as $faq) {
             if (empty($faq['q']) || empty($faq['a'])) {
                 continue;
             }
             // Question text is escaped; answer text is raw (may contain trusted
             // <a href> internal links from aeo.json — see the tldr note above).
-            $out .= '<div><h3 class="text-lg font-bold text-white mb-2">' . $e($faq['q']) . '</h3>';
-            $out .= '<p class="text-on-surface-variant leading-relaxed">' . $faq['a'] . '</p></div>';
+            // <details>/<summary> gives every item a native, accessible
+            // expand/collapse toggle with no JS; the chevron flip is pure CSS
+            // (see the #faq details.imp-faq-item[open] rule in index.html).
+            $out .= '<details class="imp-faq-item"><summary><h3 class="text-lg font-bold text-white">' . $e($faq['q']) . '</h3>';
+            $out .= '<span class="material-symbols-outlined imp-faq-icon" aria-hidden="true">expand_more</span></summary>';
+            $out .= '<p class="imp-faq-a text-on-surface-variant leading-relaxed">' . $faq['a'] . '</p></details>';
         }
         $out .= '</div></section>';
 

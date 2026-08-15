@@ -188,6 +188,39 @@
             color: #ff8555;
         }
 
+        /* FAQ accordion (native <details>/<summary>, no JS needed). Each
+           item's marker triangle is hidden in favor of the Material Symbols
+           chevron, which flips 180deg when the item is open. */
+        #faq details.imp-faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+        }
+        #faq details.imp-faq-item summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        #faq details.imp-faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        #faq details.imp-faq-item summary::marker {
+            content: "";
+        }
+        #faq .imp-faq-icon {
+            flex: none;
+            color: #FF6B35;
+            transition: transform 0.2s ease;
+        }
+        #faq details.imp-faq-item[open] .imp-faq-icon {
+            transform: rotate(180deg);
+        }
+        #faq .imp-faq-a {
+            padding-top: 12px;
+        }
+
         .glass-header {
             background: rgba(14, 14, 14, 0.6);
             backdrop-filter: blur(24px);

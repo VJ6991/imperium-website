@@ -229,6 +229,57 @@ with the trimmed safelist.
 
 ---
 
+## 6. Removed: the TL;DR ("In short") band site-wide
+
+Following directly from §5 (the homepage removal): the owner then noticed the
+same "In short" box on the inner pages too (verticals, case studies,
+industry-influence, contact, about) and asked why it was on every page and
+for it to be removed there as well.
+
+**Why it was on every page**: this was not a bug — it was the shared,
+always-visible `views/layouts/components/aeo.blade.php` partial working as
+designed. The original AEO-phase brief explicitly asked for "a concise
+answer/TL;DR near the top of each priority page," so it was deliberately
+built into the one shared partial included on all 16 non-homepage pages, each
+with page-specific content pulled from that page's `tldr` field in
+`cms/data/aeo.json`. §5's homepage removal only touched the homepage's
+*separate*, PHP-generated code path (`renderAeoTldr()` in
+`controllers/index.php`) — the shared partial's own TL;DR block, and
+therefore every other page, was untouched until this request.
+
+**What was removed**: the `@if(!empty($aeoData['tldr']))` block and its
+`last_updated` sub-block from `views/layouts/components/aeo.blade.php`
+(the how-it-works, comparison-table and FAQ sections are untouched); the
+now-dead `.imp-aeo-tldr`, `.imp-aeo-tldr-kicker`, `.imp-aeo-tldr-text` and
+`.imp-aeo-updated` CSS rules from `assets/css/aeo.css` (including their
+mobile media-query overrides).
+
+**What was left alone, same reasoning as §5**: every page's `tldr` field in
+`cms/data/aeo.json` stays as inert, unrendered data rather than being
+deleted — cheap to point somewhere else later (e.g. a meta description) if
+wanted, harmless to leave as a documented per-page summary otherwise. The
+how-it-works steps, comparison table (case studies page) and FAQ sections —
+on every page, including their FAQPage schema — are unaffected.
+
+**Verified**: full 17-page sweep after clearing the Blade cache — every page
+still `200`, zero PHP notices, zero occurrences of "In short" anywhere in the
+rendered output. Spot-checked `/healthcare`: the "How does Imperium's
+healthcare contact center work?" heading, all 5 FAQ items, and the FAQPage
+schema (still 5 questions, matching) all render correctly and unchanged.
+
+**Also present as of this point in the session**: the homepage FAQ
+(`renderAeoFaq()` in `controllers/index.php`) now renders each question as a
+native `<details>/<summary>` element (`imp-faq-item`, with matching CSS in
+`imperium homepage_final/index.html` for the expand/collapse chevron) instead
+of a static always-expanded list — a genuinely collapsed-by-default,
+one-click-to-reveal FAQ, the same accessible, non-hidden pattern discussed
+earlier in this session as the compliant alternative to actually hiding
+content. Re-verified end-to-end after the TL;DR removal above: `200`, zero
+notices, all 6 questions present (`imp-faq-item` × 6), FAQPage schema still
+matches (6 questions).
+
+---
+
 ## Files changed this session
 
 | File | Change |
@@ -247,7 +298,9 @@ with the trimmed safelist.
 | `77b34666e313801d1d9fc85dfebca50d.txt` (new) | IndexNow key-verification file |
 | `tools/indexnow-submit.php` (new) | IndexNow bulk-submission script (not yet run — see §3) |
 | `imperium homepage_final/index.html` | Metrics-section evidence link; `award` added to the homepage's hardcoded schema copy; TL;DR marker/comment/CSS removed (§5) |
-| `controllers/index.php` | `renderAeoTldr()` and its call site removed (§5) |
+| `controllers/index.php` | `renderAeoTldr()` and its call site removed (§5); homepage FAQ items converted to `<details>/<summary>` accordion (§6) |
+| `assets/css/aeo.css` | Dead `.imp-aeo-tldr`/`.imp-aeo-updated` rules removed (§6) |
+| `views/layouts/components/aeo.blade.php` | TL;DR block removed site-wide (§6) |
 | `build/tailwind.home.config.js` | Safelist trimmed to just `space-y-8` (§5) |
 | `assets/css/tailwind-home.min.css` | Rebuilt |
 
