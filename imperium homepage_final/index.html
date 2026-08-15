@@ -175,16 +175,16 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
 
-        /* Internal links inside the AEO TL;DR/FAQ sections (controllers/index.php
-           injects that markup from cms/data/aeo.json — see the AEO_TLDR/AEO_FAQ
-           markers below). Plain <a> tags would render browser-default blue,
-           which reads wrong against this page's dark theme. */
-        #tldr a, #faq a {
+        /* Internal links inside the AEO FAQ section (controllers/index.php
+           injects that markup from cms/data/aeo.json — see the AEO_FAQ marker
+           below). Plain <a> tags would render browser-default blue, which
+           reads wrong against this page's dark theme. */
+        #faq a {
             color: #FF6B35;
             text-decoration: underline;
             text-underline-offset: 2px;
         }
-        #tldr a:hover, #faq a:hover {
+        #faq a:hover {
             color: #ff8555;
         }
 
@@ -629,9 +629,6 @@
                 -->
             </div>
         </section>
-        <!-- AEO: quick-answer TL;DR, injected by controllers/index.php from
-             cms/data/aeo.json (Aeo::page('index')) — see renderAeoTldr(). -->
-        <!-- AEO_TLDR -->
         <!-- Trust Bar / Partners -->
         <section id="partners" class="pt-12 pb-6 bg-surface-container-low/50">
             <div class="max-w-7xl mx-auto px-5 sm:px-8">

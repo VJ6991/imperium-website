@@ -32,12 +32,13 @@ class index extends Controller
                 $html = preg_replace('#\b(href|src|action)="/(?!/)#', '$1="' . $base . '/', $html);
                 $html = preg_replace('#\burl\((["\']?)/(?!/)#', 'url($1' . $base . '/', $html);
             }
-            // AEO: TL;DR + FAQ content is injected from cms/data/aeo.json (via the
-            // Aeo helper) at the two marker comments below, rather than being
-            // hand-duplicated into this static file — same source of truth every
+            // AEO: FAQ content is injected from cms/data/aeo.json (via the Aeo
+            // helper) at the marker comment below, rather than being hand-
+            // duplicated into this static file — same source of truth every
             // other page's FAQ reads from, so editing aeo.json can't leave this
             // page's copy stale. The homepage stays otherwise fully static.
-            $html = str_replace('<!-- AEO_TLDR -->', $this->renderAeoTldr(), $html);
+            // (The matching TL;DR band was removed 2026-08-15 — see
+            // reports/30-geo-implementation-log.md.)
             $html = str_replace('<!-- AEO_FAQ -->', $this->renderAeoFaq(), $html);
             echo $html;
             return;
@@ -56,34 +57,6 @@ class index extends Controller
         
         return $this->view->render('index', ['meta' => $meta, 'blogs' => $blogs, 'casestudies' => $casestudies]);
 
-    }
-
-    /**
-     * Homepage TL;DR band — matches the Tailwind utility classes already used
-     * elsewhere on this page (bg-surface-container-lowest / text-on-surface-variant
-     * / text-primary tokens, defined in build/tailwind.home.config.js), not the
-     * shared assets/css/aeo.css light-card styling the Bootstrap pages use — a
-     * bright card would look out of place against this page's dark theme.
-     */
-    private function renderAeoTldr()
-    {
-        $aeo = class_exists('Aeo') ? Aeo::page('index') : null;
-        if (empty($aeo['tldr'])) {
-            return '';
-        }
-        $e = function ($v) { return htmlspecialchars((string) $v, ENT_QUOTES, 'UTF-8'); };
-
-        $out  = '<section id="tldr" class="py-10 px-5 sm:px-8 bg-surface-container-lowest border-y border-white/10">';
-        $out .= '<div class="max-w-7xl mx-auto">';
-        $out .= '<p class="text-[11px] font-bold uppercase tracking-widest text-primary mb-2">In short</p>';
-        // Raw, not escaped: tldr text may contain hand-authored <a href> internal
-        // links — cms/data/aeo.json is our own trusted content, not user input.
-        $out .= '<p class="text-on-surface-variant text-base sm:text-lg leading-relaxed max-w-4xl">' . $aeo['tldr'] . '</p>';
-        if (!empty($aeo['last_updated'])) {
-            $out .= '<p class="text-xs text-on-surface-variant opacity-70 mt-3">Reviewed by the Imperium team &middot; last updated ' . $e(date('j F Y', strtotime($aeo['last_updated']))) . '</p>';
-        }
-        $out .= '</div></section>';
-        return $out;
     }
 
     /** Homepage FAQ section + its matching FAQPage JSON-LD, from the same array. */

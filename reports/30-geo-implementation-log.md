@@ -171,6 +171,64 @@ why those stay open pending your confirmation.
 
 ---
 
+---
+
+## 5. Removed: the homepage TL;DR ("In short") band
+
+Added earlier in this same session (§4 above / the AEO phase's homepage
+injection work), **removed 2026-08-15 at the owner's explicit request**, after
+a discussion about whether it could instead be kept in the page but hidden
+from view. It could not, for reasons worth recording here since the same
+question will likely come up again for other pages:
+
+- **Google's spam policies explicitly treat hidden text as a violation** —
+  content present in HTML but hidden via CSS (`display:none`, tiny/
+  transparent text, off-screen positioning) risks a manual action, not just
+  reduced benefit. This applies regardless of *where* in the DOM or on which
+  page the hidden content lives — moving it to an unlinked page or a hidden
+  element elsewhere doesn't avoid the problem, and showing crawlers content a
+  real visitor would never see is cloaking, a related and generally more
+  serious violation.
+- **Several AI crawlers render pages rather than just parsing raw HTML now**,
+  so "invisible to a human" and "invisible to the crawler" overlap more than
+  they used to.
+- More fundamentally, **every design decision in the SEO/AEO/GEO work across
+  all three phases has been built on "never mark up content not visibly on
+  the page"** — hidden-but-present content is the exact failure mode the
+  visible-content-vs-schema parity checks throughout this project exist to
+  catch. Making an exception here would have undermined the premise the rest
+  of the AEO/GEO build relies on.
+- The legitimate middle ground — a genuinely visible but collapsed/
+  expandable "Quick answer" toggle, the same pattern as an FAQ accordion,
+  which Google does *not* treat as hidden content — was offered but not
+  wanted either. The owner's call was to remove it outright rather than
+  restyle it.
+
+**What was removed**: `renderAeoTldr()` and its call site in
+`controllers/index.php`; the `<!-- AEO_TLDR -->` marker and its explanatory
+comment in `imperium homepage_final/index.html`; the `#tldr` CSS link-styling
+rule (simplified to just `#faq`, since that's now the only injected section
+using it); and the four Tailwind safelist entries
+(`max-w-4xl`/`sm:text-lg`/`border-y`/`opacity-70`) that existed only to
+support that markup — `space-y-8` is the only one still needed, for the FAQ
+section.
+
+**What was deliberately left alone**: the `tldr` field itself in
+`cms/data/aeo.json`'s `index` entry — it's inert, unrendered data now, not a
+half-finished feature; harmless to keep as a documented summary, and cheap to
+wire back up (or point somewhere else, e.g. a meta description) later if
+wanted. The homepage FAQ section, its schema, and every other page's TL;DR
+(which use the shared, always-visible `views/layouts/components/aeo.blade.php`
+partial, not this homepage-specific code path) are unaffected.
+
+**Verified**: `php -l` clean; homepage still `200`, zero PHP notices; "In
+short" no longer appears anywhere in the rendered HTML; the FAQ section and
+all three JSON-LD blocks (Organization, WebSite, FAQPage — 6 questions,
+unchanged) still render and validate correctly; Tailwind CSS rebuilt clean
+with the trimmed safelist.
+
+---
+
 ## Files changed this session
 
 | File | Change |
@@ -188,7 +246,10 @@ why those stay open pending your confirmation.
 | `llms.txt` (new) | AI-agent-readable page index |
 | `77b34666e313801d1d9fc85dfebca50d.txt` (new) | IndexNow key-verification file |
 | `tools/indexnow-submit.php` (new) | IndexNow bulk-submission script (not yet run — see §3) |
-| `imperium homepage_final/index.html` | Metrics-section evidence link; `award` added to the homepage's hardcoded schema copy |
+| `imperium homepage_final/index.html` | Metrics-section evidence link; `award` added to the homepage's hardcoded schema copy; TL;DR marker/comment/CSS removed (§5) |
+| `controllers/index.php` | `renderAeoTldr()` and its call site removed (§5) |
+| `build/tailwind.home.config.js` | Safelist trimmed to just `space-y-8` (§5) |
+| `assets/css/tailwind-home.min.css` | Rebuilt |
 
 Not yet committed — see the summary for the commit(s) grouping these changes.
 Two further changes (robots.txt, `.htaccess`) are proposed as diffs awaiting
