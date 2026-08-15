@@ -47,6 +47,15 @@ return [
         'type'        => 'website',
     ],
 
+    'about' => [
+        'title'       => 'About Imperium Software Technologies | Dubai, UAE',
+        'description' => 'Imperium Software Technologies is a Dubai-based CX and contact center software provider and certified Avaya DevConnect partner, serving the UAE, Singapore and India.',
+        'image'       => 'image/imperium-logo-orange-new.png',
+        'priority'    => '0.7',
+        'changefreq'  => 'monthly',
+        'type'        => 'website',
+    ],
+
     'contact' => [
         'title'       => 'Contact Imperium Software Technologies | Dubai, UAE',
         'description' => 'Talk to Imperium about AI-powered CX, contact center, CTI and IVR projects. Offices in Dubai, Singapore, Chennai and Bengaluru. Support desk staffed 24/7.',

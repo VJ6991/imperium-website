@@ -15,6 +15,7 @@ class Seo
         'index'              => 'Home',
         'industry-influence' => 'Verticals',
         'casestudy'          => 'Case Studies',
+        'about'              => 'About',
         'contact'            => 'Contact',
         'healthcare'         => 'Healthcare',
         'debtcollection'     => 'Debt Collection',
@@ -190,6 +191,15 @@ class Seo
      * claims that cannot be verified on-site (founding date, employee count,
      * aggregate ratings): structured data that disagrees with the visible page is
      * treated as untrustworthy and can cost the rich result entirely.
+     *
+     * `award` (GEO phase) is the one exception added so far, and only because it
+     * clears a higher bar than "verified on-site": it's stated on the new /about
+     * page AND independently corroborated by a dated, named third-party source
+     * (TahawulTech.com, Feb 2024 — see reports/32-authority-and-offsite-plan.md).
+     * `foundingDate` and `parentOrganization` were deliberately NOT added despite
+     * being in the same About-page copy — that copy is Imperium's own single,
+     * possibly-stale source (see the handoff report's NAP-consistency finding),
+     * not independently corroborated the way the Avaya partnership is.
      */
     public static function organizationSchema()
     {
@@ -277,6 +287,7 @@ class Seo
                     ],
                 ],
             ],
+            'award'  => 'Avaya DevConnect Technology Partner',
             'sameAs' => [
                 'https://www.facebook.com/imperiumapp',
                 'https://twitter.com/imperiumapp',

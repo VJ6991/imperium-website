@@ -114,6 +114,41 @@
         "last_updated": "2026-08-12"
     },
 
+    "about": {
+        "core_question": "Who is Imperium Software Technologies?",
+        "tldr": "Imperium Software Technologies is a Dubai-headquartered CX and contact center software provider, founded in 2005 as a subsidiary of Protocol Systems. It is a certified Avaya DevConnect Technology partner and Avaya Powered By Cloud partner, with additional offices in Singapore, Chennai and Bengaluru, serving clients across the UAE, Saudi Arabia, Singapore and India.",
+        "how_it_works_heading": "What does Imperium Software Technologies actually do?",
+        "how_it_works": [
+            "Builds CTI (computer telephony integration), IVR and omnichannel contact center software on top of established telephony infrastructure — primarily Avaya — rather than replacing it outright.",
+            "Delivers both on-premise contact center setups and on-premise-to-cloud migrations, depending on a client's existing infrastructure and compliance needs (see the <a href=\"/casestudy\">case studies</a> for real examples of both).",
+            "Configures that same core platform for 12 named industries — from healthcare to banking — each with its own workflow (see <a href=\"/industry-influence\">industries Imperium serves</a>).",
+            "Supports clients from four offices: Dubai (UAE, head office), Singapore, Chennai (India) and Bengaluru (India)."
+        ],
+        "faqs": [
+            {
+                "q": "When was Imperium Software Technologies founded?",
+                "a": "2005, as a subsidiary of Protocol Systems. Imperium has been a certified Avaya DevConnect Technology partner since then and has since also been onboarded as an Avaya Powered By Cloud partner."
+            },
+            {
+                "q": "Is Imperium Software Technologies an official Avaya partner?",
+                "a": "Yes — Imperium is a certified Avaya DevConnect Technology partner and an Avaya Powered By Cloud partner. Its case studies (Emirates Hospital Group, Concordia Dubai, Macemacro, Omniyat, Growthgate Capital — see the <a href=\"/casestudy\">case studies page</a>) are all built on Avaya contact center infrastructure."
+            },
+            {
+                "q": "Where is Imperium Software Technologies located?",
+                "a": "Headquartered in Dubai, UAE, with additional offices in Singapore, Chennai (India) and Bengaluru (India). Full addresses are on the <a href=\"/contact\">contact page</a>."
+            },
+            {
+                "q": "What industries does Imperium Software Technologies serve?",
+                "a": "Twelve named verticals — healthcare, debt collection, help desk, business centers, logistics, education, e-commerce, real estate, retail, banking, finance and insurance — built on the same core CTI/IVR/omnichannel platform. See <a href=\"/industry-influence\">industries Imperium serves</a> for the full list."
+            },
+            {
+                "q": "Does Imperium Software Technologies only work with Avaya, or other telephony vendors too?",
+                "a": "Avaya is the vendor behind every one of Imperium's published case studies to date. The company also lists Microsoft, AWS, Google Cloud, Zoom, Sestek and Globitel as technology partners (see the homepage's technology partners section) for its broader CX platform."
+            }
+        ],
+        "last_updated": "2026-08-14"
+    },
+
     "healthcare": {
         "core_question": "What does a healthcare contact center solution from Imperium include?",
         "tldr": "Imperium's healthcare contact center software gives hospitals and clinics one system for patient calls, appointment booking and multi-channel support, instead of a separate reception desk per branch or department. It runs on Avaya contact center infrastructure with CTI, so a patient's record appears on the agent's screen before the call even connects, and it can centralize multiple branches behind a single number — as it did for Emirates Hospital Group's seven UAE branches. Imperium has also deployed healthcare-specific modules (SMS gateway, customer surveys) for Al Tadawi Medical Care and Mobile Doctors 24/7.",

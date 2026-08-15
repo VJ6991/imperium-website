@@ -21,6 +21,8 @@ class Bootstrap
 		// that no longer ships in this folder.
 		$allowed = [
 			'index', 'industry-influence', 'casestudy',
+			// Entity/E-E-A-T page (GEO phase) — who Imperium is, not what it sells
+			'about',
 			// Enquiry page reached from the "Get in Touch" buttons on the homepage
 			'contact',
 			// Vertical inside pages linked from /industry-influence

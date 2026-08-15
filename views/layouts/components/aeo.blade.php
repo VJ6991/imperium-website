@@ -36,8 +36,10 @@
     <section class="imp-aeo-block">
         <h2 class="imp-aeo-h2">{{ !empty($aeoData['how_it_works_heading']) ? $aeoData['how_it_works_heading'] : 'How does it work?' }}</h2>
         <ol class="imp-aeo-steps">
+            {{-- Raw output: how_it_works steps may contain trusted <a href>
+                 internal links, same as tldr/faq-a/table cells above. --}}
             @foreach($aeoData['how_it_works'] as $step)
-            <li>{{ $step }}</li>
+            <li>{!! $step !!}</li>
             @endforeach
         </ol>
     </section>
