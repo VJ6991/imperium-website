@@ -309,3 +309,24 @@ Two further changes (robots.txt, `.htaccess`) are proposed as diffs awaiting
 your approval in
 [`31-llms-txt-and-crawler-report.md`](31-llms-txt-and-crawler-report.md) —
 neither has been applied.
+
+---
+
+## 7. Removed: the "See sourced results..." caption under the metrics section
+
+The one-line evidence link added in §4 (`"See sourced results from named
+clients in our case studies"`, under the homepage's "Delivering measurable
+outcomes" 40%/30%/2X/100% section) was removed at the owner's request. The
+four metric numbers themselves, and the rest of that section, are unchanged
+— only the added caption line and its explanatory HTML comment were removed
+from `imperium homepage_final/index.html`.
+
+This does not resolve the underlying question raised in §4 and tracked in
+report 33 item 7: those four figures still have no visible methodology,
+date, or source. Removing the pointer to the case studies page doesn't
+change whether the numbers themselves should eventually be sourced — it's
+still open, and still your call, not mine to guess at.
+
+**Verified**: `200`, zero PHP notices, the caption text no longer appears
+anywhere in the rendered output, the "Delivering measurable outcomes"
+heading and all four figures are unchanged.
