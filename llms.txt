@@ -1,0 +1,27 @@
+# Imperium Software Technologies
+
+> Imperium Software Technologies is a Dubai-headquartered CX and contact center software provider — CTI, IVR, omnichannel routing and enterprise telephony, primarily built on Avaya infrastructure — serving 12 industries across the UAE, Saudi Arabia, Singapore and India.
+
+Founded in 2005, Imperium is a certified Avaya DevConnect Technology partner and Avaya Powered By Cloud partner, with offices in Dubai (head office), Singapore, Chennai and Bengaluru.
+
+## Company
+
+- [About Imperium](https://www.imperiumapp.com/about): Company background, Avaya partnership, office locations, and founding facts.
+- [Contact](https://www.imperiumapp.com/contact): Offices, phone/email, and response-time commitments (1 business day for new enquiries, 24/7 support for existing customers).
+- [Case studies](https://www.imperiumapp.com/casestudy): Real, named client deployments with problem/solution/result — Emirates Hospital Group, Concordia Dubai, Macemacro, Omniyat, Growthgate Capital.
+
+## Industries served
+
+- [All industries](https://www.imperiumapp.com/industry-influence): Overview of all 12 verticals Imperium builds contact center solutions for.
+- [Healthcare](https://www.imperiumapp.com/healthcare): Appointment IVR, patient-record CTI, and centralized multi-branch contact centers for hospitals and clinics.
+- [Banking](https://www.imperiumapp.com/banking): Authenticated IVR, call recording, and core-banking system integration.
+- [Finance](https://www.imperiumapp.com/finance): Debt collection systems, third-party integrations, and audit-ready reporting for financial services.
+- [Insurance](https://www.imperiumapp.com/insurance): Claims-status IVR and policy-aware call routing for renewals and claims.
+- [Real estate](https://www.imperiumapp.com/realestate): Lead routing, CRM integration, and missed-enquiry prevention for brokerages and developers.
+- [Logistics](https://www.imperiumapp.com/logistics): Shipment-tracking IVR with text-to-speech and automated booking-request capture.
+- [Retail](https://www.imperiumapp.com/retail): Unified store, contact center and online channel view of each customer.
+- [E-commerce](https://www.imperiumapp.com/ecommerce): Order-status IVR and CRM-connected agents for online retailers.
+- [Education](https://www.imperiumapp.com/educationsector): Admissions IVR, parent notification campaigns, and student help desk.
+- [Help desk](https://www.imperiumapp.com/helpdesk): Unified phone/email/chat/social ticket logging and routing.
+- [Business centers](https://www.imperiumapp.com/businesscenter): Multi-tenant telephony for shared offices and business centers.
+- [Debt collection](https://www.imperiumapp.com/debtcollection): Predictive dialling, promise-to-pay tracking, and compliance reporting.
