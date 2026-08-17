@@ -54,7 +54,7 @@
    <link href="{{asset('css/redesign-responsive.css')}}?v=3" rel="stylesheet">
    <!-- AEO content styling (TL;DR / how-it-works / FAQ) — shared with the homepage
         and contact page, see assets/css/aeo.css for why it's framework-agnostic. -->
-   <link href="{{asset('css/aeo.css')}}?v=1" rel="stylesheet">
+   <link href="{{asset('css/aeo.css')}}?v=2" rel="stylesheet">
     <!-- jQuery javascript library -->
 
     <!-- <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> -->

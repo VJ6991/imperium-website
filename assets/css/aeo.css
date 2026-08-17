@@ -128,19 +128,52 @@
     border-top: 1px solid #ECE5DD;
 }
 
+/* <details>/<summary> accordion: no JS needed, native expand/collapse.
+   The marker triangle is replaced with a CSS-only chevron (border trick)
+   since these pages don't load an icon font. */
 .imp-aeo-faq-q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    list-style: none;
     font-size: 16.5px;
     font-weight: 700;
     color: #1a1714;
-    margin: 0 0 8px;
+    margin: 0;
     line-height: 1.4;
+}
+
+.imp-aeo-faq-q::-webkit-details-marker {
+    display: none;
+}
+
+.imp-aeo-faq-q::marker {
+    content: "";
+}
+
+.imp-aeo-faq-icon {
+    flex: none;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #FF6B35;
+    border-bottom: 2px solid #FF6B35;
+    transform: rotate(45deg);
+    margin-top: -4px;
+    transition: transform 0.2s ease;
+}
+
+.imp-aeo-faq-item[open] .imp-aeo-faq-icon {
+    transform: rotate(-135deg);
+    margin-top: 4px;
 }
 
 .imp-aeo-faq-a {
     font-size: 15px;
     line-height: 1.65;
     color: #453f38;
-    margin: 0;
+    margin: 8px 0 0;
 }
 
 .imp-aeo a {

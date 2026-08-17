@@ -74,10 +74,10 @@
     <section class="imp-aeo-block imp-aeo-faq" aria-label="Frequently asked questions">
         <h2 class="imp-aeo-h2">Frequently asked questions</h2>
         @foreach($aeoData['faqs'] as $faq)
-        <div class="imp-aeo-faq-item">
-            <h3 class="imp-aeo-faq-q">{{ $faq['q'] }}</h3>
+        <details class="imp-aeo-faq-item">
+            <summary class="imp-aeo-faq-q">{{ $faq['q'] }}<span class="imp-aeo-faq-icon" aria-hidden="true"></span></summary>
             <p class="imp-aeo-faq-a">{!! $faq['a'] !!}</p>
-        </div>
+        </details>
         @endforeach
     </section>
     @endif
